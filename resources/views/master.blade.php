@@ -30,9 +30,9 @@
         $title .= e($titlePart)."\u{202c}";
 
         if ($i + 1 === count($titleTree)) {
-            // Titles ending with phrase containing "osu!" like "osu!store" don't need the suffix.
-            if (strpos($titlePart, 'osu!') === false) {
-                $title .= " | \u{202d}osu!\u{202c}";
+            // Titles ending with phrase containing "Delta" like "Delta store" don't need the suffix.
+            if (strpos($titlePart, 'Delta') === false) {
+                $title .= " | \u{202d}Delta\u{202c}";
             }
         } else {
             $title .= ' · ';
@@ -110,7 +110,7 @@
 
                 @if ($GLOBALS['cfg']['osu']['is_development_deploy'])
                     <div class="development-deploy-footer">
-                        This is a development instance of the <a href="https://osu.ppy.sh" class="development-deploy-footer__link">osu! website</a>. Please do not login with your osu! credentials.
+                        This is a development instance of the <a href="https://osu.ppy.sh" class="development-deploy-footer__link">Delta website</a>. Please do not login with your Delta credentials.
                     </div>
                 @endif
             </div>

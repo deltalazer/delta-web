@@ -3,4 +3,4 @@
     See the LICENCE file in the repository root for full licence text.
 --}}
 --
-osu! | {{ $GLOBALS['cfg']['app']['url'] }}
+Delta | {{ $GLOBALS['cfg']['app']['url'] }}

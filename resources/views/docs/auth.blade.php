@@ -38,7 +38,7 @@
 </p>
 
 <p>
-    Before you can use the osu!api, you will need to
+    Before you can use the Delta API, you will need to
     <ol>
         <li>have registered an OAuth Application.
         <li>
@@ -420,7 +420,7 @@ Restricted users can grant authorization like anyone else. If your client should
 <h2>Using the access token to access the API</h2>
 
 <p>
-    With the access token, you can make requests to osu!api on behalf of a user.
+    With the access token, you can make requests to Delta API on behalf of a user.
 </p>
 
 <p>
@@ -536,7 +536,7 @@ $scopeDescriptions = [
 </p>
 
 <p>
-    Routes marked with <a class="badge badge-scope badge-scope-lazer" name="scope-lazer">lazer</a> are intended for use by the <a href="https://github.com/ppy/osu">osu!lazer</a> client and not currently available for use with Authorization Code or Client Credentials grants.
+    Routes marked with <a class="badge badge-scope badge-scope-lazer" name="scope-lazer">lazer</a> are intended for use by the <a href="https://github.com/ppy/osu">DeltaLazer</a> client and not currently available for use with Authorization Code or Client Credentials grants.
 </p>
 
 <p>

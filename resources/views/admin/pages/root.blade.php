@@ -7,6 +7,13 @@
 @section('content')
     @include('admin._header')
     <div class="osu-page osu-page--admin">
+        <h2 class="title">delta</h2>
+        <ul>
+            <li><a href="{{ route('admin.delta.users') }}">user management</a></li>
+            <li><a href="{{ route('admin.delta.beatmapsets') }}">beatmap management</a></li>
+            <li><a href="{{ route('admin.delta.forums') }}">forum management</a></li>
+        </ul>
+
         <h2 class="title">{{ osu_trans('admin.pages.root.sections.general') }}</h2>
         <ul>
             <li>

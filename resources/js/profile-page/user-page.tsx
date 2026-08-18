@@ -2,7 +2,6 @@
 // See the LICENCE file in the repository root for full licence text.
 
 import StringWithComponent from 'components/string-with-component';
-import { route } from 'laroute';
 import { action, computed, makeObservable } from 'mobx';
 import { observer } from 'mobx-react';
 import core from 'osu-core-singleton';
@@ -98,7 +97,7 @@ export default class UserPage extends React.Component<ExtraPageProps> {
               mappings={{
                 link: (
                   <a
-                    href={route('store.products.show', { product: 'supporter-tag' })}
+                    href={'https://github.com/deltalazer/delta'}
                     rel="noreferrer"
                     target='_blank'
                   >

@@ -8,7 +8,7 @@ return [
         'disabled' => 'This beatmap is currently not available for download.',
         'parts-removed' => 'Portions of this beatmap have been removed at the request of the creator or a third-party rights holder.',
         'more-info' => 'Check here for more information.',
-        'rule_violation' => 'Some assets contained within this map have been removed after being judged as not being suitable for use in osu!.',
+        'rule_violation' => 'Some assets contained within this map have been removed after being judged as not being suitable for use in Delta.',
     ],
 
     'cover' => [
@@ -36,7 +36,7 @@ return [
             'all' => 'download',
             'video' => 'download with video',
             'no_video' => 'download without video',
-            'direct' => 'open in osu!direct',
+            'direct' => 'open in Delta direct',
         ],
     ],
 
@@ -93,7 +93,7 @@ return [
 
             'download' => [
                 '_' => 'Download',
-                'direct' => 'osu!direct',
+                'direct' => 'Delta direct',
                 'no-video' => 'without Video',
                 'video' => 'with Video',
             ],
@@ -162,7 +162,7 @@ return [
 
         'lazer_only' => [
             'title' => 'Lazer Only',
-            'description' => 'Due to specific mechanics, this beatmap can only be played on osu!lazer.',
+            'description' => 'Due to specific mechanics, this beatmap can only be played on DeltaLazer.',
 
             'scoreboard_switch_mode' => [
                 '_' => ':enable_link to view scores set on this beatmap.',
@@ -188,7 +188,7 @@ return [
             'friend' => 'Friend Ranking',
             'global' => 'Global Ranking',
             'supporter-link' => 'Click <a href=":link">here</a> to see all the fancy features that you get!',
-            'supporter-only' => 'You need to be an osu!supporter to access the friend, country, or mod-specific rankings!',
+            'supporter-only' => 'You need to be an Delta supporter to access the friend, country, or mod-specific rankings!',
             'team' => 'Team Ranking',
             'title' => 'Scoreboard',
 

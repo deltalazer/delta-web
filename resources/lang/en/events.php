@@ -14,9 +14,9 @@ return [
     'empty' => "This user hasn't done anything notable recently!",
     'rank' => ':user achieved :rank on :beatmap (:mode)',
     'rank_lost' => ':user has lost first place on :beatmap (:mode)',
-    'user_support_again' => ':user has once again chosen to support osu! - thanks for your generosity!',
-    'user_support_first' => ':user has supported osu! - thanks for your generosity!',
-    'user_support_gift' => ':user has received the gift of osu!supporter!',
+    'user_support_again' => ':user has once again chosen to support Delta - thanks for your generosity!',
+    'user_support_first' => ':user has supported Delta - thanks for your generosity!',
+    'user_support_gift' => ':user has received the gift of Delta supporter!',
     'username_change' => ':previousUsername has changed their username to :user!',
 
     'beatmapset_status' => [

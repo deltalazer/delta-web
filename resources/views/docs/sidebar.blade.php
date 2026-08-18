@@ -35,7 +35,7 @@
         </li>
         <li style="padding-bottom: 5px;">
             <a href="https://osu.ppy.sh">
-                osu!
+                Delta
             </a>
         </li>
         @if($metadata['postman_collection_url'])

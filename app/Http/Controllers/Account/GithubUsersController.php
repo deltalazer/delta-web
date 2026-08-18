@@ -8,6 +8,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Account;
 
 use App\Http\Controllers\Controller;
+use App\Libraries\GithubStars;
 use App\Models\GithubUser;
 use League\OAuth2\Client\Provider\Exception\GithubIdentityProviderException;
 use League\OAuth2\Client\Provider\Github as GithubProvider;
@@ -69,15 +70,18 @@ class GithubUsersController extends Controller
         $client->authenticate($token->getToken(), \Github\AuthMethod::ACCESS_TOKEN);
         $apiUser = $client->currentUser()->show();
 
-        $githubUser = GithubUser::firstWhere('canonical_id', $apiUser['id']);
+        $existing = GithubUser::firstWhere('canonical_id', $apiUser['id']);
 
-        abort_if($githubUser === null, 422, osu_trans('accounts.github_user.error.no_contribution'));
-        abort_if($githubUser->user_id !== null, 422, osu_trans('accounts.github_user.error.already_linked'));
+        abort_if($existing?->user_id !== null, 422, osu_trans('accounts.github_user.error.already_linked'));
 
-        $githubUser->update([
+        $starredAt = GithubStars::starredAt($token->getToken());
+
+        GithubUser::importFromGithub($apiUser)->update([
+            'starred_at' => $starredAt,
             'user_id' => auth()->id(),
-            'username' => $apiUser['login'],
         ]);
+
+        GithubStars::applyToUser(auth()->user(), $starredAt);
 
         return redirect(route('account.edit').'#github');
     }
@@ -104,6 +108,8 @@ class GithubUsersController extends Controller
     public function destroy()
     {
         auth()->user()->githubUser()->update(['user_id' => null]);
+
+        GithubStars::applyToUser(auth()->user(), null);
 
         return response()->noContent();
     }

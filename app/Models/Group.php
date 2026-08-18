@@ -50,6 +50,7 @@ class Group extends Model implements AfterCommit
         'loved',
         'nat',
         'no_profile',
+        'super_admin',
     ];
 
     public $timestamps = false;

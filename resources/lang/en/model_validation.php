@@ -178,10 +178,11 @@ return [
         ],
 
         'change_username' => [
+            'cooldown' => 'You can change your username again :time.',
             'restricted' => 'You cannot change your username while restricted.',
             'supporter_required' => [
-                '_' => 'You must have :link to change your name!',
-                'link_text' => 'supported osu!',
+                '_' => 'You must be a :link to change your name!',
+                'link_text' => 'Delta supporter',
             ],
             'username_is_same' => 'This is already your username, silly!',
         ],

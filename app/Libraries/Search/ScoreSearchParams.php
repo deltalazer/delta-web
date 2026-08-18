@@ -60,38 +60,15 @@ class ScoreSearchParams extends SearchParams
     }
 
     /**
-     * This returns value for isLegacy based on user preference, request type, and `legacy_only` parameter
+     * Delta has no stable scores, so lazer scoring is the only mode. Returning
+     * null here means "not legacy" for every caller.
      */
     public static function showLegacyForUser(
         ?User $user = null,
         ?bool $legacyOnly = null,
         ?bool $isApiRequest = null
     ): null | true {
-        $isApiRequest ??= is_api_request();
-        // `null` is actual parameter value for the other two parameters so
-        // only try filling them up if not passed at all.
-        $argLen = func_num_args();
-        if ($argLen < 2) {
-            $legacyOnly = get_bool(Request('legacy_only'));
-
-            if ($argLen < 1) {
-                $user = \Auth::user();
-            }
-        }
-
-        if ($legacyOnly !== null) {
-            return $legacyOnly ? true : null;
-        }
-
-        if ($isApiRequest) {
-            return null;
-        }
-
-        $profileCustomization = UserProfileCustomization::forUser($user);
-
-        return $profileCustomization['legacy_score_only']
-            ? true
-            : null;
+        return null;
     }
 
     public function getCountryCode(): string

@@ -24,8 +24,6 @@
             data-react="user-card"
         ></div>
 
-        @include('layout._score_mode_toggle', ['class' => 'navbar-mobile-item__main'])
-
         <a
             class="navbar-mobile-item__main"
             href="{{ route('users.show', $currentUser) }}"

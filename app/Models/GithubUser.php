@@ -19,6 +19,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property \Carbon\Carbon|null $created_at
  * @property-read string|null $created_at_json
  * @property int $id
+ * @property \Carbon\Carbon|null $starred_at
  * @property \Carbon\Carbon|null $updated_at
  * @property-read string|null $updated_at_json
  * @property-read User|null $user
@@ -81,6 +82,7 @@ class GithubUser extends Model
             'username' => $this->getRawAttribute($key),
 
             'created_at',
+            'starred_at',
             'updated_at' => $this->getTimeFast($key),
 
             'created_at_json',

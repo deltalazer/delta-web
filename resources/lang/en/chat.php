@@ -4,6 +4,7 @@
 // See the LICENCE file in the repository root for full licence text.
 
 return [
+    'loading_stuck' => 'Refresh your page!',
     'loading_users' => 'loading users...',
     'searching_users' => 'searching for users...',
     'talking_in' => 'talking in :channel',

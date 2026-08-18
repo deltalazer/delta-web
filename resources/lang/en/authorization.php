@@ -4,7 +4,7 @@
 // See the LICENCE file in the repository root for full licence text.
 
 return [
-    'play_more' => 'How about playing some osu! instead?',
+    'play_more' => 'How about playing some Delta instead?',
     'require_login' => 'Please sign in to proceed.',
     'require_verification' => 'Please verify to proceed.',
     'restricted' => "Can't do that while restricted.",
@@ -212,7 +212,7 @@ return [
             'not_member' => 'Not a member of the team.',
         ],
         'store' => [
-            'require_supporter_tag' => 'osu!supporter tag is required to create team.',
+            'require_supporter_tag' => 'Delta supporter tag is required to create team.',
         ],
     ],
 
@@ -221,7 +221,7 @@ return [
             'edit' => [
                 'locked' => 'User page is locked.',
                 'not_owner' => 'Can only edit own user page.',
-                'require_supporter_tag' => 'osu!supporter tag is required.',
+                'require_supporter_tag' => 'Delta supporter tag is required.',
             ],
         ],
         'update_email' => [

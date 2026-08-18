@@ -137,6 +137,7 @@ return [
         'bar' => [
             'chat' => 'Team Chat',
             'destroy' => 'Disband Team',
+            'edit' => 'Edit Team',
             'join' => 'Request Join',
             'join_cancel' => 'Cancel Join',
             'part' => 'Leave Team',

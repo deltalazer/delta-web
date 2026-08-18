@@ -8,11 +8,11 @@ return [
         'home' => 'Go to dashboard',
         'logout' => 'Logout',
         'text' => 'You can close this tab/window now',
-        'title' => 'osu! client verification has been completed',
+        'title' => 'Delta client verification has been completed',
     ],
 
     'create' => [
         'confirm' => 'Click on authorise button below to finish client verification.',
-        'title' => 'osu! client verification',
+        'title' => 'Delta client verification',
     ],
 ];

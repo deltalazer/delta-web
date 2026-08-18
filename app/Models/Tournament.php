@@ -162,12 +162,6 @@ class Tournament extends Model
             ];
         }
 
-        if ($this->isStoreBannerAvailable()) {
-            $links[] = [
-                'url' => route('store.products.show', $this->tournament_banner_product_id),
-                'title' => osu_trans('tournament.show.banner'),
-            ];
-        }
 
         return $links;
     }

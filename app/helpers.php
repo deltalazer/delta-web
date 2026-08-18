@@ -974,8 +974,6 @@ function page_title()
     };
     $controllerKey = "{$currentRoute['namespace']}.{$currentRoute['controller']}._";
     $controllerKey = match ($controllerKey) {
-        'main.artist_tracks_controller._' => 'main.artists_controller._',
-        'main.store_controller._' => 'store._',
         'multiplayer.rooms_controller._' => 'main.ranking_controller._',
         'ranking.daily_challenge_controller._' => 'main.ranking_controller._',
         'ranking.matchmaking_controller._' => 'main.ranking_controller._',
@@ -1121,9 +1119,10 @@ function issue_icon($issue)
     }
 
     return match ($issue) {
-        'osu!lazer' => 'lzr',
+        'DeltaLazer' => 'lzr',
         'osu!stable' => 'stb',
-        'osu!web' => 'web',
+        'Delta web' => 'web',
+        default => null,
     };
 }
 
@@ -1258,7 +1257,6 @@ function nav_links()
     ];
     $links['beatmaps'] = [
         'page_title.main.beatmapsets_controller.index' => route('beatmapsets.index'),
-        'page_title.main.artists_controller._' => route('artists.index'),
         'page_title.main.beatmap_packs_controller._' => route('packs.index'),
     ];
     foreach (RankingController::TYPES as $rankingType) {
@@ -1271,11 +1269,6 @@ function nav_links()
         'page_title.main.tournaments_controller._' => route('tournaments.index'),
         'page_title.main.livestreams_controller._' => route('livestreams.index'),
         'layout.menu.community.dev' => osu_url('dev'),
-    ];
-    $links['store'] = [
-        'layout.header.store.products' => route('store.products.index'),
-        'layout.header.store.cart' => route('store.cart.show'),
-        'layout.header.store.orders' => route('store.orders.index'),
     ];
     $links['help'] = [
         'page_title.main.wiki_controller._' => wiki_url('Main_page'),
@@ -1319,7 +1312,6 @@ function footer_legal_links(): array
     }
     $ret['privacy'] = route('legal', ['locale' => $locale, 'path' => 'Privacy']);
     $ret['copyright'] = route('legal', ['locale' => $locale, 'path' => 'Copyright']);
-    $ret['server_status'] = osu_url('server_status');
     $ret['source_code'] = osu_url('source_code');
 
     return $ret;

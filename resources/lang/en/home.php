@@ -92,6 +92,7 @@ return [
         'os_version_or_later' => ':os_version or later',
         'other_os' => 'other platforms',
         'quick_start_guide' => 'quick start guide',
+        'linux_text' => 'if you\'re on linux',
         'stable_text' => 'if you\'re looking for the older one',
         'tagline_1' => 'let\'s get you',
         'tagline_2' => 'started!',
@@ -148,9 +149,9 @@ return [
             'resets' => 'resets :ends',
         ],
         'buttons' => [
-            'download' => 'Download osu!',
-            'support' => 'Support osu!',
-            'store' => 'osu!store',
+            'download' => 'Download delta!lazer',
+            'support' => 'Support delta!lazer',
+            'store' => 'Delta store',
         ],
         'livestream' => [
             'title' => 'Featured Livestream',

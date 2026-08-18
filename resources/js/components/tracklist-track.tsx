@@ -3,7 +3,6 @@
 
 import ArtistJson from 'interfaces/artist-json';
 import ArtistTrackJson, { ArtistTrackWithArtistJson } from 'interfaces/artist-track-json';
-import { route } from 'laroute';
 import * as React from 'react';
 import { classWithModifiers, Modifiers, urlPresence } from 'utils/css';
 import { formatNumber } from 'utils/html';
@@ -66,13 +65,13 @@ export default class TracklistTrack extends React.PureComponent<Props> {
             )}
           </div>
           <div className='artist-track__info'>
-            <a href={route('artists.show', { artist: this.artist.id })}>
+            <a href={`/beatmaps/artists/${this.artist.id}`}>
               {this.artist.name}
             </a>
           </div>
           {this.props.showAlbum && this.props.track.album != null && (
             <div className='artist-track__info'>
-              <a href={`${route('artists.show', { artist: this.artist.id })}#album-${this.props.track.album_id}`}>
+              <a href={`${`/beatmaps/artists/${this.artist.id}`}#album-${this.props.track.album_id}`}>
                 {this.props.track.album.title}
               </a>
             </div>

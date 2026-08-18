@@ -35,7 +35,7 @@
                 <h4 class="store-text store-text--title store-text--title-small">{{ osu_trans('store.invoice.sent_via') }}</h4>
 
                 <div class='address'>
-                    osu!store
+                    Delta store
                 </div>
             </div>
 
@@ -66,7 +66,7 @@
             $showTrackingCode = ($order->isShipped() || $order->isDelivered() || Auth::user()->isAdmin()) && $order->tracking_code;
 
             $transactionDetails = [
-                osu_trans('store.order.details.salesperson') => 'osu!store',
+                osu_trans('store.order.details.salesperson') => 'Delta store',
                 osu_trans('store.order.details.order_number') => "#{$order->order_id}",
                 osu_trans('store.order.details.shipping_method') => $showTrackingCode ? 'EMS ('.trim($order->tracking_code).')' : 'N/A',
                 osu_trans('store.order.details.shipping_terms') => 'FOB Japan',

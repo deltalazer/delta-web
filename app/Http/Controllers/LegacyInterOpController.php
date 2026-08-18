@@ -60,6 +60,8 @@ class LegacyInterOpController extends Controller
         if (!$beatmapset->trashed()) {
             $job = (new RegenerateBeatmapsetMedia($beatmapset))->onQueue('beatmap_default');
             $this->dispatch($job);
+
+            \LaravelRedis::lpush('osu-queue:beatmap', json_encode(['beatmapset_id' => $beatmapset->getKey()]));
         }
 
         dispatch(new EsDocument($beatmapset));

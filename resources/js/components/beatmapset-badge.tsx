@@ -2,7 +2,6 @@
 // See the LICENCE file in the repository root for full licence text.
 
 import BeatmapsetJson from 'interfaces/beatmapset-json';
-import { route } from 'laroute';
 import * as React from 'react';
 import { classWithModifiers, Modifiers } from 'utils/css';
 import { trans } from 'utils/lang';
@@ -20,7 +19,7 @@ export default function BeatmapsetBadge(props: Props) {
     case 'featured_artist':
       if (props.beatmapset.track_id == null) return null;
 
-      url = route('tracks.show', { track: props.beatmapset.track_id });
+      url = `/beatmaps/artists/tracks/${props.beatmapset.track_id}`;
       break;
     case 'nsfw':
       if (!props.beatmapset.nsfw) return null;

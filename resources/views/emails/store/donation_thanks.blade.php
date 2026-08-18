@@ -5,15 +5,15 @@
 
 Hi {{ $donor->username }},
 
-Thanks a lot for choosing to {{ $continued ? 'continue to ': '' }}support osu!.
+Thanks a lot for choosing to {{ $continued ? 'continue to ': '' }}support Delta.
 
-{{ $isGift ? 'Your giftee(s)' : 'You' }} will now have access to osu!direct and many other supporter benefits{{ !$isGift ? ' for '.\App\Models\SupporterTag::getDurationText($duration, 'en') : '' }}. Your support keeps osu! running for around {{ $minutes }} minutes! It may not seem like much, but every minute adds up!
+{{ $isGift ? 'Your giftee(s)' : 'You' }} will now have access to Delta direct and many other supporter benefits{{ !$isGift ? ' for '.\App\Models\SupporterTag::getDurationText($duration, 'en') : '' }}. Your support keeps Delta running for around {{ $minutes }} minutes! It may not seem like much, but every minute adds up!
 
 It's 2026 and the world is a weird place, changing faster than anyone can keep up with. Along the way everything feels less personal than ever.
 
-After all these years, the reason I continue to pour my life into this project is the constant positive feedback I receive from players. I've seen osu! create real human connections, save people from dark times, or just exist as *that game* you can always come back to and be rest-assured there's a good few minutes or hours of gameplay away from the stress of the real world.
+After all these years, the reason I continue to pour my life into this project is the constant positive feedback I receive from players. I've seen Delta create real human connections, save people from dark times, or just exist as *that game* you can always come back to and be rest-assured there's a good few minutes or hours of gameplay away from the stress of the real world.
 
-I strive to continue running osu! true to my own values. No ads; no jumping on any hype train; no outsourcing our development to AI. Just continuing to do what we do – at our own speed – to best serve the community.
+I strive to continue running Delta true to my own values. No ads; no jumping on any hype train; no outsourcing our development to AI. Just continuing to do what we do – at our own speed – to best serve the community.
 
 We can only do this with your support.
 

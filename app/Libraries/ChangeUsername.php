@@ -49,8 +49,19 @@ class ChangeUsername
             return $this->validationErrors()->add('username', '.change_username.restricted');
         }
 
-        if ($this->hasExtraValidations() && !$this->user->hasSupported()) {
+        if ($this->hasExtraValidations() && !$this->user->isSupporter()) {
             return $this->validationErrors()->addTranslated('username', static::requireSupportedMessage());
+        }
+
+        if ($this->hasExtraValidations()) {
+            $availableAt = UsernameChangeCooldown::availableAt($this->user);
+
+            if ($availableAt !== null && $availableAt->isFuture()) {
+                return $this->validationErrors()->addTranslated('username', osu_trans(
+                    'model_validation.user.change_username.cooldown',
+                    ['time' => $availableAt->diffForHumans()],
+                ));
+            }
         }
 
         if (User::cleanUsername($this->username) === $this->user->username_clean) {
@@ -75,6 +86,6 @@ class ChangeUsername
 
     private function hasExtraValidations()
     {
-        return !in_array($this->type, static::LESS_VALIDATION_TYPES, true);
+        return !in_array($this->type, static::LESS_VALIDATION_TYPES, true) && !$this->user->isAdmin();
     }
 }

@@ -114,9 +114,9 @@ class Topic extends Model implements AfterCommit
             'resolved',
         ],
         'platform' => [
-            'osu!lazer',
+            'DeltaLazer',
             'osu!stable',
-            'osu!web',
+            'Delta web',
         ],
         'misc' => [
             'technical support',

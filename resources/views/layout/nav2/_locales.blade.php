@@ -19,6 +19,10 @@
         data-visibility="hidden"
     >
         <div class="simple-menu__content">
+            <div class="simple-menu__item simple-menu__item--disabled">
+                {{ osu_trans('layout.popup_locale.notice') }}
+            </div>
+
             @foreach ($GLOBALS['cfg']['app']['available_locales'] as $locale)
                 @php
                     $localeMeta = locale_meta($locale);

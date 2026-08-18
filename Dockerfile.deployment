@@ -117,7 +117,7 @@ COPY --from=build /app /app
 WORKDIR /app
 
 RUN useradd -m osuweb
-RUN chown -R osuweb /var/lib/nginx bootstrap/cache storage
+RUN chown -R osuweb /var/lib/nginx bootstrap/cache storage public/uploads public/uploads-avatar public/uploads-replay
 USER osuweb
 ENV LOG_CHANNEL stderr
 # fix broken readline in php console

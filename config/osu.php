@@ -159,9 +159,13 @@ return [
     'git-sha' => presence(env('GIT_SHA'))
         ?? (file_exists(__DIR__.'/../version') ? trim(file_get_contents(__DIR__.'/../version')) : null)
         ?? 'unknown-version',
+    'beatmap_submission' => [
+        'storage_path' => presence(env('BEATMAP_SUBMISSION_STORAGE_PATH')) ?? '/beatmaps',
+    ],
     'github' => [
         'client_id' => presence(env('GITHUB_CLIENT_ID')),
         'client_secret' => presence(env('GITHUB_CLIENT_SECRET')),
+        'supporter_repository' => presence(env('GITHUB_SUPPORTER_REPOSITORY')) ?? 'deltalazer/delta',
     ],
     'is_development_deploy' => get_bool(env('IS_DEVELOPMENT_DEPLOY')) ?? true,
     'landing' => [
@@ -236,17 +240,17 @@ return [
     'urls' => [
         'base' => 'https://osu.ppy.sh',
         'bounty-form' => env('OS_BOUNTY_URL'),
-        'dev' => 'https://discord.gg/ppy',
+        'dev' => 'https://discord.gg/2DuCqnsrfs',
         'download_video' => env('OSU_URL_DOWNLOAD_VIDEO', 'https://assets.ppy.sh/media/festive.mp4'),
         'installer' => 'https://m1.ppy.sh/r/osu!install.exe',
         'installer-mirror' => 'https://m2.ppy.sh/r/osu!install.exe',
-        'lazer_dl.android' => presence(env('OSU_URL_LAZER_ANDROID')) ?? 'https://github.com/ppy/osu/releases/latest/download/sh.ppy.osulazer.apk',
-        'lazer_dl.ios' => presence(env('OSU_URL_LAZER_IOS')) ?? '/home/testflight',
-        'lazer_dl.linux_x64' => presence(env('OSU_URL_LAZER_LINUX_X64')) ?? 'https://github.com/ppy/osu/releases/latest/download/osu.AppImage',
-        'lazer_dl.macos_as' => presence(env('OSU_URL_LAZER_MACOS_AS')) ?? 'https://github.com/ppy/osu/releases/latest/download/osu.app.Apple.Silicon.zip',
-        'lazer_dl.macos_intel' => presence(env('OSU_URL_LAZER_MACOS_INTEL')) ?? 'https://github.com/ppy/osu/releases/latest/download/osu.app.Intel.zip',
-        'lazer_dl.windows_x64' => presence(env('OSU_URL_LAZER_WINDOWS_X64')) ?? 'https://github.com/ppy/osu/releases/latest/download/install.exe',
-        'lazer_dl_other' => presence(env('OSU_URL_LAZER_OTHER')) ?? 'https://github.com/ppy/osu/#running-osu',
+        'lazer_dl.android' => presence(env('OSU_URL_LAZER_ANDROID')) ?? 'https://github.com/deltalazer/delta/releases',
+        'lazer_dl.ios' => presence(env('OSU_URL_LAZER_IOS')) ?? 'https://github.com/deltalazer/delta/releases',
+        'lazer_dl.linux_x64' => presence(env('OSU_URL_LAZER_LINUX_X64')) ?? 'https://github.com/deltalazer/delta/releases/latest/download/deltalazer-linux-x64.AppImage',
+        'lazer_dl.macos_as' => presence(env('OSU_URL_LAZER_MACOS_AS')) ?? 'https://github.com/deltalazer/delta/releases',
+        'lazer_dl.macos_intel' => presence(env('OSU_URL_LAZER_MACOS_INTEL')) ?? 'https://github.com/deltalazer/delta/releases',
+        'lazer_dl.windows_x64' => presence(env('OSU_URL_LAZER_WINDOWS_X64')) ?? 'https://github.com/deltalazer/delta/releases/latest/download/deltalazer-win-Setup.exe',
+        'lazer_dl_other' => presence(env('OSU_URL_LAZER_OTHER')) ?? 'https://github.com/deltalazer/delta/releases',
         'lazer_info' => presence(env('OSU_URL_LAZER_INFO')),
         'menu_content' => presence(env('OSU_URL_MENU_CONTENT_JSON')) ?? 'https://assets.ppy.sh/menu-content.json',
         'osx' => 'https://osx.ppy.sh',
@@ -332,6 +336,7 @@ return [
         'chart_days' => intval(env('CHANGELOG_CHART_DAYS', 7)),
         'featured_stream' => intval(env('FEATURED_UPDATE_STREAM', 5)),
         'github_token' => env('CHANGELOG_GITHUB_TOKEN'),
+        'release_repository' => presence(env('CHANGELOG_RELEASE_REPOSITORY')) ?? 'deltalazer/delta',
         'update_streams' => array_map('intval', explode(' ', env('UPDATE_STREAMS', '5 1'))),
     ],
     'rankings' => [

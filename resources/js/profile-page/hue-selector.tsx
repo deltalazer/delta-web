@@ -2,7 +2,6 @@
 // See the LICENCE file in the repository root for full licence text.
 
 import StringWithComponent from 'components/string-with-component';
-import { route } from 'laroute';
 import { action, autorun, makeObservable, observable } from 'mobx';
 import { disposeOnUnmount, observer } from 'mobx-react';
 import * as React from 'react';
@@ -163,7 +162,7 @@ export default class HueSelector extends React.Component<Props> {
         mappings={{
           link: (
             <a
-              href={route('store.products.show', { product: 'supporter-tag' })}
+              href={'https://github.com/deltalazer/delta'}
               rel='noreferrer'
               target='_blank'
             >

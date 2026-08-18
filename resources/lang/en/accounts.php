@@ -38,6 +38,11 @@ return [
             'title' => 'Password',
         ],
 
+        'username_change' => [
+            'new' => 'new username',
+            'title' => 'Username',
+        ],
+
         'profile' => [
             'country' => 'country',
             'title' => 'Profile',
@@ -64,14 +69,13 @@ return [
     ],
 
     'github_user' => [
-        'info' => "If you're a contributor to osu!'s open-source repositories, linking your GitHub account here will associate your changelog entries with your osu! profile. GitHub accounts with no contribution history to osu! cannot be linked.",
+        'info' => 'Linking your GitHub account lets Delta check whether you have starred the repository, which is what grants supporter status. It also associates any changelog entries you have written with your Delta profile.',
         'link' => 'Link GitHub Account',
         'title' => 'GitHub',
         'unlink' => 'Unlink GitHub Account',
 
         'error' => [
             'already_linked' => 'This GitHub account is already linked to a different user.',
-            'no_contribution' => 'Cannot link GitHub account without any contribution history in osu! repositories.',
             'unverified_email' => 'Please verify your primary email on GitHub, then try linking your account again.',
         ],
     ],
@@ -128,7 +132,7 @@ return [
         'beatmapset_download' => [
             '_' => 'default beatmap download type',
             'all' => 'with video if available',
-            'direct' => 'open in osu!direct',
+            'direct' => 'open in Delta direct',
             'no_video' => 'without video',
         ],
     ],
@@ -145,7 +149,7 @@ return [
     'privacy' => [
         'friends_only' => 'block private messages from people not on your friends list',
         'hide_online' => 'hide your online presence',
-        'hide_online_info' => 'this maps to the "appear offline" mode in osu!lazer',
+        'hide_online_info' => 'this maps to the "appear offline" mode in DeltaLazer',
         'title' => 'Privacy',
     ],
 
@@ -163,6 +167,10 @@ return [
     ],
 
     'update_password' => [
+        'update' => 'update',
+    ],
+
+    'update_username' => [
         'update' => 'update',
     ],
 

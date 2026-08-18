@@ -10,7 +10,7 @@
     <div class="osu-page osu-page--description">
         {!! osu_trans('livestreams.top-headers.description', [
             'link' => link_to(
-                wiki_url('Guides/Livestreaming_osu!'),
+                wiki_url('Guides/Livestreaming_Delta'),
                 osu_trans('livestreams.top-headers.link')
             ),
         ]) !!}

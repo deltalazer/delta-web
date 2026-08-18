@@ -5,7 +5,7 @@
 
 return [
     'index' => [
-        'title_page' => 'osu!news',
+        'title_page' => 'Delta news',
 
         'nav' => [
             'newer' => 'Newer posts',
@@ -27,14 +27,14 @@ return [
         'game_updates' => 'client and website updates',
         'mappers_guild' => 'Mappers\' Guild',
         'monthly_beatmapping_contest' => 'Monthly Beatmapping Contest',
-        'merch_runs' => 'osu! merchandise',
+        'merch_runs' => 'Delta merchandise',
         'miscellaneous' => 'miscellaneous announcements',
         'official_contests' => 'official contests',
         'offline_events' => 'offline events',
         'online_events' => 'online events',
         'project_loved' => 'Project Loved',
         'ranking_system_updates' => 'ranking system updates',
-        'world_cups' => 'osu! World Cups',
+        'world_cups' => 'Delta World Cups',
     ],
 
     'show' => [

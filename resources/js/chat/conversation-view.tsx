@@ -29,6 +29,26 @@ interface Snapshot {
 
 const blankSnapshot = (): Snapshot => ({ chatHeight: 0, chatTop: 0 });
 
+function StuckLoadingNotice() {
+  const [visible, setVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => setVisible(true), 5000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  if (!visible) {
+    return null;
+  }
+
+  return (
+    <div className='chat-conversation__day-divider'>
+      {trans('chat.loading_stuck')}
+    </div>
+  );
+}
+
 @observer
 export default class ConversationView extends React.Component<Props> {
   private readonly chatViewRef = React.createRef<HTMLDivElement>();
@@ -248,9 +268,12 @@ export default class ConversationView extends React.Component<Props> {
             modifiers='chat-conversation-earlier-messages'
           />
           {channel.loadingMessages &&
-            <div className='chat-conversation__day-divider'>
-              <Spinner />
-            </div>
+            <>
+              <div className='chat-conversation__day-divider'>
+                <Spinner />
+              </div>
+              <StuckLoadingNotice />
+            </>
           }
           {this.conversationStack}
           {!channel.canMessage && renderInput &&

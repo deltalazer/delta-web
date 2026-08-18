@@ -9,7 +9,7 @@ return [
     ],
 
     'defaults' => [
-        'page_description' => 'osu! - Rhythm is just a *click* away!  With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor.',
+        'page_description' => 'Delta - Rhythm is just a *click* away!  With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor.',
     ],
 
     'header' => [
@@ -100,7 +100,7 @@ return [
             'home' => 'Home',
             'changelog-index' => 'Changelog',
             'beatmaps' => 'Beatmap Listing',
-            'download' => 'Download osu!',
+            'download' => 'Download delta!lazer',
         ],
         'help' => [
             '_' => 'Help & Community',
@@ -188,7 +188,7 @@ return [
 
         'register' => [
             'download' => 'Download',
-            'info' => 'Download osu! to create your own account!',
+            'info' => 'Download delta!lazer to create your own account!',
             'title' => "Don't have an account?",
         ],
     ],
@@ -212,5 +212,9 @@ return [
     'popup_search' => [
         'initial' => 'Type to search!',
         'retry' => 'Search failed. Click to retry.',
+    ],
+
+    'popup_locale' => [
+        'notice' => 'Delta!Lazer does not support other languages due to rebranding of the translations being required but not done yet.',
     ],
 ];

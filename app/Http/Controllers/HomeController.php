@@ -14,10 +14,10 @@ use App\Models\BeatmapDownload;
 use App\Models\Beatmapset;
 use App\Models\Build;
 use App\Models\Forum\Post;
+use App\Models\GithubUser;
 use App\Models\LivestreamCollection;
 use App\Models\Multiplayer\Room;
 use App\Models\NewsPost;
-use App\Models\UserDonation;
 use App\Transformers\MenuImageTransformer;
 use App\Transformers\NewsPostTransformer;
 use Auth;
@@ -118,13 +118,6 @@ class HomeController extends Controller
 
     public function index()
     {
-        $host = Request::getHttpHost();
-        $subdomain = substr($host, 0, strpos($host, '.'));
-
-        if ($subdomain === 'store') {
-            return ujs_redirect(route('store.products.index'));
-        }
-
         $newsLimit = Auth::check() ? NewsPost::DASHBOARD_LIMIT + 1 : NewsPost::LANDING_LIMIT;
         $news = NewsPost::default()->limit($newsLimit)->get();
 
@@ -221,8 +214,6 @@ class HomeController extends Controller
         $allSearch = new AllSearch(Request::all(), ['user' => $currentUser]);
 
         switch ($allSearch->getMode()) {
-            case 'artist_track':
-                return ujs_redirect(route('artists.tracks.index', ['query' => $allSearch->getRawQuery()]));
             case 'beatmapset':
                 return ujs_redirect(route('beatmapsets.index', ['q' => $allSearch->getRawQuery()]));
         }
@@ -256,58 +247,9 @@ class HomeController extends Controller
     public function supportTheGame()
     {
         $user = auth()->user();
-
-        if ($user !== null) {
-            // current status
-            $expiration = $user->osu_subscriptionexpiry?->addDays(1);
-            $current = $expiration?->isFuture() ?? false;
-
-            static $lengthSumFn = fn ($p) => $p['length'] * ($p['cancel'] ? -1 : 1);
-            // purchased
-            $tagPurchases = $user->supporterTagPurchases;
-            $dollars = $tagPurchases->sum('amount');
-            $duration = $tagPurchases->sum($lengthSumFn);
-
-            // gifted
-            $gifted = $tagPurchases->where('target_user_id', '<>', $user->user_id);
-            $giftedDollars = $gifted->sum('amount');
-            $giftedDuration = $gifted->sum($lengthSumFn);
-
-            $giftedUsers = [];
-            foreach ($gifted as $gift) {
-                $giftedUsers[$gift->target_user_id] =
-                    ($giftedUsers[$gift->target_user_id] ?? 0)
-                    + ($gift->cancel ? -1 : 1);
-            }
-            $giftedUsers = count(array_filter($giftedUsers, fn ($count) => $count > 0));
-
-            $supporterStatus = [
-                // current status
-                'current' => $current,
-                'expiration' => $expiration,
-                // purchased
-                'dollars' => currency($dollars, 2, false),
-                'duration' => $duration,
-                // gifted
-                'giftedDollars' => currency($giftedDollars, 2, false),
-                'giftedDuration' => $giftedDuration,
-                'giftedUsers' => $giftedUsers,
-            ];
-
-            if ($current) {
-                $lastTagPurchaseDate = UserDonation::where('target_user_id', $user->user_id)
-                    ->orderBy('timestamp', 'desc')
-                    ->pluck('timestamp')
-                    ->first();
-
-                $lastTagPurchaseDate ??= $expiration->copy()->subMonths(1);
-
-                $total = max(1, $lastTagPurchaseDate->diffInDays($expiration));
-                $used = max(1, $lastTagPurchaseDate->diffInDays());
-
-                $supporterStatus['remainingPercent'] = 100 - round($used / $total * 100, 2);
-            }
-        }
+        $canLinkGithub = $user !== null
+            && GithubUser::canAuthenticate()
+            && !$user->githubUser()->exists();
 
         $pageLayout = [
             // why support
@@ -318,23 +260,15 @@ class HomeController extends Controller
                     'team' => [
                         'icons' => ['fas fa-users'],
                     ],
-                    'infra' => [
-                        'icons' => ['fas fa-server'],
+                    'visibility' => [
+                        'icons' => ['fas fa-search'],
                     ],
-                    'featured-artists' => [
-                        'icons' => ['fas fa-user-astronaut'],
-                        'link' => route('artists.index'),
-                    ],
-                    'ads' => [
+                    'free' => [
                         'icons' => ['fas fa-ad', 'fas fa-slash'],
                     ],
-                    'tournaments' => [
-                        'icons' => ['fas fa-trophy'],
-                        'link' => route('tournaments.index'),
-                    ],
-                    'bounty-program' => [
-                        'icons' => ['fas fa-child'],
-                        'link' => osu_url('bounty-form'),
+                    'development' => [
+                        'icons' => ['fas fa-code-branch'],
+                        'link' => 'https://github.com/deltalazer/delta',
                     ],
                 ],
             ],
@@ -427,9 +361,6 @@ class HomeController extends Controller
                         'speedy_downloads' => [
                             'icons' => ['fas fa-tachometer-alt'],
                         ],
-                        'change_username' => [
-                            'icons' => ['fas fa-magic'],
-                        ],
                         'skinnables' => [
                             'icons' => ['fas fa-paint-brush'],
                         ],
@@ -439,7 +370,7 @@ class HomeController extends Controller
         ];
 
         return ext_view('home.support-the-game', [
-            'supporterStatus' => $supporterStatus ?? [],
+            'canLinkGithub' => $canLinkGithub,
             'data' => $pageLayout,
         ]);
     }

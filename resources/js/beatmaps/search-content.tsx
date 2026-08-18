@@ -10,7 +10,6 @@ import VirtualListMeta from 'beatmaps/virtual-list-meta';
 import BeatmapsetPanel, { beatmapsetCardSizes } from 'beatmapset-panel';
 import Img2x from 'components/img2x';
 import StringWithComponent from 'components/string-with-component';
-import { route } from 'laroute';
 import { chunk } from 'lodash';
 import { computed, makeObservable } from 'mobx';
 import { observer } from 'mobx-react';
@@ -148,7 +147,7 @@ export class SearchContent extends React.Component<Props> {
   private renderSupporterRequired() {
     const filters = this.controller.supporterRequiredFilterText;
     const link = (
-      <a href={route('store.products.show', { product: 'supporter-tag' })}>
+      <a href={'https://github.com/deltalazer/delta'}>
         {trans('beatmaps.listing.search.supporter_filter_quote.link_text')}
       </a>
     );

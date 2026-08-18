@@ -5,7 +5,6 @@ import HeaderV4 from 'components/header-v4';
 import ShowMoreLink from 'components/show-more-link';
 import TracklistTrack from 'components/tracklist-track';
 import { ArtistTrackWithArtistJson } from 'interfaces/artist-track-json';
-import { route } from 'laroute';
 import { action, makeObservable, observable, reaction, runInAction } from 'mobx';
 import { disposeOnUnmount, observer } from 'mobx-react';
 import * as React from 'react';
@@ -34,12 +33,12 @@ interface Data {
 const headerLinks = [
   {
     title: trans('layout.header.artists.index'),
-    url: route('artists.index'),
+    url: '/beatmaps/artists',
   },
   {
     active: true,
     title: trans('artist.tracks.index._'),
-    url: route('artists.tracks.index'),
+    url: '/beatmaps/artists/tracks',
   },
 ];
 
@@ -112,7 +111,7 @@ export default class Main extends React.Component<Props> {
 
   @action
   private readonly handleShowMore = () => {
-    this.loadingXhr = $.getJSON(route('artists.tracks.index'), { ...this.data.index.search, cursor_string: this.data.index.cursor_string });
+    this.loadingXhr = $.getJSON('/beatmaps/artists/tracks', { ...this.data.index.search, cursor_string: this.data.index.cursor_string });
 
     this.loadingXhr.done((newIndex) => runInAction(() => {
       newIndex.artist_tracks = this.data.index.artist_tracks.concat(newIndex.artist_tracks);

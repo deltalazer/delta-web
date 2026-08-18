@@ -10,7 +10,7 @@
     <link rel="alternate" type="text/html" href="{{ route('news.index') }}" />
     <link rel="self" type="application/atom+xml" href="{{ request()->fullUrl() }}" />
 
-    <title>osu!news</title>
+    <title>Delta news</title>
     <icon>{{ $GLOBALS['cfg']['app']['url'] }}/apple-touch-icon.png</icon>
 
     <updated>{{ json_time(optional($posts->last())->published_at ?? now()) }}</updated>
@@ -28,7 +28,7 @@
             </content>
 
             <author>
-                <name>osu!team</name>
+                <name>Delta team</name>
             </author>
         </entry>
     @endforeach

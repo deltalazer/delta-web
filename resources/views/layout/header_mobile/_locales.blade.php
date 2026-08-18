@@ -26,6 +26,12 @@
     </button>
 
     <ul class="navbar-mobile-item__submenu js-click-menu" data-click-menu-id="nav-mobile-locale">
+        <li>
+            <span class="navbar-mobile-item__submenu-item">
+                {{ osu_trans('layout.popup_locale.notice') }}
+            </span>
+        </li>
+
         @foreach ($GLOBALS['cfg']['app']['available_locales'] as $locale)
             @php
                 $localeMeta = locale_meta($locale);

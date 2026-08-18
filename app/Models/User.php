@@ -1008,6 +1008,13 @@ class User extends Model implements AfterCommit, AuthenticatableContract, HasLoc
         return $this->isGroup(app('groups')->byIdentifier('admin'));
     }
 
+    public function isSuperAdmin()
+    {
+        $group = app('groups')->byIdentifier('super_admin');
+
+        return $group !== null && $this->isGroup($group);
+    }
+
     public function isChatAnnouncer()
     {
         $token = $this->token();

@@ -6,10 +6,10 @@
 {!! '<?xml version="1.0" encoding="UTF-8"?>' !!}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>osu!news</title>
+        <title>Delta news</title>
         <link>{{ route('news.index') }}</link>
         <atom:link rel="self" type="application/rss+xml" href="{{ request()->fullUrl() }}" />
-        <description>Latest news on osu!</description>
+        <description>Latest news on Delta</description>
 
         @foreach ($posts as $post)
             <item>

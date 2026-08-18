@@ -113,14 +113,14 @@ return [
         'invalid_captcha' => 'Too many failed login attempts, please complete the captcha and try again. (Refresh page if captcha is not visible)',
         'locked_ip' => 'Your IP address is locked. Please wait a few minutes.',
         'password' => 'Password',
-        'register' => "Don't have an osu! account? Make a new one",
+        'register' => "Don't have an Delta account? Make a new one",
         'remember' => 'Remember this computer',
         'title' => 'Please sign in to proceed',
         'username' => 'Username',
 
         'beta' => [
             'main' => 'Beta access is currently restricted to privileged users.',
-            'small' => '(osu!supporters will get in soon)',
+            'small' => '(Delta supporters will get in soon)',
         ],
     ],
 
@@ -169,7 +169,7 @@ return [
         'dmca' => [
             'message_1' => [
                 '_' => 'Please report copyright infringement through a DMCA claim to :mail as per :policy.',
-                'policy' => 'the osu! copyright policy',
+                'policy' => 'the Delta copyright policy',
             ],
             'message_2' => 'This applies to cases where audio tracks, visual content or beatmap level content is used without correct permission.',
         ],
@@ -195,8 +195,8 @@ return [
         'age' => ':age years old',
         'change_avatar' => 'change your avatar!',
         'first_members' => 'Here since the beginning',
-        'is_developer' => 'osu!developer',
-        'is_supporter' => 'osu!supporter',
+        'is_developer' => 'Delta developer',
+        'is_supporter' => 'Delta supporter',
         'joined_at' => 'Joined :date',
         'lastvisit' => 'Last seen :date',
         'lastvisit_online' => 'Currently online',
@@ -248,7 +248,7 @@ return [
 
                     'restriction_info' => [
                         '_' => 'Upload available for :link only',
-                        'link' => 'osu!supporters',
+                        'link' => 'Delta supporters',
                     ],
                 ],
             ],
@@ -264,7 +264,7 @@ return [
 
                 'supporter' => [
                     '_' => 'Custom colour themes available for :link only',
-                    'link' => 'osu!supporters',
+                    'link' => 'Delta supporters',
                 ],
             ],
         ],
@@ -339,12 +339,12 @@ return [
             ],
             'kudosu' => [
                 'recent_entries' => 'Recent Kudosu History',
-                'title' => 'Kudosu!',
+                'title' => 'Kudosu',
                 'total' => 'Total Kudosu Earned',
 
                 'entry' => [
                     'amount' => ':amount kudosu',
-                    'empty' => "This user hasn't received any kudosu!",
+                    'empty' => "This user hasn't received any kudosu",
 
                     'beatmap_discussion' => [
                         'allow_kudosu' => [
@@ -493,7 +493,7 @@ return [
 
             'restriction_info' => [
                 '_' => 'You need to be an :link to unlock this feature.',
-                'link' => 'osu!supporter',
+                'link' => 'Delta supporter',
             ],
         ],
         'post_count' => [
@@ -550,7 +550,7 @@ return [
     ],
     'store' => [
         'from_client' => 'please register via the game client instead!',
-        'from_web' => 'please complete registration using the osu! website',
+        'from_web' => 'please complete registration using the Delta website',
         'saved' => 'User created',
     ],
     'verify' => [

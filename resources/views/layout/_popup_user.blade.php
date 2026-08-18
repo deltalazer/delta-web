@@ -21,9 +21,6 @@
         <div class="u-relative">{{ $currentUser->username }}</div>
     </a>
 
-    <div class="simple-menu__extra">
-        @include('layout._score_mode_toggle', ['class' => 'simple-menu__item'])
-    </div>
 
     <a
         class="simple-menu__item"

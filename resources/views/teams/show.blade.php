@@ -82,6 +82,14 @@
                 >
                     {{ osu_trans('teams.show.bar.chat') }}
                 </a>
+                @if (priv_check('TeamUpdate', $team)->can())
+                    <a
+                        class="team-action-button"
+                        href="{{ route('teams.edit', ['team' => $team]) }}"
+                    >
+                        {{ osu_trans('teams.show.bar.edit') }}
+                    </a>
+                @endif
                 @php
                     $partPriv = priv_check('TeamPart', $team);
                     $canPart = $partPriv->can();

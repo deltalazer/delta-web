@@ -18,13 +18,13 @@
     <div class="osu-page osu-page--generic">
         <p>
             @if ($isSupporter)
-                This is a private link for osu!supporters. <strong>Please do not share it.</strong><br />
+                This is a private link for Delta supporters. <strong>Please do not share it.</strong><br />
                 If you want to share access to the iOS beta with other users, link them to <a href="{{route('testflight')}}">this page</a> instead.
             @else
                 Note that we may reset this link every few months to allow new users to test.<br/>
                 (because Apple has a limit on how many testers can be added)<br/>
                 @if ($user === null)
-                    If you are an osu!supporter, please login for a more permanent link.
+                    If you are an Delta supporter, please login for a more permanent link.
                 @endif
             @endif
         </p>

@@ -8,6 +8,10 @@ use App\Http\Middleware\ThrottleRequests;
 Route::get('wiki/images/{path}', 'WikiController@image')->name('wiki.image')->where('path', '.+');
 Route::get('media-url', 'ProxyMediaController')->name('media-url');
 Route::get('ss/{screenshot}/{hash?}', 'ScreenshotsController@show')->name('screenshots.show');
+Route::get('osu/{beatmap}', 'BeatmapFilesController@show')->name('beatmap-file');
+Route::get('d/{beatmapset}', 'BeatmapFilesController@package')->name('beatmapset-package');
+Route::get('optim/{path}', 'ImageProcessorController@optimize')->where('path', '.+');
+Route::get('thumb/{size}/{path}', 'ImageProcessorController@thumbnail')->where('path', '.+');
 
 Route::group(['middleware' => ['web']], function () {
     Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin'], function () {
@@ -27,6 +31,16 @@ Route::group(['middleware' => ['web']], function () {
 
         Route::resource('logs', 'LogsController', ['only' => ['index']]);
 
+        Route::group(['as' => 'delta.', 'prefix' => 'delta'], function () {
+            Route::get('users', 'DeltaController@users')->name('users');
+            Route::post('users/{user}', 'DeltaController@userAction')->name('users.action');
+            Route::get('forums', 'DeltaController@forums')->name('forums');
+            Route::post('forums', 'DeltaController@forumAction')->name('forums.create');
+            Route::post('forums/{forum}', 'DeltaController@forumAction')->name('forums.action');
+            Route::get('beatmapsets', 'DeltaController@beatmapsets')->name('beatmapsets');
+            Route::post('beatmapsets/{beatmapset}', 'DeltaController@beatmapsetAction')->name('beatmapsets.action');
+        });
+
         Route::get('/', 'PagesController@root')->name('root');
 
         Route::group(['as' => 'forum.', 'prefix' => 'forum', 'namespace' => 'Forum'], function () {
@@ -41,13 +55,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('authenticator-app/issue-uri', 'UserTotpController@issueUri')->name('authenticator-app.issue-uri');
 
     Route::group(['prefix' => 'beatmaps'], function () {
-        // featured artists
-        Route::group(['as' => 'artists.', 'prefix' => 'artists'], function () {
-            Route::resource('tracks', 'ArtistTracksController', ['only' => ['index']]);
-        });
-        Route::resource('artists', 'ArtistsController', ['only' => ['index', 'show']]);
-        Route::resource('artists/tracks', 'ArtistTracksController', ['only' => 'show']);
-
         Route::resource('packs', 'BeatmapPacksController', ['only' => ['index', 'show']]);
 
         Route::group(['as' => 'beatmaps.', 'prefix' => '{beatmap}'], function () {
@@ -236,6 +243,7 @@ Route::group(['middleware' => ['web']], function () {
             Route::put('notification-options', 'AccountController@updateNotificationOptions')->name('notification-options');
             Route::put('options', 'AccountController@updateOptions')->name('options');
             Route::put('password', 'AccountController@updatePassword')->name('password');
+            Route::put('username', 'AccountController@updateUsername')->name('username');
             Route::post('reissue-code', 'AccountController@reissueCode')->name('reissue-code');
             Route::resource('sessions', 'Account\SessionsController', ['only' => ['destroy']]);
             Route::get('verify', 'AccountController@verifyLink');
@@ -246,6 +254,12 @@ Route::group(['middleware' => ['web']], function () {
             Route::get('github-users/callback', 'Account\GithubUsersController@callback')->name('github-users.callback');
             Route::resource('github-users', 'Account\GithubUsersController', ['only' => ['create']]);
             Route::delete('github-users', 'Account\GithubUsersController@destroy')->name('github-users.destroy');
+        });
+
+        Route::group(['as' => 'delta-moderation.', 'prefix' => 'delta-moderation'], function () {
+            Route::post('toggle', 'DeltaModerationController@toggle')->name('toggle');
+            Route::post('users/{user}', 'DeltaModerationController@userAction')->name('users');
+            Route::post('beatmapsets/{beatmapset}', 'DeltaModerationController@beatmapsetAction')->name('beatmapsets');
         });
 
         Route::get('quick-search', 'HomeController@quickSearch')->name('quick-search');
@@ -377,31 +391,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('wiki/{locale}/Sitemap', 'WikiController@sitemap')->name('wiki.sitemap');
     Route::get('wiki/{locale?}/{path?}', 'WikiController@show')->name('wiki.show')->where('path', '.+');
     Route::put('wiki/{locale}/{path}', 'WikiController@update')->where('path', '.+');
-
-    // FIXME: someone split this crap up into proper controllers
-    Route::group(['as' => 'store.', 'prefix' => 'store'], function () {
-        route_redirect('/', 'store.products.index');
-
-        Route::get('listing', 'StoreController@getListing')->name('products.index');
-        Route::get('invoice/{invoice}', 'StoreController@getInvoice')->name('invoice.show');
-
-        Route::group(['namespace' => 'Store'], function () {
-            Route::post('products/{product}/notification-request', 'NotificationRequestsController@store')->name('notification-request');
-            Route::delete('products/{product}/notification-request', 'NotificationRequestsController@destroy');
-
-            // Store splitting starts here
-            Route::get('cart', 'CartController@show')->name('cart.show');
-            Route::delete('cart', 'CartController@empty')->name('cart.empty');
-            Route::resource('cart', 'CartController', ['only' => ['store']]);
-
-            Route::resource('checkout', 'CheckoutController', ['only' => ['show', 'store']]);
-
-            Route::resource('orders', 'OrdersController', ['only' => ['destroy', 'index']]);
-
-            route_redirect('product/{product}', 'store.products.show');
-            Route::resource('products', 'ProductsController', ['only' => ['show']]);
-        });
-    });
 
     Route::group(['as' => 'payments.', 'prefix' => 'payments', 'namespace' => 'Payments'], function () {
         Route::group(['as' => 'paypal.', 'prefix' => 'paypal'], function () {

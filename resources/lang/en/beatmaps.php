@@ -248,7 +248,7 @@ return [
             'login_required' => 'Sign in to search.',
             'options' => 'More Search Options',
             'rank_filter_note' => 'Profile top rank counts and results shown on this page are based on your highest "standardised" (aka "lazer") scores on beatmaps.',
-            'supporter_filter' => 'Filtering by :filters requires an active osu!supporter tag',
+            'supporter_filter' => 'Filtering by :filters requires an active Delta supporter tag',
             'not-found' => 'no results',
             'not-found-quote' => '... nope, nothing found.',
             'filters' => [
@@ -276,7 +276,7 @@ return [
             ],
             'supporter_filter_quote' => [
                 '_' => 'Filtering by :filters requires an active :link',
-                'link_text' => 'osu!supporter tag',
+                'link_text' => 'Delta supporter tag',
             ],
             'tag_picker' => [
                 'tooltip' => 'browse user tags',

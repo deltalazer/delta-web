@@ -122,6 +122,23 @@
         </div>
     </div>
 
+    <div class="osu-page">
+        <h2 class="title">Powerful Features</h2>
+
+        @include('home._supporter_perk_group', ['group' => [
+            'section' => 'delta-features',
+            'items' => [
+                'section_gimmicks' => ['icons' => ['fas fa-layer-group']],
+                'hp_gimmicks' => ['icons' => ['fas fa-heartbeat']],
+                'count_limits' => ['icons' => ['fas fa-list-ol']],
+                'forced_mods' => ['icons' => ['fas fa-magic']],
+                'difficulty_overrides' => ['icons' => ['fas fa-sliders-h']],
+                'offset_penalty' => ['icons' => ['fas fa-crosshairs']],
+                'uncapped_sv' => ['icons' => ['fas fa-tachometer-alt']],
+            ],
+        ]])
+    </div>
+
     <div class="osu-page js-react" data-react="landing-news">
     </div>
 
@@ -165,29 +182,28 @@
     {
       "@context": "https://schema.org",
       "@type": "VideoGame",
-      "name": "osu!",
-      "url": "https://osu.ppy.sh/",
-      "image": "https://assets.ppy.sh/logo-with-background.png",
-      "description": "rhythm is just a click away",
+      "name": "Delta",
+      "url": "{{ $GLOBALS['cfg']['app']['url'] }}",
+      "image": "{{ $GLOBALS['cfg']['app']['url'] }}/images/favicon/android-chrome-512x512.png",
+      "description": "osu!lazer fork with section gimmicks and hitobject control",
       "author": {
         "@type": "Organization",
-        "name": "ppy"
+        "name": "deltalazer"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "ppy"
+        "name": "deltalazer"
       },
       "producer": {
         "@type": "Organization",
-        "name": "ppy"
+        "name": "deltalazer"
       },
       "applicationCategory": "Game",
       "gamePlatform": ["Windows", "macOS", "Linux", "Android", "iOS"],
       "playMode": ["SinglePlayer","MultiPlayer"],
       "genre": "Rhythm",
       "inLanguage": ["en", "be", "bg", "ca", "cs", "da", "de", "el", "es", "fi", "fr", "hr-hr", "hu", "id", "it", "ja", "ko", "lt", "lv-lv", "ms-my", "nl", "no", "pl", "pt", "pt-br", "ro", "ru", "sk", "sl", "sr", "sv", "th", "tr", "uk", "vi", "zh", "zh_hant"],
-      "sameAs": "https://github.com/ppy/osu",
-      "datePublished": "2007-09-16"
+      "sameAs": "https://github.com/deltalazer/delta"
     }
     </script>
 @endsection

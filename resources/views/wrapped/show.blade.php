@@ -3,7 +3,7 @@
     See the LICENCE file in the repository root for full licence text.
 --}}
 @extends('master', [
-    'titleOverride' => "osu!wrapped 2025: {$summary->user->username}",
+    'titleOverride' => "Delta wrapped 2025: {$summary->user->username}",
     'blank' => 'true',
     'bodyAdditionalClasses' => 'osu-layout--wrapped'
 ])

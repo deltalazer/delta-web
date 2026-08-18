@@ -38,19 +38,6 @@
                             {{ $user->username }}
                         </div>
 
-                        <div class="account-edit-entry__button">
-                            <a class="btn-osu-big btn-osu-big--account-edit" href="{{route('store.products.show', 'username-change')}}">
-                                <div class="btn-osu-big__content">
-                                    <div class="btn-osu-big__left">
-                                        {{ osu_trans('common.buttons.change') }}
-                                    </div>
-
-                                    <div class="btn-osu-big__icon">
-                                        <i class="fas fa-pencil-alt"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
                     </div>
                     @include('accounts._edit_country')
                 </div>
@@ -166,6 +153,8 @@
         @include('accounts._edit_notifications')
 
         @include('accounts._edit_options')
+
+        @include('accounts._edit_username')
 
         @include('accounts._edit_password')
 

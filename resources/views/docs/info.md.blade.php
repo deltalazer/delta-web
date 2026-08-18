@@ -4,7 +4,7 @@
 --}}
 # Introduction
 
-Welcome to the documentation for osu!api v2. You can use this API to get information on various circles and those who click them.
+Welcome to the documentation for Delta API v2. You can use this API to get information on various circles and those who click them.
 
 Note that while we endeavour to keep this documentation up to date, consider it a work-in-progress and note that it will likely contain errors.
 

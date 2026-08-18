@@ -47,6 +47,11 @@ class Kernel extends ConsoleKernel
             ->daily()
             ->onOneServer();
 
+        $schedule->command('rankings:recalculate-user-ranks')
+            ->everyMinute()
+            ->withoutOverlapping()
+            ->onOneServer();
+
         $schedule->command('rankings:recalculate-country-stats')
             ->cron('25 0,3,6,9,12,15,18,21 * * *')
             ->onOneServer();
@@ -66,6 +71,33 @@ class Kernel extends ConsoleKernel
 
         $schedule->command('oauth:delete-expired-tokens')
             ->cron('14 1 * * *')
+            ->onOneServer();
+
+        // One row per minute: the landing graph samples every 10th row by id,
+        // so a slower interval leaves it almost empty.
+        $schedule->command('stats:update')
+            ->everyMinute()
+            ->withoutOverlapping(5)
+            ->onOneServer();
+
+        $schedule->command('news:sync')
+            ->everyTenMinutes()
+            ->withoutOverlapping(120)
+            ->onOneServer();
+
+        $schedule->command('beatmap-leaders:refresh')
+            ->everyThirtyMinutes()
+            ->withoutOverlapping(120)
+            ->onOneServer();
+
+        $schedule->command('github:sync-stargazers')
+            ->everyTenMinutes()
+            ->withoutOverlapping(120)
+            ->onOneServer();
+
+        $schedule->command('changelog:sync-releases')
+            ->everyTenMinutes()
+            ->withoutOverlapping(120)
             ->onOneServer();
 
         $schedule->command('notifications:news-published')
@@ -91,6 +123,10 @@ class Kernel extends ConsoleKernel
         $schedule->command('chat:expire-ack')
             ->everyFiveMinutes()
             ->withoutOverlapping(30)
+            ->onOneServer();
+
+        $schedule->command('daily-challenge:queue-random')
+            ->cron('3 0 * * *')
             ->onOneServer();
 
         $schedule->command('daily-challenge:create-next')

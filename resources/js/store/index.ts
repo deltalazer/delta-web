@@ -1,7 +1,6 @@
 // Copyright (c) ppy Pty Ltd <contact@ppy.sh>. Licensed under the GNU Affero General Public License v3.0.
 // See the LICENCE file in the repository root for full licence text.
 
-import { route } from 'laroute';
 import core from 'osu-core-singleton';
 import { error, isJqXHR, onError } from 'utils/ajax';
 import { fail } from 'utils/fail';
@@ -79,7 +78,7 @@ export default class Store {
     const shouldShopify = target.dataset.shopify === '1';
 
     if (!shouldShopify) {
-      Turbo.visit(route('store.checkout.show', { checkout: orderId }));
+      Turbo.visit(`/store/checkout/${orderId}`);
       return;
     }
 
@@ -142,7 +141,7 @@ export default class Store {
   }
 
   private sendCheckoutRequest(params: CheckoutParams) {
-    return $.post(route('store.checkout.store'), params) as JQuery.jqXHR<CheckoutResponse>;
+    return $.post('/store/checkout', params) as JQuery.jqXHR<CheckoutResponse>;
   }
 
   private async startPayment(orderId: string, provider: string) {

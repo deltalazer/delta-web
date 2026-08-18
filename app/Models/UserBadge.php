@@ -23,6 +23,10 @@ class UserBadge extends Model
 
     public function imageUrl()
     {
+        if (preg_match('~^https?://~', $this->image) === 1) {
+            return $this->image;
+        }
+
         return "https://assets.ppy.sh/profile-badges/{$this->image}";
     }
 }

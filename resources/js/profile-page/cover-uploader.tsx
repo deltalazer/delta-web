@@ -63,7 +63,7 @@ export default class CoverUploader extends React.Component<Props> {
                 mappings={{
                   link: (
                     <a
-                      href={route('store.products.show', { product: 'supporter-tag' })}
+                      href={'https://github.com/deltalazer/delta'}
                       rel="noreferrer"
                       target='_blank'
                     >

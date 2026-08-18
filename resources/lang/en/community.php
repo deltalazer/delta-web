@@ -7,45 +7,66 @@ return [
     'support' => [
         'convinced' => [
             'title' => 'I\'m convinced! :D',
-            'support' => 'support osu!',
-            'gift' => 'or gift supporter to other players',
-            'instructions' => 'click the heart button to proceed to the osu!store',
+            'support' => 'Star Delta on GitHub',
+            'gift' => 'it is free, and it is the whole ask',
+            'instructions' => 'click the star to open the Delta repository',
+            'link_github' => 'Link GitHub Account',
+        ],
+        'delta-features' => [
+            'section_gimmicks' => [
+                'title' => 'Section Gimmicks',
+                'description' => 'Set custom gameplay rules for each section of your map. Control HP behavior, judgment limits, forced mods, and more. Each section can have completely different rules.',
+            ],
+            'hp_gimmicks' => [
+                'title' => 'HP Gimmicks',
+                'description' => 'Take control of health mechanics. Set custom HP values for each judgment, or use Reverse HP mode where inaccurate hits can heal and perfects drain.',
+            ],
+            'count_limits' => [
+                'title' => 'Count Limits',
+                'description' => 'Limit how many 100s, 50s, or even 300s a player can get per section. Challenge and push players to their limits.',
+            ],
+            'forced_mods' => [
+                'title' => 'Forced Mods',
+                'description' => 'Force specific mods for individual sections. Create maps where HD activates during choruses, or HR for the drop.',
+            ],
+            'difficulty_overrides' => [
+                'title' => 'Difficulty Overrides',
+                'description' => 'Override approach rate, overall difficulty, and circle size on a per-section or per-hitobject basis.',
+            ],
+            'offset_penalty' => [
+                'title' => 'Great Offset Penalty',
+                'description' => 'Punish imprecise 300s, hitting within the 300 window but outside your custom threshold costs HP.',
+            ],
+            'uncapped_sv' => [
+                'title' => 'Uncapped SV',
+                'description' => '10x legacy SV cap is removed, allowing far more extreme SV control for advanced mapping.',
+            ],
         ],
         'why-support' => [
-            'title' => 'Why should I support osu!? Where does the money go?',
+            'title' => 'Why should I star Delta?',
 
             'team' => [
                 'title' => 'Support the Team',
-                'description' => 'A small team develops and runs osu!. Your support helps them to, you know... live.',
+                'description' => 'A small volunteer team builds and runs Delta. Stars are how we know it is worth continuing.',
             ],
-            'infra' => [
-                'title' => 'Server Infrastructure',
-                'description' => 'Contributions go towards the servers for running the website, multiplayer services, online leaderboards, etc.',
+            'visibility' => [
+                'title' => 'Help People Find It',
+                'description' => 'Stars are most of what GitHub uses to decide what to put in front of people. The more Delta has, the more players come across it.',
             ],
-            'featured-artists' => [
-                'title' => 'Featured Artists',
-                'description' => 'With your support, we can approach even more awesome artists and license more great music for use in osu!',
-                'link_text' => 'View the current roster &raquo;',
+            'free' => [
+                'title' => 'Nothing to Buy',
+                'description' => 'Delta has no ads, no sponsors and nothing for sale. A star is the whole ask.',
             ],
-            'ads' => [
-                'title' => 'Keep osu! self-sustaining',
-                'description' => 'Your contributions help keep the game independent and completely free from ads and outside sponsors.',
-            ],
-            'tournaments' => [
-                'title' => 'Official Tournaments',
-                'description' => 'Help fund the running of (and the prizes for) the official osu! World Cup tournaments.',
-                'link_text' => 'Explore tournaments &raquo;',
-            ],
-            'bounty-program' => [
-                'title' => 'Open Source Bounty Program',
-                'description' => 'Support the community contributors that have given their time and effort to help make osu! better.',
-                'link_text' => 'Find out more &raquo;',
+            'development' => [
+                'title' => 'Follow Development',
+                'description' => 'Every change lands in the open, and each release is published as it happens.',
+                'link_text' => 'Browse the repository &raquo;',
             ],
         ],
         'perks' => [
             'title' => 'Cool! What perks do I get?',
             'osu_direct' => [
-                'title' => 'osu!direct',
+                'title' => 'Delta direct',
                 'description' => 'Gain quick and easy access to search for and download beatmaps without having to leave the game.',
             ],
 
@@ -96,12 +117,7 @@ return [
 
             'speedy_downloads' => [
                 'title' => 'Speedy Downloads',
-                'description' => 'More lenient download restrictions, especially when using osu!direct.',
-            ],
-
-            'change_username' => [
-                'title' => 'Change Username',
-                'description' => 'One free name change is included with your first supporter purchase.',
+                'description' => 'More lenient download restrictions, especially when using Delta direct.',
             ],
 
             'skinnables' => [
@@ -139,9 +155,9 @@ return [
         ],
         'supporter_status' => [
             'contribution_with_duration' => 'Thank you for your ongoing support! So far, you\'ve contributed a total of :dollars, earning you the "Supporter" tag for :duration.',
-            'not_yet' => "You haven't ever had an osu!supporter tag :(",
-            'valid_until' => 'Your current osu!supporter tag is valid until :date!',
-            'was_valid_until' => 'Your osu!supporter tag was valid until :date.',
+            'not_yet' => "You haven't ever had an Delta supporter tag :(",
+            'valid_until' => 'Your current Delta supporter tag is valid until :date!',
+            'was_valid_until' => 'Your Delta supporter tag was valid until :date.',
 
             'gifted' => [
                 '_' => 'Out of your total contributions, you’ve gifted :dollars worth of tags to :users covering :duration. That’s incredibly generous!',

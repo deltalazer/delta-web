@@ -17,6 +17,13 @@
         data-initial-data="{{ json_encode($initialData) }}"
         data-react="profile-page"
     ></div>
+
+    @php
+        $currentUser ??= Auth::user();
+    @endphp
+    @if (App\Libraries\DeltaModeration::controlsEnabled() && ($currentUser?->isAdmin() || $currentUser?->isModerator()))
+        @include('delta._admin_menu_user', compact('currentUser', 'user'))
+    @endif
 @endsection
 
 @section ("script")

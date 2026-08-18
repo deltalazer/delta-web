@@ -18,6 +18,40 @@
                 <span class="admin-menu__button-icon fas fa-tools"></span>
             </button>
             <div class="admin-menu__menu js-menu" data-menu-id="admin-beatmapset" data-visibility="hidden">
+                @if ($currentUser?->isAdmin() && App\Libraries\DeltaModeration::controlsEnabled())
+                    @php
+                        $route = route('delta-moderation.beatmapsets', $beatmapset->getKey());
+                    @endphp
+
+                    @include('delta._admin_menu_flash')
+
+                    @foreach ([
+                        'qualify' => 'fas fa-check-circle',
+                        'rank' => 'fas fa-star',
+                        'love' => 'fas fa-heart',
+                        'pending' => 'fas fa-clock',
+                        'graveyard' => 'fas fa-skull',
+                    ] as $action => $icon)
+                        @include('delta._admin_menu_action', compact('action', 'icon', 'route'))
+                    @endforeach
+
+                    <form method="POST" action="{{ $route }}">
+                        @csrf
+                        <input type="hidden" name="action" value="unrank">
+
+                        <div class="admin-menu-item__content">
+                            <span class="admin-menu-item__label admin-menu-item__label--icon">
+                                <span class="fas fa-ban"></span>
+                            </span>
+
+                            <span class="admin-menu-item__label admin-menu-item__label--text">
+                                <input name="reason" type="text" size="18" placeholder="public reason">
+                                <button type="submit">unrank</button>
+                            </span>
+                        </div>
+                    </form>
+                @endif
+
                 @if ($currentUser?->isAdmin())
                     <a class="admin-menu-item" href="{{ route('admin.beatmapsets.show', $beatmapset->getKey()) }}" target="_blank">
                         <span class="admin-menu-item__content">

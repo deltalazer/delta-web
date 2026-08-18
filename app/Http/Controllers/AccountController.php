@@ -5,6 +5,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\ChangeUsernameException;
 use App\Exceptions\ModelNotSavedException;
 use App\Libraries\Session\Store as SessionStore;
 use App\Libraries\SessionVerification;
@@ -68,6 +69,7 @@ class AccountController extends Controller
         $this->middleware('throttle:60,10', ['only' => [
             'updateEmail',
             'updatePassword',
+            'updateUsername',
             'verify',
             'verifyLink',
         ]]);
@@ -92,7 +94,7 @@ class AccountController extends Controller
             'cover_id:int',
         ], ['null_missing' => true]);
 
-        if ($params['cover_file'] !== null && !$user->osu_subscriber) {
+        if ($params['cover_file'] !== null && !$user->isSupporter()) {
             return error_popup(osu_trans('errors.supporter_only'));
         }
 
@@ -157,7 +159,7 @@ class AccountController extends Controller
         ]);
 
         // setting it to null (default) is always allowed
-        if (isset($params['user_style']) && !$user->osu_subscriber) {
+        if (isset($params['user_style']) && !$user->isSupporter()) {
             return error_popup(osu_trans('errors.supporter_only'));
         }
 
@@ -300,6 +302,23 @@ class AccountController extends Controller
         } else {
             return ModelNotSavedException::makeResponse(null, compact('user'));
         }
+    }
+
+    public function updateUsername()
+    {
+        $params = get_params(request()->all(), 'user', ['username:string']);
+        $user = Auth::user();
+
+        try {
+            $user->changeUsername($params['username'] ?? '', 'paid');
+        } catch (ChangeUsernameException $e) {
+            return response([
+                'error' => $e->getMessage(),
+                'form_error' => ['user' => $e->getErrors()->all()],
+            ], 422);
+        }
+
+        return response()->noContent();
     }
 
     public function verificationMailFallback()
