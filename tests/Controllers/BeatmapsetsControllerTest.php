@@ -12,6 +12,7 @@ use App\Models\BeatmapsetEvent;
 use App\Models\Genre;
 use App\Models\Language;
 use App\Models\User;
+use PHPUnit\Framework\Attributes\DataProvider;
 use Tests\TestCase;
 
 class BeatmapsetsControllerTest extends TestCase
@@ -122,9 +123,7 @@ class BeatmapsetsControllerTest extends TestCase
         $this->assertSame(0, $beatmapset->beatmapsetNominations()->current()->count());
     }
 
-    /**
-     * @dataProvider beatmapsetStatesDataProvider
-     */
+    #[DataProvider('beatmapsetStatesDataProvider')]
     public function testBeatmapsetUpdateMetadataAsModerator($state)
     {
         $owner = User::factory()->create();
@@ -156,9 +155,7 @@ class BeatmapsetsControllerTest extends TestCase
         $this->assertSame($resultLanguageId, $beatmapset->language_id);
     }
 
-    /**
-     * @dataProvider beatmapsetStatesDataProvider
-     */
+    #[DataProvider('beatmapsetStatesDataProvider')]
     public function testBeatmapsetUpdateMetadataAsOtherUser($state)
     {
         $owner = User::factory()->create();
@@ -190,9 +187,7 @@ class BeatmapsetsControllerTest extends TestCase
         $this->assertSame($resultLanguageId, $beatmapset->language_id);
     }
 
-    /**
-     * @dataProvider dataProviderForTestBeatmapsetUpdateDescriptionAsOwner
-     */
+    #[DataProvider('dataProviderForTestBeatmapsetUpdateDescriptionAsOwner')]
     public function testBeatmapsetUpdateDescriptionAsOwner(bool $downloadDisabled, ?string $downloadDisabledUrl, bool $ok)
     {
         $beatmapset = Beatmapset::factory()->owner()->withDescription()->create([
@@ -200,10 +195,10 @@ class BeatmapsetsControllerTest extends TestCase
             'download_disabled_url' => $downloadDisabledUrl,
         ]);
         $owner = $beatmapset->user;
-        $beatmapset->updateDescription('old description', $owner);
+        $beatmapset->description()->update('old description', $owner);
 
         $newDescription = 'new description';
-        $expectedDescription = $ok ? $newDescription : $beatmapset->editableDescription();
+        $expectedDescription = $ok ? $newDescription : $beatmapset->description()->bbcode()->toEditor();
 
         $this->actingAsVerified($owner)
             ->put(route('beatmapsets.update', ['beatmapset' => $beatmapset->getKey()]), [
@@ -212,12 +207,10 @@ class BeatmapsetsControllerTest extends TestCase
 
         $beatmapset->refresh();
 
-        $this->assertSame($expectedDescription, $beatmapset->editableDescription());
+        $this->assertSame($expectedDescription, $beatmapset->description()->bbcode()->toEditor());
     }
 
-    /**
-     * @dataProvider beatmapsetStatesDataProvider
-     */
+    #[DataProvider('beatmapsetStatesDataProvider')]
     public function testBeatmapsetUpdateMetadataAsOwner($state)
     {
         $ok = in_array($state, ['graveyard', 'wip', 'pending'], true);
@@ -249,9 +242,7 @@ class BeatmapsetsControllerTest extends TestCase
         $this->assertSame($resultLanguageId, $beatmapset->language_id);
     }
 
-    /**
-     * @dataProvider beatmapsetStatesDataProvider
-     */
+    #[DataProvider('beatmapsetStatesDataProvider')]
     public function testBeatmapsetUpdateMetadataAsProjectLoved(string $state): void
     {
         $beatmapset = Beatmapset::factory()->create([
@@ -291,9 +282,7 @@ class BeatmapsetsControllerTest extends TestCase
         $this->assertSame($resultLanguageId, $beatmapset->language_id);
     }
 
-    /**
-     * @dataProvider dataProviderForTestBeatmapsetUpdateOffset
-     */
+    #[DataProvider('dataProviderForTestBeatmapsetUpdateOffset')]
     public function testBeatmapsetUpdateOffset(string $userGroupOrOwner, bool $ok): void
     {
         $beatmapset = Beatmapset::factory()->create([
@@ -322,9 +311,7 @@ class BeatmapsetsControllerTest extends TestCase
         $this->assertSame($expectedOffset, $beatmapset->offset);
     }
 
-    /**
-     * @dataProvider dataProviderForTestBeatmapsetUpdateTags
-     */
+    #[DataProvider('dataProviderForTestBeatmapsetUpdateTags')]
     public function testBeatmapsetUpdateTags(string $userGroupOrOwner, bool $ok): void
     {
         $beatmapset = Beatmapset::factory()->create([
