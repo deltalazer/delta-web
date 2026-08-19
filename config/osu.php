@@ -257,7 +257,7 @@ return [
         'server_status' => 'https://status.ppy.sh',
         'smilies' => '/forum/images/smilies',
         'social.twitter' => '/wiki/Twitter',
-        'source_code' => 'https://github.com/ppy',
+        'source_code' => presence(env('OSU_URL_SOURCE_CODE')) ?? 'https://github.com/deltalazer/delta-web',
         'testflight.public' => env('TESTFLIGHT_LINK'),
         'testflight.supporter' => env('TESTFLIGHT_LINK_SUPPORTER'),
         'user.recover' => '/wiki/Help_centre/Account#sign-in',
