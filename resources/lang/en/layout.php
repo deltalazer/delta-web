@@ -13,7 +13,7 @@ return [
     ],
 
     'download_notice' => [
-        'message' => 'delta!lazer has not been released yet, so builds downloaded from this site may be outdated or broken. Please wait for the official release before downloading.',
+        'message' => 'The delta!lazer update that lets the game connect to these servers has not been released yet, so the build available here cannot connect. Please wait for the official release before downloading.',
         'title' => 'Do not download from the website for now',
     ],
 

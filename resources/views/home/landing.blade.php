@@ -10,6 +10,7 @@
 @extends('master', [
     'titleOverride' => osu_trans('home.landing.title'),
     'blank' => 'true',
+    'blankNotificationBanners' => true,
     'bodyAdditionalClasses' => 'osu-layout--body-landing'
 ])
 

@@ -64,11 +64,7 @@ class HomeController extends Controller
     public function getDownload()
     {
         $lazerPlatformNames = [
-            'android' => osu_trans('home.download.os_version_or_later', ['os_version' => 'Android 5']),
-            'ios' => osu_trans('home.download.os_version_or_later', ['os_version' => 'iOS 13.4']),
             'linux_x64' => 'Linux (x64)',
-            'macos_as' => osu_trans('home.download.os_version_or_later', ['os_version' => 'macOS 12']).' (Apple Silicon)',
-            'macos_intel' => osu_trans('home.download.os_version_or_later', ['os_version' => 'macOS 12']).' (Intel)',
             'windows_x64' => osu_trans('home.download.os_version_or_later', ['os_version' => 'Windows 10']).' (x64)',
         ];
 
@@ -79,13 +75,6 @@ class HomeController extends Controller
             $family = $deviceDetector->getOs('family');
 
             $platform = match ($family) {
-                // Try matching most likely platform first
-                'Windows' => 'windows_x64',
-                // current iPadOS declares itself as a desktop browser.
-                'iOS' => 'ios',
-                // FIXME: Figure out a way to differentiate Intel and Apple Silicon.
-                'Mac' => 'macos_as',
-                'Android' => 'android',
                 'GNU/Linux' => 'linux_x64',
                 default => 'windows_x64',
             };

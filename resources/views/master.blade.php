@@ -94,6 +94,10 @@
             >
                 @stack('notification_banners')
             </div>
+        @elseif ($blankNotificationBanners ?? false)
+            <div class="osu-page">
+                @stack('notification_banners')
+            </div>
         @endif
         <div class="osu-layout__section osu-layout__section--full">
             @yield('content')
