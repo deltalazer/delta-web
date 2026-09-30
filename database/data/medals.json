@@ -1,0 +1,3522 @@
+[
+    {
+        "id": 1,
+        "name": "500 Combo",
+        "slug": "osu-combo-500",
+        "description": "500 big ones! You're moving up in the world!",
+        "instructions": "aiming for a combo of 500 or higher on any beatmap",
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 0
+    },
+    {
+        "id": 3,
+        "name": "750 Combo",
+        "slug": "osu-combo-750",
+        "description": "750 notes back to back? Woah.",
+        "instructions": "aiming for a combo of 750 or higher on any beatmap",
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 0
+    },
+    {
+        "id": 4,
+        "name": "1,000 Combo",
+        "slug": "osu-combo-1000",
+        "description": "A thousand reasons why you rock at this game.",
+        "instructions": "aiming for a combo of at least 1,000 on any beatmap (try a <a href=\"/beatmapsets?q=marathon\">marathon</a>)",
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 0
+    },
+    {
+        "id": 5,
+        "name": "2,000 Combo",
+        "slug": "osu-combo-2000",
+        "description": "Nothing can stop you now.",
+        "instructions": "aiming for a combo of at least 2,000 on any beatmap (try a <a href=\"/beatmapsets?q=marathon\">marathon</a>)",
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 0
+    },
+    {
+        "id": 6,
+        "name": "Don't let the bunny distract you!",
+        "slug": "all-secret-bunny",
+        "description": "The order was indeed, not a rabbit.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 7,
+        "name": "Video Game Pack vol.1",
+        "slug": "all-packs-gamer-1",
+        "description": "A whole pack of video game goodness, done and dusted. Go you!",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 8,
+        "name": "Rhythm Game Pack vol.1",
+        "slug": "all-packs-rhythm-1",
+        "description": "Many beats were clicked, but the rhythm isn't over yet.",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 9,
+        "name": "Internet! Pack vol.1",
+        "slug": "all-packs-internet-1",
+        "description": "Did somebody say something about IRC and ICQ?",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 10,
+        "name": "Anime Pack vol.1",
+        "slug": "all-packs-anime-1",
+        "description": "I-it's not like I'm proud of you or anything..",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 11,
+        "name": "Video Game Pack vol.2",
+        "slug": "all-packs-gamer-2",
+        "description": "The sequel was no match for your skills, obviously.",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 12,
+        "name": "Anime Pack vol.2",
+        "slug": "all-packs-anime-2",
+        "description": "Truly dedicated to 2D.",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 13,
+        "name": "Catch 20,000 fruits",
+        "slug": "fruits-hits-20000",
+        "description": "That is a lot of dietary fiber.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 3
+    },
+    {
+        "id": 14,
+        "name": "Video Game Pack vol.3",
+        "slug": "all-packs-gamer-3",
+        "description": "True dedication to the gaming art.",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 15,
+        "name": "S-Ranker",
+        "slug": "all-secret-rank-s",
+        "description": "Accuracy is really underrated.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 16,
+        "name": "Most Improved",
+        "slug": "all-secret-improved",
+        "description": "Now THAT is improvement.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 17,
+        "name": "Non-stop Dancer",
+        "slug": "all-secret-dancer",
+        "description": "Can you still feel your feet after that?",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 18,
+        "name": "Internet! Pack vol.2",
+        "slug": "all-packs-internet-2",
+        "description": "Straight from an albino black sheep. Wait, what?",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 19,
+        "name": "Rhythm Game Pack vol.2",
+        "slug": "all-packs-rhythm-2",
+        "description": "You just can't stop the beat.",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 20,
+        "name": "5,000 Plays",
+        "slug": "osu-plays-5000",
+        "description": "There's a lot more where that came from.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 1
+    },
+    {
+        "id": 21,
+        "name": "15,000 Plays",
+        "slug": "osu-plays-15000",
+        "description": "Must.. click.. circles..",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 1
+    },
+    {
+        "id": 22,
+        "name": "25,000 Plays",
+        "slug": "osu-plays-25000",
+        "description": "There's no going back.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 1
+    },
+    {
+        "id": 23,
+        "name": "Catch 200,000 fruits",
+        "slug": "fruits-hits-200000",
+        "description": "So, I heard you like fruit...",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 3
+    },
+    {
+        "id": 24,
+        "name": "Catch 2,000,000 fruits",
+        "slug": "fruits-hits-2000000",
+        "description": "Downright healthy.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 3
+    },
+    {
+        "id": 25,
+        "name": "Anime Pack vol.3",
+        "slug": "all-packs-anime-3",
+        "description": "You did it for the waifus.",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 26,
+        "name": "Rhythm Game Pack vol.3",
+        "slug": "all-packs-rhythm-3",
+        "description": "Everyone knows the classics play better on osu! anyway.",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 27,
+        "name": "Internet! Pack vol.3",
+        "slug": "all-packs-internet-3",
+        "description": "You didn't stumble upon this one, I'm guessing.",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 28,
+        "name": "50,000 Plays",
+        "slug": "osu-plays-50000",
+        "description": "You're here forever.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 1
+    },
+    {
+        "id": 31,
+        "name": "30,000 Drum Hits",
+        "slug": "taiko-hits-30000",
+        "description": "Did that drum have a face?",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 3
+    },
+    {
+        "id": 32,
+        "name": "300,000 Drum Hits",
+        "slug": "taiko-hits-300000",
+        "description": "The rhythm never stops.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 3
+    },
+    {
+        "id": 33,
+        "name": "3,000,000 Drum Hits",
+        "slug": "taiko-hits-3000000",
+        "description": "Truly, the Don of dons.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 3
+    },
+    {
+        "id": 34,
+        "name": "Anime Pack vol.4",
+        "slug": "all-packs-anime-4",
+        "description": "Has your ship not sailed?",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 35,
+        "name": "Rhythm Game Pack vol.4",
+        "slug": "all-packs-rhythm-4",
+        "description": "A click away? More like, right here.",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 36,
+        "name": "Internet! Pack vol.4",
+        "slug": "all-packs-internet-4",
+        "description": "Must... have... more... memes...",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 37,
+        "name": "Video Game Pack vol.4",
+        "slug": "all-packs-gamer-4",
+        "description": "You are Player 1.",
+        "instructions": null,
+        "grouping": "Beatmap Packs",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 38,
+        "name": "Consolation Prize",
+        "slug": "all-secret-consolation_prize",
+        "description": "Well, it could be worse.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 39,
+        "name": "Challenge Accepted",
+        "slug": "all-secret-challenge_accepted",
+        "description": "Oh, you're ON.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 40,
+        "name": "Stumbler",
+        "slug": "all-secret-stumbler",
+        "description": "No regrets.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 41,
+        "name": "Jackpot",
+        "slug": "all-secret-jackpot",
+        "description": "Lucky sevens is a mild understatement.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 42,
+        "name": "Quick Draw",
+        "slug": "all-secret-quick_draw",
+        "description": "It's high noon.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 43,
+        "name": "Obsessed",
+        "slug": "all-secret-obsessed",
+        "description": "COMPLETION AT ALL COSTS.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 44,
+        "name": "Nonstop",
+        "slug": "all-secret-nonstop",
+        "description": "Breaks? What are those?",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 45,
+        "name": "Jack of All Trades",
+        "slug": "all-secret-jack",
+        "description": "Good at everything.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 46,
+        "name": "40,000 Keys",
+        "slug": "mania-hits-40000",
+        "description": "Just the start of the rainbow.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 3
+    },
+    {
+        "id": 47,
+        "name": "400,000 Keys",
+        "slug": "mania-hits-400000",
+        "description": "Four hundred thousand and still not even close.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 3
+    },
+    {
+        "id": 48,
+        "name": "4,000,000 Keys",
+        "slug": "mania-hits-4000000",
+        "description": "Is this the end of the rainbow?",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 3
+    },
+    {
+        "id": 50,
+        "name": "I Can See The Top",
+        "slug": "all-skill-highranker-1",
+        "description": "Your dedication has paid off. Welcome to the top 50,000!",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 51,
+        "name": "The Gradual Rise",
+        "slug": "all-skill-highranker-2",
+        "description": "There's no stopping you, is there? Welcome to the top 10,000!",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 52,
+        "name": "Scaling Up",
+        "slug": "all-skill-highranker-3",
+        "description": "Welcome to the top 5,000. Never give up!",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 53,
+        "name": "Approaching The Summit",
+        "slug": "all-skill-highranker-4",
+        "description": "Pro tier. Welcome to the top 1,000!",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 54,
+        "name": "Twin Perspectives",
+        "slug": "mania-secret-meganekko",
+        "description": "You met Mani and Mari, our twin osu!mania mascots.",
+        "instructions": null,
+        "grouping": "Hush-Hush",
+        "mode": 3,
+        "ordering": 2
+    },
+    {
+        "id": 55,
+        "name": "Rising Star",
+        "slug": "osu-skill-pass-1",
+        "description": "Can't go forward without the first steps.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 4
+    },
+    {
+        "id": 56,
+        "name": "Constellation Prize",
+        "slug": "osu-skill-pass-2",
+        "description": "Definitely not a consolation prize. Now things start getting hard!",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 4
+    },
+    {
+        "id": 57,
+        "name": "Building Confidence",
+        "slug": "osu-skill-pass-3",
+        "description": "Oh, you've SO got this.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 4
+    },
+    {
+        "id": 58,
+        "name": "Insanity Approaches",
+        "slug": "osu-skill-pass-4",
+        "description": "You're not twitching, you're just ready.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 4
+    },
+    {
+        "id": 59,
+        "name": "These Clarion Skies",
+        "slug": "osu-skill-pass-5",
+        "description": "Everything seems so clear now.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 4
+    },
+    {
+        "id": 60,
+        "name": "Above and Beyond",
+        "slug": "osu-skill-pass-6",
+        "description": "A cut above the rest.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 4
+    },
+    {
+        "id": 61,
+        "name": "Supremacy",
+        "slug": "osu-skill-pass-7",
+        "description": "All marvel before your prowess.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 4
+    },
+    {
+        "id": 62,
+        "name": "Absolution",
+        "slug": "osu-skill-pass-8",
+        "description": "My god, you're full of stars!",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 4
+    },
+    {
+        "id": 63,
+        "name": "Totality",
+        "slug": "osu-skill-fc-1",
+        "description": "All the notes. Every single one.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 64,
+        "name": "Business As Usual",
+        "slug": "osu-skill-fc-2",
+        "description": "Two to go, please.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 65,
+        "name": "Building Steam",
+        "slug": "osu-skill-fc-3",
+        "description": "Hey, this isn't so bad.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 66,
+        "name": "Moving Forward",
+        "slug": "osu-skill-fc-4",
+        "description": "Bet you feel good about that.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 67,
+        "name": "Paradigm Shift",
+        "slug": "osu-skill-fc-5",
+        "description": "Surprisingly difficult.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 68,
+        "name": "Anguish Quelled",
+        "slug": "osu-skill-fc-6",
+        "description": "Don't choke.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 69,
+        "name": "Never Give Up",
+        "slug": "osu-skill-fc-7",
+        "description": "Excellence is its own reward.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 70,
+        "name": "Aberration",
+        "slug": "osu-skill-fc-8",
+        "description": "They said it couldn't be done. They were wrong.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 71,
+        "name": "My First Don",
+        "slug": "taiko-skill-pass-1",
+        "description": "Marching to the beat of your own drum. Literally.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 4
+    },
+    {
+        "id": 72,
+        "name": "Katsu Katsu Katsu",
+        "slug": "taiko-skill-pass-2",
+        "description": "Hora! Ikuzo!",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 4
+    },
+    {
+        "id": 73,
+        "name": "Not Even Trying",
+        "slug": "taiko-skill-pass-3",
+        "description": "Muzukashii? Not even.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 4
+    },
+    {
+        "id": 74,
+        "name": "Face Your Demons",
+        "slug": "taiko-skill-pass-4",
+        "description": "The first trials are now behind you, but are you a match for the Oni?",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 4
+    },
+    {
+        "id": 75,
+        "name": "The Demon Within",
+        "slug": "taiko-skill-pass-5",
+        "description": "No rest for the wicked.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 4
+    },
+    {
+        "id": 76,
+        "name": "Drumbreaker",
+        "slug": "taiko-skill-pass-6",
+        "description": "Too strong.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 4
+    },
+    {
+        "id": 77,
+        "name": "The Godfather",
+        "slug": "taiko-skill-pass-7",
+        "description": "You are the Don of Dons.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 4
+    },
+    {
+        "id": 78,
+        "name": "Rhythm Incarnate",
+        "slug": "taiko-skill-pass-8",
+        "description": "Feel the beat. Become the beat.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 4
+    },
+    {
+        "id": 79,
+        "name": "A Slice Of Life",
+        "slug": "fruits-skill-pass-1",
+        "description": "Hey, this fruit catching business isn't bad.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 4
+    },
+    {
+        "id": 80,
+        "name": "Dashing Ever Forward",
+        "slug": "fruits-skill-pass-2",
+        "description": "Fast is how you do it.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 4
+    },
+    {
+        "id": 81,
+        "name": "Zesty Disposition",
+        "slug": "fruits-skill-pass-3",
+        "description": "No scurvy for you, not with that much fruit.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 4
+    },
+    {
+        "id": 82,
+        "name": "Hyperdash ON!",
+        "slug": "fruits-skill-pass-4",
+        "description": "Time and distance is no obstacle to you.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 4
+    },
+    {
+        "id": 83,
+        "name": "It's Raining Fruit",
+        "slug": "fruits-skill-pass-5",
+        "description": "And you can catch them all.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 4
+    },
+    {
+        "id": 84,
+        "name": "Fruit Ninja",
+        "slug": "fruits-skill-pass-6",
+        "description": "Legendary techniques.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 4
+    },
+    {
+        "id": 85,
+        "name": "Dreamcatcher",
+        "slug": "fruits-skill-pass-7",
+        "description": "No fruit, only dreams now.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 4
+    },
+    {
+        "id": 86,
+        "name": "Lord of the Catch",
+        "slug": "fruits-skill-pass-8",
+        "description": "Your kingdom kneels before you.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 4
+    },
+    {
+        "id": 87,
+        "name": "First Steps",
+        "slug": "mania-skill-pass-1",
+        "description": "It isn't 9-to-5, but 1-to-9. Keys, that is.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 4
+    },
+    {
+        "id": 88,
+        "name": "No Normal Player",
+        "slug": "mania-skill-pass-2",
+        "description": "Not anymore, at least.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 4
+    },
+    {
+        "id": 89,
+        "name": "Impulse Drive",
+        "slug": "mania-skill-pass-3",
+        "description": "Not quite hyperspeed, but getting close.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 4
+    },
+    {
+        "id": 90,
+        "name": "Hyperspeed",
+        "slug": "mania-skill-pass-4",
+        "description": "Woah.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 4
+    },
+    {
+        "id": 91,
+        "name": "Ever Onwards",
+        "slug": "mania-skill-pass-5",
+        "description": "Another challenge is just around the corner.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 4
+    },
+    {
+        "id": 92,
+        "name": "Another Surpassed",
+        "slug": "mania-skill-pass-6",
+        "description": "Is there no limit to your skills?",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 4
+    },
+    {
+        "id": 93,
+        "name": "Extra Credit",
+        "slug": "mania-skill-pass-7",
+        "description": "See me after class.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 4
+    },
+    {
+        "id": 94,
+        "name": "Maniac",
+        "slug": "mania-skill-pass-8",
+        "description": "There's just no stopping you.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 4
+    },
+    {
+        "id": 95,
+        "name": "Keeping Time",
+        "slug": "taiko-skill-fc-1",
+        "description": "Don, then katsu. Don, then katsu..",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 5
+    },
+    {
+        "id": 96,
+        "name": "To Your Own Beat",
+        "slug": "taiko-skill-fc-2",
+        "description": "Straight and steady.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 5
+    },
+    {
+        "id": 97,
+        "name": "Big Drums",
+        "slug": "taiko-skill-fc-3",
+        "description": "Bigger scores to match.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 5
+    },
+    {
+        "id": 98,
+        "name": "Adversity Overcome",
+        "slug": "taiko-skill-fc-4",
+        "description": "Difficult? Not for you.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 5
+    },
+    {
+        "id": 99,
+        "name": "Demonslayer",
+        "slug": "taiko-skill-fc-5",
+        "description": "An Oni felled forevermore.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 5
+    },
+    {
+        "id": 100,
+        "name": "Rhythm's Call",
+        "slug": "taiko-skill-fc-6",
+        "description": "Heralding true skill.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 5
+    },
+    {
+        "id": 101,
+        "name": "Time Everlasting",
+        "slug": "taiko-skill-fc-7",
+        "description": "Not a single beat escapes you.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 5
+    },
+    {
+        "id": 102,
+        "name": "The Drummer's Throne",
+        "slug": "taiko-skill-fc-8",
+        "description": "Percussive brilliance befitting royalty alone.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 5
+    },
+    {
+        "id": 103,
+        "name": "Sweet And Sour",
+        "slug": "fruits-skill-fc-1",
+        "description": "Apples and oranges, literally.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 5
+    },
+    {
+        "id": 104,
+        "name": "Reaching The Core",
+        "slug": "fruits-skill-fc-2",
+        "description": "The seeds of future success.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 5
+    },
+    {
+        "id": 105,
+        "name": "Clean Platter",
+        "slug": "fruits-skill-fc-3",
+        "description": "Clean only of failure. It is completely full, otherwise.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 5
+    },
+    {
+        "id": 106,
+        "name": "Between The Rain",
+        "slug": "fruits-skill-fc-4",
+        "description": "No umbrella needed.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 5
+    },
+    {
+        "id": 107,
+        "name": "Addicted",
+        "slug": "fruits-skill-fc-5",
+        "description": "That was an overdose?",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 5
+    },
+    {
+        "id": 108,
+        "name": "Quickening",
+        "slug": "fruits-skill-fc-6",
+        "description": "A dash above normal limits.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 5
+    },
+    {
+        "id": 109,
+        "name": "Supersonic",
+        "slug": "fruits-skill-fc-7",
+        "description": "Faster than is reasonably necessary.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 5
+    },
+    {
+        "id": 110,
+        "name": "Dashing Scarlet",
+        "slug": "fruits-skill-fc-8",
+        "description": "Speed beyond mortal reckoning.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 5
+    },
+    {
+        "id": 111,
+        "name": "Keystruck",
+        "slug": "mania-skill-fc-1",
+        "description": "The beginning of a new story.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 5
+    },
+    {
+        "id": 112,
+        "name": "Keying In",
+        "slug": "mania-skill-fc-2",
+        "description": "Finding your groove.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 5
+    },
+    {
+        "id": 113,
+        "name": "Hyperflow",
+        "slug": "mania-skill-fc-3",
+        "description": "You can *feel* the rhythm.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 5
+    },
+    {
+        "id": 114,
+        "name": "Breakthrough",
+        "slug": "mania-skill-fc-4",
+        "description": "Many skills mastered, rolled into one.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 5
+    },
+    {
+        "id": 115,
+        "name": "Everything Extra",
+        "slug": "mania-skill-fc-5",
+        "description": "Giving your all is giving everything you have.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 5
+    },
+    {
+        "id": 116,
+        "name": "Level Breaker",
+        "slug": "mania-skill-fc-6",
+        "description": "Finesse beyond reason.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 5
+    },
+    {
+        "id": 117,
+        "name": "Step Up",
+        "slug": "mania-skill-fc-7",
+        "description": "A precipice rarely seen.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 5
+    },
+    {
+        "id": 118,
+        "name": "Behind The Veil",
+        "slug": "mania-skill-fc-8",
+        "description": "Supernatural!",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 5
+    },
+    {
+        "id": 119,
+        "name": "Finality",
+        "slug": "all-intro-suddendeath",
+        "description": "High stakes, no regrets.",
+        "instructions": "completing a map with the <b>Sudden Death</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 120,
+        "name": "Perfectionist",
+        "slug": "all-intro-perfect",
+        "description": "Accept nothing but the best.",
+        "instructions": "completing a map with the <b>Perfect</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 121,
+        "name": "Rock Around The Clock",
+        "slug": "all-intro-hardrock",
+        "description": "You can't stop the rock.",
+        "instructions": "completing a map with the <b>Hard Rock</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 122,
+        "name": "Time And A Half",
+        "slug": "all-intro-doubletime",
+        "description": "Having a right ol' time. One and a half of them, almost.",
+        "instructions": "completing a map with the <b>DoubleTime</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 123,
+        "name": "Sweet Rave Party",
+        "slug": "all-intro-nightcore",
+        "description": "Founded in the fine tradition of changing things that were just fine as they were.",
+        "instructions": "completing a map with the <b>Nightcore</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 124,
+        "name": "Blindsight",
+        "slug": "all-intro-hidden",
+        "description": "I can see just perfectly.",
+        "instructions": "completing a map with the <b>Hidden</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 125,
+        "name": "Are You Afraid Of The Dark?",
+        "slug": "all-intro-flashlight",
+        "description": "Harder than it looks, probably because it's hard to look.",
+        "instructions": "completing a map with the <b>Flashlight</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 126,
+        "name": "Dial It Right Back",
+        "slug": "all-intro-easy",
+        "description": "Sometimes you just want to take it easy.",
+        "instructions": "completing a map with the <b>Easy</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 127,
+        "name": "Risk Averse",
+        "slug": "all-intro-nofail",
+        "description": "Safety nets are fun!",
+        "instructions": "completing a map with the <b>No Fail</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 128,
+        "name": "Slowboat",
+        "slug": "all-intro-halftime",
+        "description": "You got there. Eventually.",
+        "instructions": "completing a map with the <b>HalfTime</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 131,
+        "name": "Burned Out",
+        "slug": "all-intro-spunout",
+        "description": "One cannot always spin to win.",
+        "instructions": "completing a map with the <b>Spun Out</b> mod enabled!",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 132,
+        "name": "Perseverance",
+        "slug": "all-secret-perseverance",
+        "description": "Endure.",
+        "instructions": "<i>Endurance is the key.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 133,
+        "name": "Feel The Burn",
+        "slug": "all-secret-ftb",
+        "description": "It isn't all about how fast you manage.",
+        "instructions": "<i>Endurance <strong>and</strong> precision is essential.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 134,
+        "name": "Time Dilation",
+        "slug": "all-secret-tidi",
+        "description": "Longer is shorter when all is said and done.",
+        "instructions": "<i>Time often flies when one is having fun, though rarely does it last forever.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 135,
+        "name": "Just One Second",
+        "slug": "all-secret-onesecond",
+        "description": "And suddenly.. gone.",
+        "instructions": "<i>Blink and you'll miss it.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 136,
+        "name": "Afterimage",
+        "slug": "osu-secret-afterimage",
+        "description": "But a glimpse of its true self.",
+        "instructions": "<i>Always coming behind the original image.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 137,
+        "name": "To The Core",
+        "slug": "all-secret-tothecore",
+        "description": "In for a penny, in for a pound. Pounding bass, that is.",
+        "instructions": "<i>Double negatives sometimes <strong>do</strong> make a positive.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 138,
+        "name": "Prepared",
+        "slug": "all-secret-prepared",
+        "description": "Do it for real next time.",
+        "instructions": "<i>Preparation is key for all successful endeavours.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 139,
+        "name": "Eclipse",
+        "slug": "osu-secret-eclipse",
+        "description": "Something new born from absence.",
+        "instructions": "<i>Can't see the sun for the clouds. Or the moon, in this case.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 140,
+        "name": "Reckless Abandon",
+        "slug": "all-secret-reckless",
+        "description": "Throw it all to the wind.",
+        "instructions": "<i>Do it just because you can, even if the stakes are high.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 141,
+        "name": "Tunnel Vision",
+        "slug": "osu-secret-tunnelvision",
+        "description": "But it was right there..",
+        "instructions": "<i>Afraid of the dark?</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 142,
+        "name": "Behold No Deception",
+        "slug": "osu-secret-deception",
+        "description": "That wasn't easy at all!",
+        "instructions": "<i>Sometimes the hard way is in fact, easier.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 143,
+        "name": "Up For The Challenge",
+        "slug": "all-secret-challenge",
+        "description": "Turn it up to eleven.",
+        "instructions": "<i>Everything's better at eleven.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 144,
+        "name": "Lights Out",
+        "slug": "all-secret-lightsout",
+        "description": "The party's just getting started.",
+        "instructions": "<i>Set the mood.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 145,
+        "name": "Unstoppable",
+        "slug": "osu-secret-superhardhddt",
+        "description": "Holy shit.",
+        "instructions": "<i>Reaching the limits of mortal skill.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 146,
+        "name": "Is This Real Life?",
+        "slug": "osu-secret-supersuperhardhddt",
+        "description": "You did NOT just pull that off.",
+        "instructions": "<i>The absolute height of perfection.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 147,
+        "name": "Camera Shy",
+        "slug": "all-secret-uguushy",
+        "description": "Stop being cute.",
+        "instructions": "<i>Uguu.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 148,
+        "name": "The Sum Of All Fears",
+        "slug": "all-secret-nuked",
+        "description": "Unfortunate.",
+        "instructions": "<i>The end comes when you least expect it.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 149,
+        "name": "Dekasight",
+        "slug": "osu-secret-deka",
+        "description": "So big, yet so hard to see.",
+        "instructions": "<i>Size isn't everything.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 150,
+        "name": "Hour Before The Dawn",
+        "slug": "all-secret-hourbeforethedawn",
+        "description": "Eleven skies of everlasting sunrise.",
+        "instructions": "<i>The night where we belong.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 151,
+        "name": "Slow And Steady",
+        "slug": "all-secret-slowandsteady",
+        "description": "Win the race, or start again.",
+        "instructions": "<i>Take your time.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 152,
+        "name": "No Time To Spare",
+        "slug": "all-secret-ntts",
+        "description": "Places to be, things to do.",
+        "instructions": "<i>Think fast, click fast, be fast.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 153,
+        "name": "Sognare",
+        "slug": "all-secret-sognare",
+        "description": "A dream in stop-motion, soon forever gone.",
+        "instructions": "<i>\"I saw three spires all around, and a world in halted time..\"</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 154,
+        "name": "Realtor Extraordinaire",
+        "slug": "all-secret-realtor",
+        "description": "An acre-wide stride.",
+        "instructions": "<i>The wrong kind of house.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 155,
+        "name": "Realität",
+        "slug": "all-secret-realitat",
+        "description": "A moonlight butterfly, and beacons of three.",
+        "instructions": "<i>Dream of greater heights.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 156,
+        "name": "Our Mechanical Benefactors",
+        "slug": "all-secret-ourbenefactors",
+        "description": "Human, please explain directive \"GREED\".",
+        "instructions": "<i>Close, yet so far.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 157,
+        "name": "Meticulous",
+        "slug": "osu-secret-meticulous",
+        "description": "The circle goes here, and then here, and then here..",
+        "instructions": "<i>This is the way it's SUPPOSED to be.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 158,
+        "name": "Infinitesimal",
+        "slug": "osu-secret-infinitesimal",
+        "description": "Big word for something so very, very small.",
+        "instructions": "<i>Tiny in scope, big in meaning.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 159,
+        "name": "Equilibrium",
+        "slug": "osu-secret-equilibrium",
+        "description": "Balance in all things.",
+        "instructions": "<i>Seek the middle ground.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 160,
+        "name": "Impeccable",
+        "slug": "all-secret-impeccable",
+        "description": "Speed matters not to the exemplary.",
+        "instructions": "<i>Simply superb.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 161,
+        "name": "Elite",
+        "slug": "all-secret-elite",
+        "description": "Dangerous beat agents.",
+        "instructions": "<i>A challenge for status, prestige and fame is not always the smartest thing to do in the middle of something.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 162,
+        "name": "January/February 2017 Spotlight",
+        "slug": "spotlight-2017-01",
+        "description": "Two for the price of one.",
+        "instructions": "<i>Complete any gamemode version of the January/February Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 163,
+        "name": "March 2017 Spotlight",
+        "slug": "spotlight-2017-03",
+        "description": "March ever onwards.",
+        "instructions": "<i>Complete any gamemode version of the March Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 164,
+        "name": "April 2017 Spotlight",
+        "slug": "spotlight-2017-04",
+        "description": "Pitch.. WHAT?",
+        "instructions": "<i>Complete any gamemode version of the April Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 165,
+        "name": "May 2017 Spotlight",
+        "slug": "spotlight-2017-05",
+        "description": "May your accuracy forever be swift and true.",
+        "instructions": "<i>Complete any gamemode version of the May Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 166,
+        "name": "June 2017 Spotlight",
+        "slug": "spotlight-2017-06",
+        "description": "Innocence destroyed.",
+        "instructions": "<i>Complete any gamemode version of the June Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 167,
+        "name": "July 2017 Spotlight",
+        "slug": "spotlight-2017-07",
+        "description": "Where it all begins.",
+        "instructions": "<i>Complete any gamemode version of the July Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 168,
+        "name": "50/50",
+        "slug": "all-secret-5050",
+        "description": "Half full or half empty, that's a whole lot of fifty.",
+        "instructions": "<i>Strong opinions about this, one way or another.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 169,
+        "name": "August 2017 Spotlight",
+        "slug": "spotlight-2017-08",
+        "description": "Ah, yes. Something just like this.",
+        "instructions": "<i>Complete any gamemode version of the August Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 170,
+        "name": "Thrill of the Chase",
+        "slug": "all-secret-thrillofthechase",
+        "description": "My heart's beating, my hands are shaking, and I'm STILL clicking.",
+        "instructions": "<i>Is there anything better than the hunt? Such a classic pursuit.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 171,
+        "name": "The Girl in the Forest",
+        "slug": "all-secret-girlintheforest",
+        "description": "Not even the Elite Four could stop you now.",
+        "instructions": "<i>Think back to where it all began, in shades of red and blue..</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 172,
+        "name": "You Can't Hide",
+        "slug": "all-secret-youcanthide",
+        "description": "I will find you, and I will click you. All of you.",
+        "instructions": "<i>Don't even try to hide.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 173,
+        "name": "True Torment",
+        "slug": "osu-secret-truetorment",
+        "description": "It lasts forever.",
+        "instructions": "<i>Note the ghosts.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 174,
+        "name": "The Firmament Moves",
+        "slug": "all-secret-celestialmovement",
+        "description": "Number fourteen? More like number one.",
+        "instructions": "<i>Three times does it move, but most only know one. What you seek is something different yet again, warped three times over.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 175,
+        "name": "Too Fast, Too Furious",
+        "slug": "all-secret-toofasttoofurious",
+        "description": "A march if you have eight feet, maybe!",
+        "instructions": "<i>Something you don't do when you're afraid.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 176,
+        "name": "Feelin' It",
+        "slug": "all-secret-feelinit",
+        "description": "Got with the times.",
+        "instructions": "<i>Beats multiplied. A lot of them.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 177,
+        "name": "Overconfident",
+        "slug": "osu-secret-overconfident",
+        "description": "Try again later, maybe?",
+        "instructions": "<i>The 's' in progress stands for hubris.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 178,
+        "name": "Spooked",
+        "slug": "osu-secret-spooked",
+        "description": "Something moved. It wasn't your cursor!",
+        "instructions": "<i>Don't look behind you.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 179,
+        "name": "MOtOLOiD",
+        "slug": "all-packs-motoloid",
+        "description": "Legends made manifest, by the mappers of the Guild.",
+        "instructions": "<i>Play all of the MOtOLOiD Mapper's Guild pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 180,
+        "name": "September 2017 Spotlight",
+        "slug": "spotlight-2017-09",
+        "description": "New beginnings, time travelers, and airborne robots. Oh my!",
+        "instructions": "<i>Complete any gamemode version of the September Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 181,
+        "name": "October 2017 Spotlight",
+        "slug": "spotlight-2017-10",
+        "description": "First, one must distract a punk rock girl. Then, they must put on the radio.",
+        "instructions": "<i>Complete any gamemode version of the October Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 182,
+        "name": "November 2017 Spotlight",
+        "slug": "spotlight-2017-11",
+        "description": "The end of an era, and the start of something new!",
+        "instructions": "<i>Complete any gamemode version of the November Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 183,
+        "name": "December 2017 Spotlight",
+        "slug": "spotlight-2017-12",
+        "description": "Impulse to end the year!",
+        "instructions": "<i>Complete any gamemode version of the December Spotlights for 2017.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 184,
+        "name": "January 2018 Spotlight",
+        "slug": "spotlight-2018-01",
+        "description": "Reality distorts.",
+        "instructions": "<i>Complete any gamemode version of the January Spotlights for 2018.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 185,
+        "name": "Mappers' Guild Pack I",
+        "slug": "all-packs-mappersguild-01",
+        "description": "The first among many to come.",
+        "instructions": "<i>Complete all of the beatmaps in the Mappers' Guild I pack..</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 186,
+        "name": "February 2018 Spotlight",
+        "slug": "spotlight-2018-02",
+        "description": "Let's jump for dreams of future candy!",
+        "instructions": "<i>Complete any gamemode version of the February Spotlights for 2018.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 187,
+        "name": "March 2018 Spotlight",
+        "slug": "spotlight-2018-03",
+        "description": "Transport me to Nirvana on the backs of angels!",
+        "instructions": "<i>Complete any gamemode version of the March Spotlights for 2018.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 188,
+        "name": "April 2018 Spotlight",
+        "slug": "spotlight-2018-04",
+        "description": "A lesson from a DJ: drop kick captivatingly.",
+        "instructions": "<i>Complete any gamemode version of the April Spotlights for 2018.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 7
+    },
+    {
+        "id": 189,
+        "name": "Cranky",
+        "slug": "all-packs-cranky",
+        "description": "The grandfather of rhythm gaming music, brought to life by the mappers of the Guild and guests alike.",
+        "instructions": "<i>Play all of the Cranky pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 190,
+        "name": "Mappers' Guild Pack II",
+        "slug": "all-packs-mappersguild-02",
+        "description": "A variable dream of the future.",
+        "instructions": "<i>Complete all of the beatmaps in the Mappers' Guild II pack..</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 191,
+        "name": "High Tea Music",
+        "slug": "all-packs-highteamusic",
+        "description": "Silently journeying to invade the skies.",
+        "instructions": "<i>Complete all of the beatmaps in the Mappers' Guild III/High Tea Music pack..</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 192,
+        "name": "Skylord",
+        "slug": "osu-secret-skylord",
+        "description": "Never miss a wingbeat.",
+        "instructions": "<i>Flight among the sky requires nothing but perfection.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 193,
+        "name": "B-Rave",
+        "slug": "all-secret-brave",
+        "description": "It takes courage to stand before the master.",
+        "instructions": "<i>Ill-tempered bosses make for excellent final battles.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 194,
+        "name": "Any%",
+        "slug": "all-secret-anypercent",
+        "description": "A speedrunner's best friend.",
+        "instructions": "<i>Sometimes you have to break the rules to work with speed.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 195,
+        "name": "Mirage",
+        "slug": "all-secret-mirage",
+        "description": "The horizon goes on forever, and ever, and ever...",
+        "instructions": "<i>The light is far harder than it seems.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 196,
+        "name": "Under The Stars",
+        "slug": "all-secret-underthestars",
+        "description": "Onwards, to where the darkness can never stop us.",
+        "instructions": "<i>Walk beneath the stars on a journey to elsewhere.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 197,
+        "name": "Senseless",
+        "slug": "all-secret-senseless",
+        "description": "I hear nothing. I see nothing.",
+        "instructions": "<i>A song that is, and something that is not.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 199,
+        "name": "Aeon",
+        "slug": "all-secret-aeon",
+        "description": "In the mire of thawing time, memory shall be your guide.",
+        "instructions": "<i>When time runs slow and sight fails you, how will you succeed?</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 200,
+        "name": "Upon The Wind",
+        "slug": "all-secret-uponthewind",
+        "description": "And in that gale, no eye could hope to follow.",
+        "instructions": "<i>In the heart of a storm of flowers, a world unseen.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 201,
+        "name": "Vantage",
+        "slug": "osu-secret-vantage",
+        "description": "There we stood, where the spires pierced the sky, and dreamed of the future to come.",
+        "instructions": "<i>Where ground was broken to critical acclaim.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 202,
+        "name": "Quick Maths",
+        "slug": "all-secret-quickmaffs",
+        "description": "Beats per minute over... this isn't quick at all!",
+        "instructions": "<i>Where x equals beats per minute, and a variable unknown...</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 204,
+        "name": "Efflorescence",
+        "slug": "all-secret-efflorescence",
+        "description": "A lament for the past, and a glimpse into tomorrow.",
+        "instructions": "<i>The horizon thunders with a portentous bloom.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 205,
+        "name": "Summer 2018 Beatmap Spotlights",
+        "slug": "spotlight-2018-summer",
+        "description": "The hottest beatmaps from Summer 2018!",
+        "instructions": "<i>Play all of the maps from one mode of the Summer 2018 Beatmap Spotlights.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 8
+    },
+    {
+        "id": 206,
+        "name": "Culprate",
+        "slug": "all-packs-culprate",
+        "description": "A dream of whispers, light, and things to come.",
+        "instructions": "<i>Complete all of the beatmaps in the Mappers' Guild IV/Culprate pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 207,
+        "name": "Fall 2018 Beatmap Spotlights",
+        "slug": "spotlight-2018-autumn",
+        "description": "The most fabulous beatmaps from Fall 2018!",
+        "instructions": "<i>Play all of the maps from one mode of the Fall 2018 Beatmap Spotlights.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 8
+    },
+    {
+        "id": 208,
+        "name": "HyuN",
+        "slug": "all-packs-hyun",
+        "description": "Digital punk goes into overdrive!",
+        "instructions": "<i>Play all of the HyuN pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 209,
+        "name": "Winter 2019 Beatmap Spotlights",
+        "slug": "spotlight-2019-winter",
+        "description": "The chillest beatmaps from Winter 2019!",
+        "instructions": "<i>Play all of the maps from one mode of the Winter 2019 Beatmap Spotlights.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 8
+    },
+    {
+        "id": 210,
+        "name": "Spring 2019 Beatmap Spotlights",
+        "slug": "spotlight-2019-spring",
+        "description": "A bloomin' good time from Spring 2019!",
+        "instructions": "<i>Play all of the maps from one mode of the Spring 2019 Beatmap Spotlights.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 8
+    },
+    {
+        "id": 213,
+        "name": "Imperial Circus Dead Decadence",
+        "slug": "all-packs-icdd",
+        "description": "A little kite once sang me a song...",
+        "instructions": "<i>Play all of the Imperial Circus Dead Decadence pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 214,
+        "name": "tieff",
+        "slug": "all-packs-tieff",
+        "description": "Flow.",
+        "instructions": "<i>Play all of the tieff pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 215,
+        "name": "Summer 2019 Beatmap Spotlights",
+        "slug": "spotlight-2019-summer",
+        "description": "Blaze a trail through the best of Summer 2019!",
+        "instructions": "<i>Play all of the maps from one mode of the Summer 2019 Beatmap Spotlights.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 8
+    },
+    {
+        "id": 216,
+        "name": "Inundate",
+        "slug": "all-secret-inundate",
+        "description": "Swept away.",
+        "instructions": "<i>Across and beyond the tides.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 217,
+        "name": "Not Bluffing",
+        "slug": "osu-secret-bluffing",
+        "description": "Did that with my eyes closed.",
+        "instructions": "<i>It's not arrogance if you can live up to it.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 218,
+        "name": "Eureka!",
+        "slug": "all-secret-eureka",
+        "description": "By Jove, you've got it!",
+        "instructions": "<i>When inspiration strikes...</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 219,
+        "name": "Regicide",
+        "slug": "all-secret-regicide",
+        "description": "A king no more.",
+        "instructions": "<i>No throne lasts forever.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 220,
+        "name": "Permadeath",
+        "slug": "all-secret-permadeath",
+        "description": "One life, one shot.",
+        "instructions": "<i>Better make it count! Ware well the example of the white cat.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 221,
+        "name": "The Future Is Now",
+        "slug": "all-secret-futureisnow",
+        "description": "The stars showed you all that was to come.",
+        "instructions": "<i>Withstand the primordial.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 222,
+        "name": "Natural 20",
+        "slug": "all-secret-nat20",
+        "description": "Rolled it.",
+        "instructions": "<i>Not just a chance of the dice, this one is all skill.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 223,
+        "name": "Kaleidoscope",
+        "slug": "all-secret-kaleidoscope",
+        "description": "So many pretty colours. Most of them red.",
+        "instructions": "<i>See the tiny colours up through the tube up close and personal, and slow right down.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 224,
+        "name": "AHAHAHAHA",
+        "slug": "all-secret-yandere",
+        "description": "TOGETHER FOREVER.",
+        "instructions": "<i>Who am I? Where am I? What the hell IS this place?</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 225,
+        "name": "Valediction",
+        "slug": "all-secret-valediction",
+        "description": "One last time.",
+        "instructions": "<i>Time stood still as we waved farewell.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 226,
+        "name": "Mappers' Guild Pack III",
+        "slug": "all-packs-mappersguild-03",
+        "description": "Sunrise was the end of a very magical night for one very special girl.",
+        "instructions": "<i>Complete all maps in the Mappers' Guild Pack III.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 227,
+        "name": "Mappers' Guild Pack IV",
+        "slug": "all-packs-mappersguild-04",
+        "description": "This freeway is a sensation and boy, does it love you!",
+        "instructions": "<i>Complete all maps in the Mappers' Guild Pack IV.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 228,
+        "name": "Autumn 2019 Beatmap Spotlights",
+        "slug": "spotlight-2019-autumn",
+        "description": "Fall straight into the best maps of Autumn 2019!",
+        "instructions": "<i>Play all of the maps from one mode of the Autumn 2019 Beatmap Spotlights.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 8
+    },
+    {
+        "id": 229,
+        "name": "Afterparty",
+        "slug": "all-packs-afterparty",
+        "description": "Encore to the core.",
+        "instructions": "<i>Complete the Afterparty beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 230,
+        "name": "Ben Briggs",
+        "slug": "all-packs-benbriggs",
+        "description": "Chiptunes, Pokemon, oh my!",
+        "instructions": "<i>Play all of the Ben Briggs pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 231,
+        "name": "Carpool Tunnel",
+        "slug": "all-packs-carpooltunnel",
+        "description": "Not to be confused with an injury common to top-end players and people who watch anime.",
+        "instructions": "<i>Play all of the Carpool Tunnel pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 232,
+        "name": "Creo",
+        "slug": "all-packs-creo",
+        "description": "Dashing geometrically to a beatmap near you.",
+        "instructions": "<i>Play all of the Creo pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 233,
+        "name": "cYsmix",
+        "slug": "all-packs-cysmix",
+        "description": "Dead funky. For real.",
+        "instructions": "<i>Play all of the cYsmix pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 234,
+        "name": "Fractal Dreamers",
+        "slug": "all-packs-fractaldreamers",
+        "description": "Shattered dreams and muted skies never sounded so good.",
+        "instructions": "<i>Play all of the Fractal Dreamers pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 235,
+        "name": "LukHash",
+        "slug": "all-packs-lukhash",
+        "description": "There's a ghost in this here machine.",
+        "instructions": "<i>Play all of the LukHash pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 236,
+        "name": "*namirin",
+        "slug": "all-packs-namirin",
+        "description": "Five colors to make your world sing!",
+        "instructions": "<i>Play all of the *namirin pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 237,
+        "name": "onumi",
+        "slug": "all-packs-onumi",
+        "description": "There's a lot going on here.",
+        "instructions": "<i>Play all of the onumi pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 238,
+        "name": "The Flashbulb",
+        "slug": "all-packs-theflashbulb",
+        "description": "Not merely incandescent.",
+        "instructions": "<i>Play all of The Flashbulb pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 239,
+        "name": "Undead Corporation",
+        "slug": "all-packs-undeadcorporation",
+        "description": "Diversifying underground assets. Literally.",
+        "instructions": "<i>Play all of the Undead Corporation pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 240,
+        "name": "Wisp X",
+        "slug": "all-packs-wispx",
+        "description": "Sunset and the moon.",
+        "instructions": "<i>Play all of the Wisp X pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 241,
+        "name": "Winter 2020 Beatmap Spotlights",
+        "slug": "spotlight-2020-winter",
+        "description": "The best of Winter 2020 in beatmap form!",
+        "instructions": "<i>Play all of the maps from one mode of the Winter 2020 Beatmap Spotlights.</i>",
+        "grouping": "Beatmap Spotlights",
+        "mode": null,
+        "ordering": 8
+    },
+    {
+        "id": 242,
+        "name": "Event Horizon",
+        "slug": "osu-skill-pass-9",
+        "description": "No force dares to pull you under.",
+        "instructions": "<i>Stare into the abyss, and pass the trial of any 9 star map.</i>",
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 4
+    },
+    {
+        "id": 243,
+        "name": "Chosen",
+        "slug": "osu-skill-fc-9",
+        "description": "Reign among the Prometheans, where you belong.",
+        "instructions": "<i>Triumph over one of the hardest beatmaps ever made, and FC a 9 star map.</i>",
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 244,
+        "name": "Phantasm",
+        "slug": "osu-skill-pass-10",
+        "description": "Fevered is your passion, extraordinary is your skill.",
+        "instructions": "<i>Approach the limit of human endurance, and pass a 10 star map.</i>",
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 4
+    },
+    {
+        "id": 245,
+        "name": "Unfathomable",
+        "slug": "osu-skill-fc-10",
+        "description": "You have no equal.",
+        "instructions": "<i>Cement your place among legends, and FC any 10 star map.</i>",
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 5
+    },
+    {
+        "id": 246,
+        "name": "Camellia I",
+        "slug": "all-packs-camellia-1",
+        "description": "This is the entrance to the jungle.",
+        "instructions": "<i>Play all of the Camellia Sets pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 247,
+        "name": "Camellia II",
+        "slug": "all-packs-camellia-2",
+        "description": "Exit the atmosphere.",
+        "instructions": "<i>Play all of the Camellia Challenges pack, which requires no difficulty reduction mods active.</i>",
+        "grouping": "Beatmap Challenge Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 248,
+        "name": "Celldweller",
+        "slug": "all-packs-celldweller",
+        "description": "The end of an empire is no obstacle to you.",
+        "instructions": "<i>Play all of the Celldweller pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 249,
+        "name": "Cranky II",
+        "slug": "all-packs-cranky2",
+        "description": "Even crankier than before!",
+        "instructions": "<i>Play all of the Cranky 2 pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 250,
+        "name": "Cute Anime Girls",
+        "slug": "all-packs-CuteAnimeGirls",
+        "description": "Not to be confused with cute flambé grills.",
+        "instructions": "<i>Play all of the Cute Anime Girls pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 251,
+        "name": "ELFENSJoN",
+        "slug": "all-packs-ELFENSJoN",
+        "description": "A world all of your own.",
+        "instructions": "<i>Play all of the ELFENSJoN pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 252,
+        "name": "Hyper Potions",
+        "slug": "all-packs-HyperPotions",
+        "description": "Gain 200 HP.",
+        "instructions": "<i>Play all of the Hyper Potions pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 253,
+        "name": "Kola Kid",
+        "slug": "all-packs-KolaKid",
+        "description": "Remember, the Earth is counting on you.",
+        "instructions": "<i>Play all of the Kola Kid pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 254,
+        "name": "LeaF",
+        "slug": "all-packs-leaf",
+        "description": "Calamity was not in your fortune.",
+        "instructions": "<i>Play all of the LeaF pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 255,
+        "name": "Panda Eyes",
+        "slug": "all-packs-PandaEyes",
+        "description": "Embrace the immortal flame.",
+        "instructions": "<i>Play all of the Panda Eyes pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 256,
+        "name": "PUP",
+        "slug": "all-packs-PUP",
+        "description": "Finally, some closure.",
+        "instructions": "<i>Play all of the PUP pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 257,
+        "name": "Ricky Montgomery",
+        "slug": "all-packs-RickyMontgomery",
+        "description": "All hook and sinker.",
+        "instructions": "<i>Play all of the Ricky Montgomery pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 258,
+        "name": "Rin",
+        "slug": "all-packs-Rin",
+        "description": "Two minds, and a house full of ghosts.",
+        "instructions": "<i>Play all of the Rin/Function Phantom pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 259,
+        "name": "S3RL",
+        "slug": "all-packs-S3RL",
+        "description": "You'll never get any of these out of your head.",
+        "instructions": "<i>Play all of the S3RL pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 260,
+        "name": "Sound Souler",
+        "slug": "all-packs-SoundSouler",
+        "description": "Return color to your life.",
+        "instructions": "<i>Play all of the Sound Souler pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 261,
+        "name": "Teminite",
+        "slug": "all-packs-Teminite",
+        "description": "It's all about the state of mind.",
+        "instructions": "<i>Play all of the Teminite pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 262,
+        "name": "VINXIS",
+        "slug": "all-packs-VINXIS",
+        "description": "Staying on track.",
+        "instructions": "<i>Play all of the VINXIS pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 263,
+        "name": "Mappers' Guild Pack V",
+        "slug": "all-packs-mappersguild-05",
+        "description": "Invisible birdwatching.",
+        "instructions": "<i>Play all of the Mappers' Guild V pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 264,
+        "name": "Mappers' Guild Pack VI",
+        "slug": "all-packs-mappersguild-06",
+        "description": "Turn your superpower to hyperdrive!",
+        "instructions": "<i>Play all of the Mappers' Guild VI pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 265,
+        "name": "Mappers' Guild Pack VII",
+        "slug": "all-packs-mappersguild-07",
+        "description": "A new set of vibrant challenges to overcome.",
+        "instructions": "<i>Play all of the Mappers' Guild VII pack, which require no difficulty reduction mods when submitting a score.</i>",
+        "grouping": "Beatmap Challenge Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 266,
+        "name": "Mappers' Guild Pack VIII",
+        "slug": "all-packs-mappersguild-08",
+        "description": "Succeed with a chorus of voices.",
+        "instructions": "<i>Play all of the Mappers' Guild VIII pack, which require no difficulty reduction mods when submitting a score.</i>",
+        "grouping": "Beatmap Challenge Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 267,
+        "name": "Mappers' Guild Pack IX",
+        "slug": "all-packs-mappersguild-09",
+        "description": "This is no subtle change.",
+        "instructions": "<i>Play all of the Mappers' Guild IX pack, which require no difficulty reduction mods when submitting a score.</i>",
+        "grouping": "Beatmap Challenge Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 268,
+        "name": "Ten To One",
+        "slug": "all-secret-tentoone",
+        "description": "From one extreme to another.",
+        "instructions": "<i>From a marathon to a sprint.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 269,
+        "name": "Exquisite",
+        "slug": "all-secret-exquisite",
+        "description": "Indubitably.",
+        "instructions": "<i>Do it once with true calibre, then do it again.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 270,
+        "name": "Persistence Is Key",
+        "slug": "all-secret-persistenceiskey",
+        "description": "Don't let your dreams be dreams.",
+        "instructions": "<i>Don't give up!</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 271,
+        "name": "Mad Scientist",
+        "slug": "all-secret-madscientist",
+        "description": "The experiment... it's all gone!",
+        "instructions": "<i>Become invisible.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 272,
+        "name": "Tribulation",
+        "slug": "all-secret-tribulation",
+        "description": "Success is inevitable... eventually.",
+        "instructions": "<i>Struggle and then stop.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 273,
+        "name": "Right On Time",
+        "slug": "all-secret-rightontime",
+        "description": "The first minute is always the hardest.",
+        "instructions": "<i>Every hour's got sixty, but your timer only wants one.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 274,
+        "name": "Replica",
+        "slug": "all-secret-replica",
+        "description": "One just like the other.",
+        "instructions": "<i>Duplicate.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 275,
+        "name": "All Good",
+        "slug": "all-secret-allgood",
+        "description": "Better now, thanks!",
+        "instructions": "<i>You got this.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 276,
+        "name": "Dead Center",
+        "slug": "all-secret-deadcenter",
+        "description": "As all things should be.",
+        "instructions": "<i>Perfect balance.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 277,
+        "name": "In Memoriam",
+        "slug": "osu-secret-inmemoriam",
+        "description": "In loving memory of your sanity, long forgotten.",
+        "instructions": "<i>Conquer a test of the most frustrating combination of mods imaginable.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 278,
+        "name": "Sanguine",
+        "slug": "osu-secret-sanguine",
+        "description": "Timeless thorns still draw blood.",
+        "instructions": "<i>Return to the past, when everything was simpler.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 2
+    },
+    {
+        "id": 279,
+        "name": "Not Again",
+        "slug": "all-secret-notagain",
+        "description": "Regret everything.",
+        "instructions": "<i>You had it all, and then it was gone.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 280,
+        "name": "Final Boss",
+        "slug": "osu-secret-finalboss",
+        "description": "Game over.",
+        "instructions": "<i>Let the credits roll.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 281,
+        "name": "Beast Mode",
+        "slug": "osu-secret-beastmode",
+        "description": "Unleash the animal within!",
+        "instructions": "<i>Go absolutely feral.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 282,
+        "name": "Touhou Pack",
+        "slug": "all-packs-touhou",
+        "description": "The bamboo isn't the only thing dancing!",
+        "instructions": "<i>Play all of the Touhou beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 283,
+        "name": "ginkiha Pack",
+        "slug": "all-packs-ginkiha",
+        "description": "The night stars shine the brightest of all.",
+        "instructions": "<i>Play all of the ginkiha beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 284,
+        "name": "MUZZ Pack",
+        "slug": "all-packs-muzz",
+        "description": "Break away from the endgame.",
+        "instructions": "<i>Play all of the MUZZ beatmap pack, which requires no difficulty reduction mods when submitting a score.</i>",
+        "grouping": "Beatmap Challenge Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 285,
+        "name": "Deliberation",
+        "slug": "all-secret-deliberation",
+        "description": "The challenge remains.",
+        "instructions": "<i>Turn a short challenge into a long one.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 286,
+        "name": "Lightless",
+        "slug": "all-secret-lightless",
+        "description": "Better the devil you know.",
+        "instructions": "<i>I CAN'T SEE A THING.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 287,
+        "name": "When You See It",
+        "slug": "all-secret-when-you-see-it",
+        "description": "Three numbers which will haunt you forevermore.",
+        "instructions": "<i>You don't need a hint for this one.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 288,
+        "name": "Vocaloid Pack",
+        "slug": "all-packs-vocaloid",
+        "description": "What's life without a song?",
+        "instructions": "<i>Play all of the Vocaloid beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 289,
+        "name": "Maduk Pack",
+        "slug": "all-packs-maduk",
+        "description": "You took control.",
+        "instructions": "<i>Play all of the Maduk beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 290,
+        "name": "Aitsuki Nakuru Pack",
+        "slug": "all-packs-aitsuki",
+        "description": "Took part in the Joker's Parade.",
+        "instructions": "<i>Play all of the Aitsuki Nakuru beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 291,
+        "name": "30,000,000 Drum Hits",
+        "slug": "taiko-hits-30000000",
+        "description": "Your rhythm, eternal.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 1,
+        "ordering": 3
+    },
+    {
+        "id": 292,
+        "name": "Catch 20,000,000 fruits",
+        "slug": "fruits-hits-20000000",
+        "description": "Nothing left behind.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 2,
+        "ordering": 3
+    },
+    {
+        "id": 293,
+        "name": "40,000,000 Keys",
+        "slug": "mania-hits-40000000",
+        "description": "When someone asks which keys you play, the answer is now 'yes'.",
+        "instructions": null,
+        "grouping": "Skill & Dedication",
+        "mode": 3,
+        "ordering": 3
+    },
+    {
+        "id": 294,
+        "name": "Ariabl'eyeS Pack",
+        "slug": "all-packs-ariableyes",
+        "description": "Command the mercurial skies.",
+        "instructions": "<i>Play all of the Ariabl'eyes beatmap pack, which requires no difficulty reduction mods.</i>",
+        "grouping": "Beatmap Challenge Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 295,
+        "name": "Omoi Pack",
+        "slug": "all-packs-omoi",
+        "description": "A whole new meaning to chill.",
+        "instructions": "<i>Play all of the Omoi beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 296,
+        "name": "Chill Pack",
+        "slug": "all-packs-chill",
+        "description": "Just vibin'.",
+        "instructions": "<i>Play all of the Chill beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 297,
+        "name": "Mortal Coils",
+        "slug": "all-secret-together-apart",
+        "description": "Never one without the other.",
+        "instructions": "<i>Prisoners of flesh in an unending apocalypse.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 298,
+        "name": "Dark Familiarity",
+        "slug": "all-secret-dark-familiarity",
+        "description": "No mistakes, no witnesses.",
+        "instructions": "<i>Don't second guess yourself.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 299,
+        "name": "Creator's Gambit",
+        "slug": "all-secret-trophy",
+        "description": "I made this.",
+        "instructions": "<i>Make your own prize.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 300,
+        "name": "Time Sink",
+        "slug": "all-secret-time-sink",
+        "description": "Rise from the depths into a new age.",
+        "instructions": "<i>Descend into the fathoms, yesteryear and today.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 301,
+        "name": "Unseen Heights",
+        "slug": "all-secret-unseen-heights",
+        "description": "Reach for the stars.",
+        "instructions": "<i>Go where even the editor fears to tread.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 302,
+        "name": "You're Here Forever",
+        "slug": "all-secret-youre-here-forever",
+        "description": "We knew you'd be back.",
+        "instructions": "<i>Touch grass.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 303,
+        "name": "Hospitality",
+        "slug": "all-secret-hospitality",
+        "description": "Welcome.",
+        "instructions": "<i>From guest, to host.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 304,
+        "name": "True North",
+        "slug": "all-secret-true-north",
+        "description": "Where they tread, you go.",
+        "instructions": "<i>Seek your favourite creator to lead the way.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 305,
+        "name": "Astronomic",
+        "slug": "all-secret-astronomic",
+        "description": "Precision machinery.",
+        "instructions": "<i>Celestial coordinates: 284-905.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 306,
+        "name": "Superfan",
+        "slug": "all-secret-superfan",
+        "description": "THIS IS MY JAM.",
+        "instructions": "<i>AHHHHHH THEY'RE MY OSHI.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 307,
+        "name": "Iron Will",
+        "slug": "all-secret-iron-will",
+        "description": "A legacy of broken bonds, remade.",
+        "instructions": "<i>Step forth, and master three years of titan-ending tests.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 308,
+        "name": "USAO Pack",
+        "slug": "all-packs-usao",
+        "description": "Now THAT is a showdown.",
+        "instructions": "<i>Play all of the USAO beatmap pack, which requires no difficulty reduction mods.</i>",
+        "grouping": "Beatmap Challenge Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 309,
+        "name": "Rohi Pack",
+        "slug": "all-packs-rohi",
+        "description": "An artifact of true skill.",
+        "instructions": "<i>Play all of the Rohi beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 310,
+        "name": "Drum & Bass Pack",
+        "slug": "all-packs-drum_and_bass",
+        "description": "727? More like 174, baby!",
+        "instructions": "<i>Play all of the Drum & Bass beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 5
+    },
+    {
+        "id": 311,
+        "name": "Project Loved: Winter 2021",
+        "slug": "loved-seasonal-2021-winter",
+        "description": "You're very welcome for the music.",
+        "instructions": "<i>Play any of the Project Loved: Winter 2021 beatmap packs.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 312,
+        "name": "Project Loved: Spring 2022",
+        "slug": "loved-seasonal-2022-spring",
+        "description": "You promised that foolish heroes would be good for me...",
+        "instructions": "<i>Play any of the Project Loved: Spring 2022 beatmap packs.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 313,
+        "name": "Project Loved: Summer 2022",
+        "slug": "loved-seasonal-2022-summer",
+        "description": "Alright, fine. You don't sound like dragonforce.",
+        "instructions": "<i>Play any of the Project Loved: Summer 2022 beatmap packs.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 314,
+        "name": "Project Loved: Autumn 2022",
+        "slug": "loved-seasonal-2022-autumn",
+        "description": "There's a god-ish bee in my damned salad.",
+        "instructions": "<i>Play any of the Project Loved: Autumn 2022 beatmap packs.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 315,
+        "name": "Project Loved: Winter 2022",
+        "slug": "loved-seasonal-2022-winter",
+        "description": "Chasing nightmares in square, alien and propane forms.",
+        "instructions": "<i>Play any of the Project Loved: Winter 2022 beatmap packs.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 316,
+        "name": "Project Loved: Spring 2023",
+        "slug": "loved-seasonal-2023-spring",
+        "description": "Phase one: turn all humans and their fickle souls into orange cordial.",
+        "instructions": "<i>Play any of the Project Loved: Spring 2023 beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 317,
+        "name": "Resurgence",
+        "slug": "all-secret-resurgence",
+        "description": "A flame rekindled.",
+        "instructions": "<i>From the ashes, blaze bright.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 318,
+        "name": "Clarity",
+        "slug": "all-secret-clarity",
+        "description": "And yet in our memories, you remain crystal clear.",
+        "instructions": "<i>A distorted reality and our own intersect.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 319,
+        "name": "Autocreation",
+        "slug": "all-secret-autocreation",
+        "description": "Absolute rule.",
+        "instructions": "<i>One is all.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 320,
+        "name": "Star Power",
+        "slug": "all-secret-star-power",
+        "description": "AND I'LL DO IT AGAIN.",
+        "instructions": "<i>When an encore just isn't enough.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 321,
+        "name": "Causality",
+        "slug": "osu-secret-causality",
+        "description": "Definitely not for casuals.",
+        "instructions": "<i>Flee from the future.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 322,
+        "name": "Abrogation",
+        "slug": "osu-secret-abrogation",
+        "description": "Endure not the imposition of celestial law.",
+        "instructions": "<i>Return to whence the rules were first broken.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 323,
+        "name": "Internment",
+        "slug": "osu-secret-internment",
+        "description": "Stained in the hues of madness, they rage within a four-walled jail.",
+        "instructions": "<a href=\"https://assets.ppy.sh/medals/internment_hint.jpg\"><i>Bask in the shade of an ailing mind.</i></a>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 324,
+        "name": "Anabasis",
+        "slug": "taiko-secret-anabasis",
+        "description": "And what an adventure you had.",
+        "instructions": "<i>Life is but a journey of the senses.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 1,
+        "ordering": 3
+    },
+    {
+        "id": 325,
+        "name": "Project Loved: Summer 2023",
+        "slug": "loved-seasonal-2023-summer",
+        "description": "Keep those psychopathic bugs away from my flowers!",
+        "instructions": "<i>Play any of the Project Loved: Summer 2023 beatmap packs.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 326,
+        "name": "Festive Fever",
+        "slug": "osu-secret-festive",
+        "description": "And the jingle bells never stop.",
+        "instructions": "<i>Well, eventually they do if you aren't careful enough.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 327,
+        "name": "Literal",
+        "slug": "taiko-secret-literal",
+        "description": "The instructions were very clear.",
+        "instructions": "<i>...but probably not optimal.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 1,
+        "ordering": 3
+    },
+    {
+        "id": 328,
+        "name": "Value Your Identity",
+        "slug": "all-secret-identity",
+        "description": "As perfect as you are.",
+        "instructions": "<i>In the end, you'll know what to do.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 329,
+        "name": "Banana Republic",
+        "slug": "catch-secret-banana",
+        "description": "Potassium overdose.",
+        "instructions": "<i>The more may not always be the merrier.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 2,
+        "ordering": 3
+    },
+    {
+        "id": 331,
+        "name": "Dexterity",
+        "slug": "mania-secret-dexterity",
+        "description": "True savants are flexible.",
+        "instructions": "<i>Don't go all in on one stat.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 3,
+        "ordering": 2
+    },
+    {
+        "id": 332,
+        "name": "Hybrid Hyperion",
+        "slug": "all-secret-hybrid",
+        "description": "Manifold conqueror.",
+        "instructions": "<i>You proteans should show off more.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 333,
+        "name": "Divination Break",
+        "slug": "all-secret-divinationbreak",
+        "description": "So cold...",
+        "instructions": "<i>The frozen thread shattered.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 334,
+        "name": "Unwilted",
+        "slug": "all-secret-unwilted",
+        "description": "Vivid recollection of a forgotten memory.",
+        "instructions": "<i>Flourish anew like it was yesterday.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 335,
+        "name": "in love with a ghost",
+        "slug": "catch-packs-ghostlove",
+        "description": "A quasi-Valentine's story about coffee, cuteness, lonely mornings and laughs.",
+        "instructions": "<i>Play all of the in love with a ghost beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": 2,
+        "ordering": 5
+    },
+    {
+        "id": 336,
+        "name": "Daily Sprout",
+        "slug": "all-skill-dc-1",
+        "description": "Ready for anything.",
+        "instructions": "<b>osu!(lazer) only</b><br>Achieve a 1-day streak in Daily Challenge",
+        "grouping": "Skill & Dedication",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 337,
+        "name": "Weekly Sapling",
+        "slug": "all-skill-dc-7",
+        "description": "Circadian rhythm calibrated.",
+        "instructions": "<b>osu!(lazer) only</b><br>Achieve a 7-day streak in Daily Challenge",
+        "grouping": "Skill & Dedication",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 338,
+        "name": "Monthly Shrub",
+        "slug": "all-skill-dc-30",
+        "description": "In for the grind.",
+        "instructions": "<b>osu!(lazer) only</b><br>Achieve a 1-month streak in Daily Challenge",
+        "grouping": "Skill & Dedication",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 339,
+        "name": "Gear Shift",
+        "slug": "all-intro-conversion",
+        "description": "Tailor your experience to your perfect fit.",
+        "instructions": "<b>osu!(lazer) only</b><br><i>Complete a map with any <b>Conversion</b> mod enabled.</i>",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 340,
+        "name": "Game Night",
+        "slug": "all-intro-fun",
+        "description": "Mum said it's my turn with the beatmap!",
+        "instructions": "<b>osu!(lazer) only</b><br><i>Complete a map with any <b>Fun</b> mod enabled.</i>",
+        "grouping": "Mod Introduction",
+        "mode": null,
+        "ordering": 0
+    },
+    {
+        "id": 341,
+        "name": "Deciduous Arborist",
+        "slug": "all-secret-deciduousarborist",
+        "description": "But life moves on.",
+        "instructions": "<b>osu!(lazer) only</b><br><i>Break the cycle.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 342,
+        "name": "Pioneer",
+        "slug": "all-secret-pioneer",
+        "description": "Call sign: Cedar",
+        "instructions": "<i>Liftoff schedule at subunit precision.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 3
+    },
+    {
+        "id": 343,
+        "name": "Overcooked?",
+        "slug": "osu-secret-overcooked",
+        "description": "Come and watch me!",
+        "instructions": "<i>Internet lemonade!</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 344,
+        "name": "Stargazer",
+        "slug": "taiko-secret-stargazer",
+        "description": "Three for the almanac.",
+        "instructions": "<i>Return later.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 1,
+        "ordering": 3
+    },
+    {
+        "id": 345,
+        "name": "Candescence",
+        "slug": "osu-secret-candescence",
+        "description": "Guided by blazing resolve.",
+        "instructions": "<b>osu!(lazer) only</b><br><i>Allow no shortcuts.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 346,
+        "name": "By The Skin Of The Teeth",
+        "slug": "all-secret-skinoftheteeth",
+        "description": "You're that accurate.",
+        "instructions": "<b>osu!(lazer) only</b><br><i>You said it yourself!</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 347,
+        "name": "The Strongest Ice Fairy",
+        "slug": "osu-secret-icefairy",
+        "description": "Extreme Sign \"Perfect Metal\"",
+        "instructions": "<b>osu!(lazer) only</b><br><i>Unfazed by eidetic patterns.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 348,
+        "name": "Infectious Enthusiasm",
+        "slug": "all-secret-infectiousenthusiasm",
+        "description": "You're a fungus.",
+        "instructions": "<b>osu!(lazer) only</b><br><i>:)</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 349,
+        "name": "Meticulous Mayhem",
+        "slug": "all-secret-meticulousmayhem",
+        "description": "How did we get here?",
+        "instructions": "<b>osu!(lazer) only</b><br><i>A curious brew, perceptually chaotic.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 350,
+        "name": "Project Loved: Best of 2024",
+        "slug": "loved-seasonal-2024",
+        "description": "In the freezing midwinter, I can still barely hear your voice...",
+        "instructions": "<i>Play any of the Project Loved: Best of 2024 beatmap packs.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 351,
+        "name": "Weather Reverie",
+        "slug": "catch-secret-weatherreverie",
+        "description": "Up and above the world...",
+        "instructions": "<b>osu!(lazer) only</b><br><i>...Like a fruit tray in the sky.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 2,
+        "ordering": 2
+    },
+    {
+        "id": 352,
+        "name": "Up To Eleven",
+        "slug": "osu-secret-uptoeleven",
+        "description": "Crank it up!",
+        "instructions": "<b>osu!(lazer) only</b><br><i>Break limits.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 353,
+        "name": "Hotshot",
+        "slug": "all-secret-hotshot",
+        "description": "Star of the play, a masterpiece known the world over.",
+        "instructions": "<b>osu!(lazer) only</b><br><i>Shine brighter than anyone else, in a way only you can.</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 354,
+        "name": "Cyclone",
+        "slug": "osu-skill-cyclone",
+        "description": "Clockwise or anticlockwise, that is the question.",
+        "instructions": "<b>osu!(lazer) only</b><br><i>Reach 477 spins per minute on a spinner.</i>",
+        "grouping": "Skill & Dedication",
+        "mode": 0,
+        "ordering": 7
+    },
+    {
+        "id": 355,
+        "name": "Hamster Wheel",
+        "slug": "all-secret-hamsterwheel",
+        "description": "Feeling dizzy yet?",
+        "instructions": "<b>osu!(lazer) only</b><br><i>Will it go any faster?</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 356,
+        "name": "Courier Catapult",
+        "slug": "all-secret-couriercatapult",
+        "description": "YEET!",
+        "instructions": "<b>osu!(lazer) only</b><br><i>No spam mail, please!</i>",
+        "grouping": "Hush-Hush",
+        "mode": null,
+        "ordering": 2
+    },
+    {
+        "id": 357,
+        "name": "Waning Memory",
+        "slug": "osu-secret-waningmemory",
+        "description": "An image reformed.",
+        "instructions": "<i>Concealed reflection or genuine recollection.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 358,
+        "name": "Fading Reflection",
+        "slug": "osu-secret-fadingreflection",
+        "description": "A falsehood adorned.",
+        "instructions": "<i>Fabricated memory or unveiled identity.</i>",
+        "grouping": "Hush-Hush",
+        "mode": 0,
+        "ordering": 3
+    },
+    {
+        "id": 359,
+        "name": "Project Loved: Best of 2025",
+        "slug": "loved-seasonal-2025",
+        "description": "Isn't it about time for a good morning?",
+        "instructions": "<i>Play any of the Project Loved: Best of 2025 beatmap packs.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": null,
+        "ordering": 6
+    },
+    {
+        "id": 360,
+        "name": "Chroma Pack",
+        "slug": "taiko-packs-chroma",
+        "description": "@_@",
+        "instructions": "<i>Play all of the Chroma beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": 1,
+        "ordering": 5
+    },
+    {
+        "id": 361,
+        "name": "Mili Pack",
+        "slug": "catch-packs-mili",
+        "description": "With so much sacrifice, I don't even bother to survive.",
+        "instructions": "<i>Play all of the Mili beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": 2,
+        "ordering": 5
+    },
+    {
+        "id": 362,
+        "name": "4K Globetrotter",
+        "slug": "mania-packs-4k-globe",
+        "description": "Around the world, a-round the world.",
+        "instructions": "<i>Play all of the 4K beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": 3,
+        "ordering": 5
+    },
+    {
+        "id": 363,
+        "name": "7K World Cup Anthology",
+        "slug": "mania-packs-7k-world-cup",
+        "description": "A spread worthy of a world stage.",
+        "instructions": "<i>Play all of the 7K beatmap pack.</i>",
+        "grouping": "Beatmap Packs",
+        "mode": 3,
+        "ordering": 5
+    }
+]
