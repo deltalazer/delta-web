@@ -16,8 +16,6 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for information about the code sta
 
 While we have standards in place, nothing is set in stone. If you have an issue with the way code is structured; with any libraries we are using; with any processes involved with contributing, *please* bring it up. We welcome all feedback so we can make contributing to this project as pain-free as possible.
 
-Our team believes in **human contributions**. Any contribution – be it an issue report or a pull request – which is created by, documented by, or aided by AI/LLM usage will typically be **closed and locked without further discussion**.
-
 ## Seeking Help
 
 If you need help with anything, you have two options:
