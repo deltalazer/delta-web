@@ -126,6 +126,9 @@ return [
         'token_validation_timeout' => get_float(env('CLIENT_TOKEN_VALIDATION_TIMEOUT')) ?? 0.05,
         'user_agent' => env('CLIENT_USER_AGENT', 'osu!'),
     ],
+    'delta' => [
+        'download_notice' => get_bool(env('DELTA_DOWNLOAD_NOTICE')) ?? true,
+    ],
     'elasticsearch' => [
         'prefix' => env('ES_INDEX_PREFIX'),
         'search_timeout' => env('ES_SEARCH_TIMEOUT', '5s'),

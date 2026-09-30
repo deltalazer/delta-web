@@ -77,6 +77,14 @@
             ])
         @endif
 
+        @if ($GLOBALS['cfg']['osu']['delta']['download_notice'])
+            @include('objects._notification_banner', [
+                'type' => 'warning',
+                'title' => osu_trans('layout.download_notice.title'),
+                'message' => osu_trans('layout.download_notice.message'),
+            ])
+        @endif
+
         @if (!isset($blank))
             @include("layout.header")
 

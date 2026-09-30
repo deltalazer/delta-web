@@ -12,6 +12,11 @@ return [
         'page_description' => 'Delta - Rhythm is just a *click* away!  With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor.',
     ],
 
+    'download_notice' => [
+        'message' => 'delta!lazer has not been released yet, so builds downloaded from this site may be outdated or broken. Please wait for the official release before downloading.',
+        'title' => 'Do not download from the website for now',
+    ],
+
     'header' => [
         'admin' => [
             'beatmapset' => 'beatmapset',
