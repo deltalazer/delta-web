@@ -7,9 +7,9 @@ return [
     'support' => [
         'convinced' => [
             'title' => 'I\'m convinced! :D',
-            'support' => 'Star Delta on GitHub',
+            'support' => 'Star delta!lazer on GitHub',
             'gift' => 'it is free, and it is the whole ask',
-            'instructions' => 'click the star to open the Delta repository',
+            'instructions' => 'click the star to open the delta!lazer repository',
             'link_github' => 'Link GitHub Account',
         ],
         'delta-features' => [
@@ -43,7 +43,7 @@ return [
             ],
         ],
         'why-support' => [
-            'title' => 'Why should I star Delta?',
+            'title' => 'Why should I star delta!lazer?',
 
             'team' => [
                 'title' => 'Support the Team',
@@ -155,7 +155,7 @@ return [
         ],
         'supporter_status' => [
             'contribution_with_duration' => 'Thank you for your ongoing support! So far, you\'ve contributed a total of :dollars, earning you the "Supporter" tag for :duration.',
-            'not_yet' => "You haven't ever had an Delta supporter tag :(",
+            'not_yet' => "You haven't ever had a Delta supporter tag :(",
             'valid_until' => 'Your current Delta supporter tag is valid until :date!',
             'was_valid_until' => 'Your Delta supporter tag was valid until :date.',
 
