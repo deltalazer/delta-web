@@ -182,7 +182,7 @@ return [
             'restricted' => 'You cannot change your username while restricted.',
             'supporter_required' => [
                 '_' => 'You must be a :link to change your name!',
-                'link_text' => 'Delta supporter',
+                'link_text' => 'delta!lazer supporter',
             ],
             'username_is_same' => 'This is already your username, silly!',
         ],

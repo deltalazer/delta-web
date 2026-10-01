@@ -16,7 +16,7 @@ return [
     'rank_lost' => ':user has lost first place on :beatmap (:mode)',
     'user_support_again' => ':user has once again chosen to support Delta - thanks for your generosity!',
     'user_support_first' => ':user has supported Delta - thanks for your generosity!',
-    'user_support_gift' => ':user has received the gift of Delta supporter!',
+    'user_support_gift' => ':user has received the gift of delta!lazer supporter!',
     'username_change' => ':previousUsername has changed their username to :user!',
 
     'beatmapset_status' => [

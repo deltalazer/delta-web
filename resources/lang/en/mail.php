@@ -27,8 +27,8 @@ return [
         'translation' => 'A community-provided translation for informational purposes follows:',
 
         'benefit' => [
-            'gift' => 'Your giftee(s) will now have access to Delta direct and many other supporter benefits.',
-            'self' => 'You will now have access to Delta direct and many other supporter benefits for :duration.',
+            'gift' => 'Your giftee(s) will now have access to delta!lazer direct and many other supporter benefits.',
+            'self' => 'You will now have access to delta!lazer direct and many other supporter benefits for :duration.',
         ],
 
         'support' => [
@@ -64,11 +64,11 @@ return [
     'supporter_gift' => [
         'anonymous_gift' => 'The person who gifted you this tag may choose to remain anonymous, so they have not been mentioned in this notification.',
         'anonymous_gift_maybe_not' => 'But you likely already know who it is ;).',
-        'duration' => 'Thanks to them, you have access to Delta direct and other Delta supporter benefits for the next :duration.',
+        'duration' => 'Thanks to them, you have access to delta!lazer direct and other delta!lazer supporter benefits for the next :duration.',
         'features' => 'You can find out more details on these features here:',
-        'gifted' => 'Someone has just gifted you an Delta supporter tag!',
+        'gifted' => 'Someone has just gifted you a delta!lazer supporter tag!',
         'gift_message' => 'The person who gifted you this tag left you a message:',
-        'subject' => 'You have been gifted an Delta supporter tag!',
+        'subject' => 'You have been gifted a delta!lazer supporter tag!',
     ],
 
     'user_email_updated' => [
