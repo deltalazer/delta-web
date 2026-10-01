@@ -35,7 +35,7 @@ class ChangelogReleases
         $repository = Repository::firstOrCreate(['name' => static::repository()]);
         $stream = static::updateStream();
 
-        foreach ($releases as $release) {
+        foreach (array_reverse($releases) as $release) {
             static::importRelease($release, $stream, $repository);
         }
 
@@ -91,13 +91,20 @@ class ChangelogReleases
         $entry->saveOrExplode();
 
         $build->changelogEntries()->syncWithoutDetaching([$entry->getKey()]);
+
+        $manualEntries = $build->changelogEntries()->whereNull('changelog_entries.repository_id')->get();
+
+        foreach ($manualEntries as $manualEntry) {
+            $build->changelogEntries()->detach($manualEntry);
+            $manualEntry->delete();
+        }
     }
 
     private static function updateStream(): UpdateStream
     {
         return UpdateStream::updateOrCreate(
             ['stream_id' => $GLOBALS['cfg']['osu']['changelog']['featured_stream']],
-            ['name' => 'delta', 'pretty_name' => 'Delta'],
+            ['name' => 'delta', 'pretty_name' => 'delta!lazer'],
         );
     }
 

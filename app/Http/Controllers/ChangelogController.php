@@ -145,6 +145,14 @@ class ChangelogController extends Controller
      */
     public function index()
     {
+        if (!is_json_request() && request()->query() === []) {
+            $latest = Build::default()->orderBy('date', 'DESC')->orderBy('build_id', 'DESC')->first();
+
+            if ($latest !== null) {
+                return $this->build($latest->updateStream->name, $latest->version);
+            }
+        }
+
         $updateStreams = $this->getUpdateStreams();
 
         $params = get_params(request()->all(), null, [
@@ -170,7 +178,8 @@ class ChangelogController extends Controller
                 'defaultChangelogs.user',
                 'defaultChangelogEntries.githubUser.user',
                 'defaultChangelogEntries.repository',
-            ])->orderBy('build_id', 'DESC')
+            ])->orderBy('date', 'DESC')
+            ->orderBy('build_id', 'DESC')
             ->get();
 
         if (!is_json_request() && count($builds) === 1 && request('no_redirect') !== '1') {

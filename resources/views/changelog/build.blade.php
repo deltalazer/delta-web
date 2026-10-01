@@ -4,6 +4,7 @@
 --}}
 @extends('master', [
     'titlePrepend' => "{$build->updateStream->pretty_name} {$build->version}",
+    'canonicalUrl' => build_url($build),
 ])
 
 @section('content')

@@ -2,6 +2,7 @@
 // See the LICENCE file in the repository root for full licence text.
 
 import ChangelogChart from 'charts/changelog-chart';
+import { parseJsonNullable } from 'utils/json';
 
 export default class ChangelogChartLoader {
   private chart: ChangelogChart | null = null;
@@ -15,6 +16,11 @@ export default class ChangelogChartLoader {
     const container = document.querySelector('.js-changelog-chart');
 
     if (!(container instanceof HTMLElement)) return;
+
+    if (parseJsonNullable<{ build_history: unknown[] }>('json-chart-config')?.build_history.length === 0) {
+      container.hidden = true;
+      return;
+    }
 
     // reset existing chart
     container.innerHTML = '';

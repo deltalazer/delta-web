@@ -266,8 +266,11 @@ class Build extends Model implements CommentableInterface
         if (!array_key_exists('versionNext', $this->cache)) {
             $this->cache['versionNext'] = static
                 ::default()
-                ->where('build_id', '>', $this->build_id)
+                ->where(fn ($q) => $q
+                    ->where('date', '>', $this->date)
+                    ->orWhere(fn ($q) => $q->where('date', $this->date)->where('build_id', '>', $this->build_id)))
                 ->where('stream_id', $this->stream_id)
+                ->orderBy('date', 'ASC')
                 ->orderBy('build_id', 'ASC')
                 ->first();
         }
@@ -280,8 +283,11 @@ class Build extends Model implements CommentableInterface
         if (!array_key_exists('versionPrevious', $this->cache)) {
             $this->cache['versionPrevious'] = static
                 ::default()
-                ->where('build_id', '<', $this->build_id)
+                ->where(fn ($q) => $q
+                    ->where('date', '<', $this->date)
+                    ->orWhere(fn ($q) => $q->where('date', $this->date)->where('build_id', '<', $this->build_id)))
                 ->where('stream_id', $this->stream_id)
+                ->orderBy('date', 'DESC')
                 ->orderBy('build_id', 'DESC')
                 ->first();
         }
