@@ -125,7 +125,7 @@ class DeltaModeration
                     'awarded' => now(),
                     'description' => $description,
                     'image' => $image,
-                    'url' => trim($params['url'] ?? ''),
+                    'url' => static::normaliseUrl($params['url'] ?? null),
                     'user_id' => $user->getKey(),
                 ]);
 
@@ -150,7 +150,7 @@ class DeltaModeration
 
                 $rank = new Rank();
                 $rank->rank_title = $title;
-                $rank->url = trim($params['url'] ?? '');
+                $rank->url = static::normaliseUrl($params['url'] ?? null);
                 $rank->rank_special = 1;
                 $rank->save();
 
@@ -164,7 +164,7 @@ class DeltaModeration
 
                 $rank->update([
                     'rank_title' => $title,
-                    'url' => trim($params['url'] ?? ''),
+                    'url' => static::normaliseUrl($params['url'] ?? null),
                 ]);
 
                 return "title updated: {$title}";
@@ -262,6 +262,17 @@ class DeltaModeration
 
             $beatmapset->disqualifyOrResetNominations($actor, $discussion, true);
         });
+    }
+
+    private static function normaliseUrl(?string $url): string
+    {
+        $url = trim($url ?? '');
+
+        if ($url === '' || preg_match('~^(https?://|/)~i', $url) === 1) {
+            return $url;
+        }
+
+        return "https://{$url}";
     }
 
     private static function badgeImage(array $params): ?string
