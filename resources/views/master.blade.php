@@ -32,7 +32,7 @@
         if ($i + 1 === count($titleTree)) {
             // Titles ending with phrase containing "Delta" like "Delta store" don't need the suffix.
             if (strpos($titlePart, 'Delta') === false) {
-                $title .= " | \u{202d}Delta\u{202c}";
+                $title .= " | \u{202d}delta!lazer\u{202c}";
             }
         } else {
             $title .= ' · ';

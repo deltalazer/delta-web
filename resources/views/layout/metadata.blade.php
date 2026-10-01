@@ -28,7 +28,7 @@
 
 <link rel="search" type="application/opensearchdescription+xml" title="Delta search" href="{{ $appUrl }}/opensearch.xml">
 
-<meta property="og:site_name" content="Delta">
+<meta property="og:site_name" content="delta!lazer">
 <meta property="og:type" content="website">
 
 @if (isset($canonicalUrl))

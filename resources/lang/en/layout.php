@@ -9,12 +9,12 @@ return [
     ],
 
     'defaults' => [
-        'page_description' => 'Delta - Rhythm is just a *click* away!  With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor.',
+        'page_description' => 'delta!lazer is a community-driven fork of osu!lazer with section gimmicks and hit object control.',
     ],
 
     'download_notice' => [
-        'message' => 'The delta!lazer update that lets the game connect to these servers has not been released yet, so the build available here cannot connect. Please wait for the official release before downloading.',
-        'title' => 'Do not download from the website for now',
+        'message' => 'This is an early release of delta!lazer. It has not been officially released yet.',
+        'title' => 'Early release',
     ],
 
     'header' => [

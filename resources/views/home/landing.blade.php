@@ -11,7 +11,8 @@
     'titleOverride' => osu_trans('home.landing.title'),
     'blank' => 'true',
     'blankNotificationBanners' => true,
-    'bodyAdditionalClasses' => 'osu-layout--body-landing'
+    'bodyAdditionalClasses' => 'osu-layout--body-landing',
+    'canonicalUrl' => $GLOBALS['cfg']['app']['url'].'/',
 ])
 
 @section('content')
@@ -183,7 +184,7 @@
     {
       "@context": "https://schema.org",
       "@type": "VideoGame",
-      "name": "Delta",
+      "name": "delta!lazer",
       "url": "{{ $GLOBALS['cfg']['app']['url'] }}",
       "image": "{{ $GLOBALS['cfg']['app']['url'] }}/images/favicon/android-chrome-512x512.png",
       "description": "osu!lazer fork with section gimmicks and hitobject control",
@@ -200,11 +201,21 @@
         "name": "deltalazer"
       },
       "applicationCategory": "Game",
-      "gamePlatform": ["Windows", "macOS", "Linux", "Android", "iOS"],
+      "gamePlatform": ["Windows", "Linux"],
       "playMode": ["SinglePlayer","MultiPlayer"],
       "genre": "Rhythm",
       "inLanguage": ["en", "be", "bg", "ca", "cs", "da", "de", "el", "es", "fi", "fr", "hr-hr", "hu", "id", "it", "ja", "ko", "lt", "lv-lv", "ms-my", "nl", "no", "pl", "pt", "pt-br", "ro", "ru", "sk", "sl", "sr", "sv", "th", "tr", "uk", "vi", "zh", "zh_hant"],
       "sameAs": "https://github.com/deltalazer/delta"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "delta!lazer",
+      "alternateName": ["deltalazer", "DeltaLazer"],
+      "url": "{{ $GLOBALS['cfg']['app']['url'] }}/"
     }
     </script>
 @endsection
