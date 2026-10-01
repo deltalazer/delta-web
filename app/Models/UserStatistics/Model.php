@@ -193,9 +193,14 @@ abstract class Model extends BaseModel
 
     public function globalRank(): ?int
     {
-        $value = $this->rank_score_index;
+        return $this->memoize(__FUNCTION__, function () {
+            if ($this->rank_score === null || $this->rank_score <= 0) {
+                return null;
+            }
 
-        return $value === 0 || $this->rank_score === 0.0 ? null : $value;
+            return static::where('rank_score', '>', static::where('user_id', $this->user_id)->select('rank_score'))
+                ->count() + 1;
+        });
     }
 
     public function globalRankPercent(): ?float

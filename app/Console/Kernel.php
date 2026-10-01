@@ -48,7 +48,7 @@ class Kernel extends ConsoleKernel
             ->onOneServer();
 
         $schedule->command('rankings:recalculate-user-ranks')
-            ->everyMinute()
+            ->hourly()
             ->withoutOverlapping()
             ->onOneServer();
 
