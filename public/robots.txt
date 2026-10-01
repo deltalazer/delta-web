@@ -1,0 +1,32 @@
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Applebot
+User-agent: YandexBot
+User-agent: Qwantbot
+User-agent: MojeekBot
+User-agent: Kagibot
+Disallow: /api/
+Disallow: /oauth/
+Disallow: /d/
+Disallow: /home/search
+Disallow: /beatmapsets/*/download
+Disallow: /scores/*/download
+Disallow: /wiki
+Disallow: /home/news
+Disallow: /legal/
+
+User-agent: Discordbot
+User-agent: Twitterbot
+User-agent: facebookexternalhit
+User-agent: Slackbot
+Allow: /
+
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://delta.mikuuu.xyz/sitemap-delta.xml

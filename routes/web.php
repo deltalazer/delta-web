@@ -687,4 +687,5 @@ Route::group(['prefix' => '_lio', 'middleware' => 'lio', 'as' => 'interop.'], fu
 });
 
 Route::get('opensearch.xml', 'HomeController@opensearch')->name('opensearch');
+Route::get('sitemap-delta.xml', 'HomeController@sitemap')->name('sitemap');
 Route::any('{catchall}', 'FallbackController@index')->where('catchall', '.*')->fallback();

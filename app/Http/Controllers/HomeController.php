@@ -10,6 +10,7 @@ use App\Libraries\CurrentStats;
 use App\Libraries\MenuContent;
 use App\Libraries\Search\AllSearch;
 use App\Libraries\Search\QuickSearch;
+use App\Models\Beatmap;
 use App\Models\BeatmapDownload;
 use App\Models\Beatmapset;
 use App\Models\Build;
@@ -18,6 +19,9 @@ use App\Models\GithubUser;
 use App\Models\LivestreamCollection;
 use App\Models\Multiplayer\Room;
 use App\Models\NewsPost;
+use App\Models\Solo\Score;
+use App\Models\Team;
+use App\Models\User;
 use App\Transformers\MenuImageTransformer;
 use App\Transformers\NewsPostTransformer;
 use Auth;
@@ -138,6 +142,42 @@ class HomeController extends Controller
     public function messageUser($user)
     {
         return ujs_redirect(route('chat.index', ['sendto' => $user]));
+    }
+
+    public function sitemap()
+    {
+        $urls = [
+            ['loc' => $GLOBALS['cfg']['app']['url'].'/'],
+            ['loc' => route('download')],
+        ];
+
+        foreach (array_keys(Beatmap::MODES) as $mode) {
+            $urls[] = ['loc' => route('rankings', ['mode' => $mode, 'type' => 'global', 'sort' => 'performance'])];
+        }
+
+        foreach (Build::default()->orderBy('date', 'DESC')->with('updateStream')->get() as $build) {
+            $urls[] = ['loc' => build_url($build), 'lastmod' => $build->date];
+        }
+
+        $beatmapsets = Beatmapset::active()->where('approved', '>', 0)->orderBy('beatmapset_id')->get();
+
+        foreach ($beatmapsets as $beatmapset) {
+            $urls[] = ['loc' => route('beatmapsets.show', $beatmapset), 'lastmod' => $beatmapset->last_update];
+        }
+
+        $players = User::default()->whereIn('user_id', Score::select('user_id'))->orderBy('user_id')->pluck('user_id');
+
+        foreach ($players as $userId) {
+            $urls[] = ['loc' => route('users.show', ['user' => $userId])];
+        }
+
+        foreach (Team::orderBy('id')->pluck('id') as $teamId) {
+            $urls[] = ['loc' => route('teams.show', ['team' => $teamId])];
+        }
+
+        return response()
+            ->view('home.sitemap', compact('urls'))
+            ->header('Content-Type', 'application/xml; charset=utf-8');
     }
 
     public function opensearch()
