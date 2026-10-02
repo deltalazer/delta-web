@@ -1,4 +1,5 @@
 User-agent: Googlebot
+User-agent: Google-Extended
 User-agent: Bingbot
 User-agent: DuckDuckBot
 User-agent: Applebot
@@ -22,7 +23,6 @@ User-agent: facebookexternalhit
 User-agent: Slackbot
 Allow: /
 
-User-agent: Google-Extended
 User-agent: Applebot-Extended
 Disallow: /
 
