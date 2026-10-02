@@ -5,6 +5,7 @@
 
 namespace App\Libraries\Search;
 
+use App\Libraries\DeltaMirror;
 use App\Libraries\Elasticsearch\BoolQuery;
 use App\Libraries\Elasticsearch\FunctionScore;
 use App\Libraries\Elasticsearch\QueryHelper;
@@ -74,6 +75,10 @@ class BeatmapsetSearch extends RecordSearch
         $this->addNsfwFilter($query);
         $this->addRankedFilter($query);
         $this->addSpotlightsFilter($query);
+
+        if (!DeltaMirror::anyAvailable()) {
+            $query->mustNot(['term' => ['user_id' => 0]]);
+        }
 
         $nested = new BoolQuery();
         $this->addDifficultyFilter($nested);

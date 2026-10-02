@@ -10,6 +10,7 @@ use App\Exceptions\ImageProcessorServiceException;
 use App\Exceptions\InvariantException;
 use App\Interfaces\CommentableInterface;
 use App\Jobs\CheckBeatmapsetCovers;
+use App\Libraries\DeltaMirror;
 use App\Jobs\EsDocumentUnique;
 use App\Jobs\Notifications\BeatmapsetDiscussionLock;
 use App\Jobs\Notifications\BeatmapsetDiscussionUnlock;
@@ -481,6 +482,10 @@ class Beatmapset extends Model implements AfterCommit, CommentableInterface, Ind
     public function coverURL($coverSize = 'cover', $customTimestamp = null)
     {
         $timestamp = $customTimestamp ?? $this->defaultCoverTimestamp();
+
+        if (DeltaMirror::isMirrored($this)) {
+            return "https://assets.ppy.sh/{$this->coverPath()}{$coverSize}.jpg?{$timestamp}";
+        }
 
         return StorageUrl::make(null, $this->coverPath()."{$coverSize}.jpg?{$timestamp}");
     }

@@ -52,6 +52,23 @@ class Kernel extends ConsoleKernel
             ->withoutOverlapping()
             ->onOneServer();
 
+        $schedule->command('delta:mirror-health')
+            ->everyMinute()
+            ->withoutOverlapping()
+            ->onOneServer();
+
+        $schedule->command('delta:mirror-import')
+            ->dailyAt('04:30')
+            ->withoutOverlapping()
+            ->runInBackground()
+            ->onOneServer();
+
+        $schedule->command('delta:mirror-import --qualified-only')
+            ->cron('15 1-23/2 * * *')
+            ->withoutOverlapping()
+            ->runInBackground()
+            ->onOneServer();
+
         $schedule->command('rankings:recalculate-country-stats')
             ->cron('25 0,3,6,9,12,15,18,21 * * *')
             ->onOneServer();

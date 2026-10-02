@@ -5,6 +5,7 @@
 
 namespace App\Libraries\Search;
 
+use App\Libraries\DeltaMirror;
 use App\Libraries\Elasticsearch\SearchResponse;
 use Cache;
 
@@ -21,7 +22,7 @@ class BeatmapsetSearchCached extends BeatmapsetSearch
             return parent::response();
         }
 
-        $key = "es-response:{$this->params->getCacheKey()}";
+        $key = "es-response:{$this->params->getCacheKey()}".(DeltaMirror::anyAvailable() ? '' : ':local-only');
 
         $value = Cache::get($key);
         if ($value !== null) {

@@ -9,6 +9,7 @@ use App\Exceptions\Handler as ExceptionsHandler;
 use App\Jobs\BeatmapsetDelete;
 use App\Libraries\BeatmapsetDiscussion\Review;
 use App\Libraries\CommentBundle;
+use App\Libraries\DeltaMirror;
 use App\Libraries\Search\BeatmapsetSearchCached;
 use App\Libraries\Search\BeatmapsetSearchRequestParams;
 use App\Models\Beatmap;
@@ -198,6 +199,21 @@ class BeatmapsetsController extends Controller
         }
 
         $noVideo = get_bool(Request::input('noVideo', false));
+
+        if (DeltaMirror::isMirrored($beatmapset)) {
+            $url = DeltaMirror::downloadUrl($beatmapset, $noVideo) ?? abort(503, osu_trans('beatmapsets.download.no_mirrors'));
+
+            BeatmapDownload::create([
+                'user_id' => $userId,
+                'timestamp' => time(),
+                'beatmapset_id' => $beatmapset->beatmapset_id,
+                'fulfilled' => 1,
+                'mirror_id' => 0,
+            ]);
+
+            return redirect($url);
+        }
+
         $mirror = BeatmapMirror::getRandomForRegion(request_country())
             ?? BeatmapMirror::getDefault()
             ?? abort(503, osu_trans('beatmapsets.download.no_mirrors'));

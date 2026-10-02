@@ -5,6 +5,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Libraries\DeltaMirror;
 use App\Models\Beatmap;
 use App\Models\Beatmapset;
 use DB;
@@ -19,6 +20,11 @@ class BeatmapFilesController extends Controller
     public function package($id)
     {
         $beatmapset = Beatmapset::findOrFail($id);
+
+        if (DeltaMirror::isMirrored($beatmapset)) {
+            return redirect(DeltaMirror::downloadUrl($beatmapset) ?? abort(503));
+        }
+
         $path = $GLOBALS['cfg']['osu']['beatmap_submission']['storage_path'].'/'.$beatmapset->getKey();
 
         abort_unless(is_readable($path), 404);
@@ -28,7 +34,15 @@ class BeatmapFilesController extends Controller
 
     public function show($id)
     {
-        $beatmap = Beatmap::findOrFail($id);
+        $beatmap = Beatmap::with('beatmapset')->findOrFail($id);
+
+        if ($beatmap->beatmapset !== null && DeltaMirror::isMirrored($beatmap->beatmapset)) {
+            $path = DeltaMirror::osuFile($beatmap);
+
+            abort_if($path === null, 404);
+
+            return response()->file($path, ['Content-Type' => 'text/plain; charset=utf-8']);
+        }
 
         abort_if($beatmap->filename === null, 404);
 
