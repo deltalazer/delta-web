@@ -9,12 +9,12 @@ return [
         'online' => '<strong>:players</strong> currently online in <strong>:games</strong> games',
         'peak' => 'Peak, :count online users',
         'players' => '<strong>:count</strong> registered players',
-        'title' => 'welcome',
+        'title' => 'delta!lazer (deltalazer), the community osu!lazer fork',
         'see_more_news' => 'see more news',
 
         'slogan' => [
-            'main' => 'the bestest free-to-win rhythm game',
-            'sub' => 'rhythm is just a click away',
+            'main' => 'delta!lazer',
+            'sub' => 'deltalazer: the community-driven osu!lazer fork',
         ],
     ],
 

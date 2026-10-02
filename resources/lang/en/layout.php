@@ -9,7 +9,7 @@ return [
     ],
 
     'defaults' => [
-        'page_description' => 'delta!lazer is a community-driven fork of osu!lazer with section gimmicks and hit object control.',
+        'page_description' => 'delta!lazer (deltalazer) is a community-driven fork of osu!lazer with section gimmicks and hit object control.',
     ],
 
     'download_notice' => [
