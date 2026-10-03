@@ -52,6 +52,11 @@ class Kernel extends ConsoleKernel
             ->withoutOverlapping()
             ->onOneServer();
 
+        $schedule->command('delta:rank-history-snapshot')
+            ->dailyAt('00:10')
+            ->withoutOverlapping()
+            ->onOneServer();
+
         $schedule->command('delta:mirror-health')
             ->everyMinute()
             ->withoutOverlapping()
