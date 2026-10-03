@@ -85,14 +85,6 @@
             ])
         @endif
 
-        @if (session('delta_moved_notice'))
-            @include('objects._notification_banner', [
-                'type' => 'info',
-                'title' => osu_trans('layout.moved_notice.title'),
-                'message' => osu_trans('layout.moved_notice.message'),
-            ])
-        @endif
-
         @include('layout._delta_copy_notice')
 
         @if (!isset($blank))
