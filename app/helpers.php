@@ -1272,7 +1272,8 @@ function nav_links()
     ];
     $links['help'] = [
         'page_title.main.wiki_controller._' => wiki_url('Main_page'),
-        'layout.menu.help.getFaq' => wiki_url('FAQ'),
+        'layout.menu.help.getDocs' => wiki_url('Delta/Documentation'),
+        'layout.menu.help.getFaq' => wiki_url('Delta/FAQ'),
         'layout.menu.help.getRules' => wiki_url('Rules'),
         'layout.menu.help.getAbuse' => wiki_url('Reporting_bad_behaviour/Abuse'),
         'layout.menu.help.getSupport' => wiki_url('Help_centre'),
@@ -1291,7 +1292,7 @@ function footer_landing_links()
             'download' => route('download'),
         ],
         'help' => [
-            'faq' => wiki_url('FAQ'),
+            'faq' => wiki_url('Delta/FAQ'),
             'forum' => route('forum.forums.index'),
             'livestreams' => route('livestreams.index'),
             'wiki' => wiki_url('Main_page'),
