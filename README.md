@@ -1,6 +1,6 @@
 # osu!web
 
-The browser-facing portion of delta!lazer
+The browser-facing portion of deltalazer
 
 ## Getting Started
 
