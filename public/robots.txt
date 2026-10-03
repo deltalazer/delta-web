@@ -13,6 +13,8 @@ Disallow: /d/
 Disallow: /home/search
 Disallow: /beatmapsets/*/download
 Disallow: /scores/*/download
+Allow: /wiki/en/Delta
+Allow: /wiki/Delta
 Disallow: /wiki
 Disallow: /home/news
 Disallow: /legal/

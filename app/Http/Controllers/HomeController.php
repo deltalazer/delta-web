@@ -151,6 +151,10 @@ class HomeController extends Controller
             ['loc' => route('download')],
         ];
 
+        foreach (['Delta', 'Delta/Documentation', 'Delta/FAQ'] as $wikiPath) {
+            $urls[] = ['loc' => wiki_url($wikiPath, 'en')];
+        }
+
         foreach (array_keys(Beatmap::MODES) as $mode) {
             $urls[] = ['loc' => route('rankings', ['mode' => $mode, 'type' => 'global', 'sort' => 'performance'])];
         }
@@ -159,7 +163,7 @@ class HomeController extends Controller
             $urls[] = ['loc' => build_url($build), 'lastmod' => $build->date];
         }
 
-        $beatmapsets = Beatmapset::active()->where('approved', '>', 0)->orderBy('beatmapset_id')->get();
+        $beatmapsets = Beatmapset::active()->where('approved', '>', 0)->where('user_id', '<>', 0)->orderBy('beatmapset_id')->get();
 
         foreach ($beatmapsets as $beatmapset) {
             $urls[] = ['loc' => route('beatmapsets.show', $beatmapset), 'lastmod' => $beatmapset->last_update];
