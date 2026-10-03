@@ -9,11 +9,11 @@ return [
         'online' => '<strong>:players</strong> currently online in <strong>:games</strong> games',
         'peak' => 'Peak, :count online users',
         'players' => '<strong>:count</strong> registered players',
-        'title' => 'delta!lazer (deltalazer), the community osu!lazer fork',
+        'title' => 'deltalazer, the community osu!lazer fork',
         'see_more_news' => 'see more news',
 
         'slogan' => [
-            'main' => 'delta!lazer',
+            'main' => 'deltalazer',
             'sub' => 'deltalazer: the community-driven osu!lazer fork',
         ],
     ],
@@ -149,8 +149,8 @@ return [
             'resets' => 'resets :ends',
         ],
         'buttons' => [
-            'download' => 'Download delta!lazer',
-            'support' => 'Support delta!lazer',
+            'download' => 'Download deltalazer',
+            'support' => 'Support deltalazer',
             'store' => 'Delta store',
         ],
         'livestream' => [

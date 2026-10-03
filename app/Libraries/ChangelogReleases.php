@@ -104,7 +104,7 @@ class ChangelogReleases
     {
         return UpdateStream::updateOrCreate(
             ['stream_id' => $GLOBALS['cfg']['osu']['changelog']['featured_stream']],
-            ['name' => 'delta', 'pretty_name' => 'delta!lazer'],
+            ['name' => 'delta', 'pretty_name' => 'deltalazer'],
         );
     }
 

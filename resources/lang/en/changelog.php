@@ -34,7 +34,7 @@ return [
     'support' => [
         'heading' => 'Love this update?',
         'text_1' => 'Support further development of Delta and :link today!',
-        'text_1_link' => 'become a delta!lazer supporter',
+        'text_1_link' => 'become a deltalazer supporter',
         'text_2' => 'Not only will you help speed development, but you will also get some extra features and customisations!',
     ],
 ];

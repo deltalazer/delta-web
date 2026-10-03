@@ -120,7 +120,7 @@ return [
 
         'beta' => [
             'main' => 'Beta access is currently restricted to privileged users.',
-            'small' => '(delta!lazer supporters will get in soon)',
+            'small' => '(deltalazer supporters will get in soon)',
         ],
     ],
 
@@ -196,7 +196,7 @@ return [
         'change_avatar' => 'change your avatar!',
         'first_members' => 'Here since the beginning',
         'is_developer' => 'Delta developer',
-        'is_supporter' => 'delta!lazer supporter',
+        'is_supporter' => 'deltalazer supporter',
         'joined_at' => 'Joined :date',
         'lastvisit' => 'Last seen :date',
         'lastvisit_online' => 'Currently online',
@@ -248,7 +248,7 @@ return [
 
                     'restriction_info' => [
                         '_' => 'Upload available for :link only',
-                        'link' => 'delta!lazer supporters',
+                        'link' => 'deltalazer supporters',
                     ],
                 ],
             ],
@@ -264,7 +264,7 @@ return [
 
                 'supporter' => [
                     '_' => 'Custom colour themes available for :link only',
-                    'link' => 'delta!lazer supporters',
+                    'link' => 'deltalazer supporters',
                 ],
             ],
         ],
@@ -493,7 +493,7 @@ return [
 
             'restriction_info' => [
                 '_' => 'You need to be an :link to unlock this feature.',
-                'link' => 'delta!lazer supporter',
+                'link' => 'deltalazer supporter',
             ],
         ],
         'post_count' => [

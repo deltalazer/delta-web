@@ -212,7 +212,7 @@ return [
             'not_member' => 'Not a member of the team.',
         ],
         'store' => [
-            'require_supporter_tag' => 'delta!lazer supporter tag is required to create team.',
+            'require_supporter_tag' => 'deltalazer supporter tag is required to create team.',
         ],
     ],
 
@@ -221,7 +221,7 @@ return [
             'edit' => [
                 'locked' => 'User page is locked.',
                 'not_owner' => 'Can only edit own user page.',
-                'require_supporter_tag' => 'delta!lazer supporter tag is required.',
+                'require_supporter_tag' => 'deltalazer supporter tag is required.',
             ],
         ],
         'update_email' => [

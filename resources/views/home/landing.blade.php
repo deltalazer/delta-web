@@ -184,7 +184,7 @@
     {
       "@context": "https://schema.org",
       "@type": "VideoGame",
-      "name": "delta!lazer",
+      "name": "deltalazer",
       "url": "{{ $GLOBALS['cfg']['app']['url'] }}",
       "image": "{{ $GLOBALS['cfg']['app']['url'] }}/images/favicon/android-chrome-512x512.png",
       "description": "osu!lazer fork with section gimmicks and hitobject control",
@@ -213,7 +213,7 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "delta!lazer",
+      "name": "deltalazer",
       "alternateName": ["deltalazer", "DeltaLazer"],
       "url": "{{ $GLOBALS['cfg']['app']['url'] }}/"
     }

@@ -9,11 +9,11 @@ return [
     ],
 
     'defaults' => [
-        'page_description' => 'delta!lazer (deltalazer) is a community-driven fork of osu!lazer with section gimmicks and hit object control.',
+        'page_description' => 'deltalazer is a community-driven fork of osu!lazer with section gimmicks and hit object control.',
     ],
 
     'download_notice' => [
-        'message' => 'This is an early release of delta!lazer. It has not been officially released yet.',
+        'message' => 'This is an early release of deltalazer. It has not been officially released yet.',
         'title' => 'Early release',
     ],
 
@@ -21,12 +21,12 @@ return [
         'original' => 'View the original on osu.ppy.sh.',
 
         'legal' => [
-            'message' => 'These are osu!\'s legal documents, copied unchanged from the osu! wiki. They describe ppy\'s services, not delta!lazer, which does not have its own yet. :link',
-            'title' => 'Not delta!lazer\'s terms',
+            'message' => 'These are osu!\'s legal documents, copied unchanged from the osu! wiki. They describe ppy\'s services, not deltalazer, which does not have its own yet. :link',
+            'title' => 'Not deltalazer\'s terms',
         ],
 
         'wiki' => [
-            'message' => 'This is a copy of the osu! wiki. It hasn\'t been adapted for delta!lazer yet, so rules, features and links may not match this server. :link',
+            'message' => 'This is a copy of the osu! wiki. It hasn\'t been adapted for deltalazer yet, so rules, features and links may not match this server. :link',
             'title' => 'osu! wiki',
         ],
     ],
@@ -120,7 +120,7 @@ return [
             'home' => 'Home',
             'changelog-index' => 'Changelog',
             'beatmaps' => 'Beatmap Listing',
-            'download' => 'Download delta!lazer',
+            'download' => 'Download deltalazer',
         ],
         'help' => [
             '_' => 'Help & Community',
@@ -208,7 +208,7 @@ return [
 
         'register' => [
             'download' => 'Download',
-            'info' => 'Download delta!lazer to create your own account!',
+            'info' => 'Download deltalazer to create your own account!',
             'title' => "Don't have an account?",
         ],
     ],
@@ -235,6 +235,6 @@ return [
     ],
 
     'popup_locale' => [
-        'notice' => 'Delta!Lazer does not support other languages due to rebranding of the translations being required but not done yet.',
+        'notice' => 'deltalazer does not support other languages due to rebranding of the translations being required but not done yet.',
     ],
 ];

@@ -28,7 +28,7 @@
                                 {{ osu_trans('home.download.download') }}
                                 <div>
                                     <div class="btn-osu-big__text-top btn-osu-big__text-top--download">
-                                        delta!lazer
+                                        deltalazer
                                     </div>
                                     {{ osu_trans('home.download.for_os', ['os' => $lazerPlatformName]) }}
                                 </div>
@@ -58,7 +58,7 @@
                             <div class="btn-osu-big__left">
                                 <div>
                                     <div class="btn-osu-big__text-top btn-osu-big__text-top--download">
-                                        delta!lazer
+                                        deltalazer
                                     </div>
                                     Linux (x64)
                                 </div>

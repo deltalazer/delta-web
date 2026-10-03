@@ -7,9 +7,9 @@ return [
     'support' => [
         'convinced' => [
             'title' => 'I\'m convinced! :D',
-            'support' => 'Star delta!lazer on GitHub',
+            'support' => 'Star deltalazer on GitHub',
             'gift' => 'it is free, and it is the whole ask',
-            'instructions' => 'click the star to open the delta!lazer repository',
+            'instructions' => 'click the star to open the deltalazer repository',
             'link_github' => 'Link GitHub Account',
         ],
         'delta-features' => [
@@ -43,19 +43,19 @@ return [
             ],
         ],
         'why-support' => [
-            'title' => 'Why should I star delta!lazer?',
+            'title' => 'Why should I star deltalazer?',
 
             'team' => [
                 'title' => 'Support the Team',
-                'description' => 'A small volunteer team builds and runs delta!lazer. Stars are how we know it is worth continuing.',
+                'description' => 'A small volunteer team builds and runs deltalazer. Stars are how we know it is worth continuing.',
             ],
             'visibility' => [
                 'title' => 'Help People Find It',
-                'description' => 'Stars are most of what GitHub uses to decide what to put in front of people. The more delta!lazer has, the more players come across it.',
+                'description' => 'Stars are most of what GitHub uses to decide what to put in front of people. The more deltalazer has, the more players come across it.',
             ],
             'free' => [
                 'title' => 'Nothing to Buy',
-                'description' => 'delta!lazer has no ads, no sponsors and nothing for sale. A star is the whole ask.',
+                'description' => 'deltalazer has no ads, no sponsors and nothing for sale. A star is the whole ask.',
             ],
             'development' => [
                 'title' => 'Follow Development',
@@ -66,7 +66,7 @@ return [
         'perks' => [
             'title' => 'Cool! What perks do I get?',
             'osu_direct' => [
-                'title' => 'delta!lazer direct',
+                'title' => 'deltalazer direct',
                 'description' => 'Gain quick and easy access to search for and download beatmaps without having to leave the game.',
             ],
 
@@ -117,7 +117,7 @@ return [
 
             'speedy_downloads' => [
                 'title' => 'Speedy Downloads',
-                'description' => 'More lenient download restrictions, especially when using delta!lazer direct.',
+                'description' => 'More lenient download restrictions, especially when using deltalazer direct.',
             ],
 
             'skinnables' => [
@@ -155,9 +155,9 @@ return [
         ],
         'supporter_status' => [
             'contribution_with_duration' => 'Thank you for your ongoing support! So far, you\'ve contributed a total of :dollars, earning you the "Supporter" tag for :duration.',
-            'not_yet' => "You haven't ever had a delta!lazer supporter tag :(",
-            'valid_until' => 'Your current delta!lazer supporter tag is valid until :date!',
-            'was_valid_until' => 'Your delta!lazer supporter tag was valid until :date.',
+            'not_yet' => "You haven't ever had a deltalazer supporter tag :(",
+            'valid_until' => 'Your current deltalazer supporter tag is valid until :date!',
+            'was_valid_until' => 'Your deltalazer supporter tag was valid until :date.',
 
             'gifted' => [
                 '_' => 'Out of your total contributions, you’ve gifted :dollars worth of tags to :users covering :duration. That’s incredibly generous!',

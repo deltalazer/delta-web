@@ -17,7 +17,7 @@ class DeltaMirror
 {
     const HEALTH_CACHE_KEY = 'delta_mirror_health';
     const HEALTH_TTL = 300;
-    const USER_AGENT = 'delta!lazer (+https://delta.mikuuu.xyz)';
+    const USER_AGENT = 'deltalazer (+https://delta.mikuuu.xyz)';
 
     const MIRRORS = [
         'catboy' => [
