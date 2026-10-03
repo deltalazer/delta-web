@@ -257,7 +257,7 @@ return [
         'lazer_info' => presence(env('OSU_URL_LAZER_INFO')),
         'menu_content' => presence(env('OSU_URL_MENU_CONTENT_JSON')) ?? 'https://assets.ppy.sh/menu-content.json',
         'osx' => 'https://osx.ppy.sh',
-        'server_status' => 'https://status.ppy.sh',
+        'server_status' => 'https://status.mikuuu.xyz',
         'smilies' => '/forum/images/smilies',
         'social.twitter' => '/wiki/Twitter',
         'source_code' => presence(env('OSU_URL_SOURCE_CODE')) ?? 'https://github.com/deltalazer/delta-web',

@@ -1313,6 +1313,7 @@ function footer_legal_links(): array
     }
     $ret['privacy'] = route('legal', ['locale' => $locale, 'path' => 'Privacy']);
     $ret['copyright'] = route('legal', ['locale' => $locale, 'path' => 'Copyright']);
+    $ret['server_status'] = osu_url('server_status');
     $ret['source_code'] = osu_url('source_code');
 
     return $ret;
