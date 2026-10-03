@@ -85,6 +85,8 @@
             ])
         @endif
 
+        @include('layout._delta_copy_notice')
+
         @if (!isset($blank))
             @include("layout.header")
 

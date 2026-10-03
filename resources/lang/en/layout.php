@@ -17,6 +17,20 @@ return [
         'title' => 'Early release',
     ],
 
+    'copy_notice' => [
+        'original' => 'View the original on osu.ppy.sh.',
+
+        'legal' => [
+            'message' => 'These are osu!\'s legal documents, copied unchanged from the osu! wiki. They describe ppy\'s services, not delta!lazer, which does not have its own yet. :link',
+            'title' => 'Not delta!lazer\'s terms',
+        ],
+
+        'wiki' => [
+            'message' => 'This is a copy of the osu! wiki. It hasn\'t been adapted for delta!lazer yet, so rules, features and links may not match this server. :link',
+            'title' => 'osu! wiki',
+        ],
+    ],
+
     'header' => [
         'admin' => [
             'beatmapset' => 'beatmapset',
