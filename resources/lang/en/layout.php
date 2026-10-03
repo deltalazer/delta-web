@@ -17,6 +17,11 @@ return [
         'title' => 'Early release',
     ],
 
+    'moved_notice' => [
+        'message' => 'You have been redirected to the new home of delta!lazer.',
+        'title' => 'New home',
+    ],
+
     'copy_notice' => [
         'original' => 'View the original on osu.ppy.sh.',
 
