@@ -1250,7 +1250,7 @@ function nav_links()
     $links['home'] = [
         '_' => route('home'),
         'page_title.main.news_controller._' => route('news.index'),
-        'layout.menu.home.team' => wiki_url('People/osu!_team'),
+        'layout.menu.home.team' => wiki_url('Delta/Team'),
         'page_title.main.changelog_controller._' => route('changelog.index'),
         'page_title.main.home_controller.get_download' => route('download'),
         'page_title.main.home_controller.search' => route('search'),

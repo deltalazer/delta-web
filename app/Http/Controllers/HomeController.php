@@ -151,7 +151,7 @@ class HomeController extends Controller
             ['loc' => route('download')],
         ];
 
-        foreach (['Delta', 'Delta/Documentation', 'Delta/FAQ'] as $wikiPath) {
+        foreach (['Delta', 'Delta/Documentation', 'Delta/FAQ', 'Delta/Team'] as $wikiPath) {
             $urls[] = ['loc' => wiki_url($wikiPath, 'en')];
         }
 
