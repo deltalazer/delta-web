@@ -12,7 +12,7 @@
             @endforeach
         </div>
     @endif
-    <div class="footer__row">ppy powered 2007-{{ date('Y') }}</div>
+    <div class="footer__row">deltalazer · based on <a href="https://github.com/ppy/osu-web" rel="noopener" target="_blank">osu-web</a> by ppy</div>
 
     <div class="js-sync-height--target" data-sync-height-id="permanent-fixed-footer"></div>
 </footer>

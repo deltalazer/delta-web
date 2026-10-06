@@ -44,6 +44,9 @@
                     <div class="download-page__other-platforms">
                         @include('objects._basic_select_options', ['modifiers' => 'download', 'selectOptions' => $selectOptions])
                     </div>
+                    <div class="download-page__text">
+                        {!! osu_trans('home.download.official', ['github' => link_to(osu_url('lazer_dl_other'), 'GitHub', ['rel' => 'noopener', 'target' => '_blank'])]) !!}
+                    </div>
                 </div>
             </div>
             <div class="download-page__banner-tail">

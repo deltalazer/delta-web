@@ -88,6 +88,7 @@ return [
         'for_os' => 'for :os',
         'macos-fallback' => 'macOS users',
         'mirror' => 'mirror',
+        'official' => 'These are the official deltalazer builds, also published on :github.',
         'or' => 'or',
         'os_version_or_later' => ':os_version or later',
         'other_os' => 'other platforms',
