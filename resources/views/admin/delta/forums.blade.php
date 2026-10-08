@@ -68,5 +68,6 @@
                 @endforeach
             </div>
         @endif
+        @include('admin.delta._original_notice')
     </div>
 @endsection

@@ -18,3 +18,8 @@
     'links' => $links,
     'linksBreadcrumb' => true,
 ]])
+@include('objects._notification_banner', [
+    'type' => 'alert',
+    'title' => 'Confidentiality Notice',
+    'message' => 'The information found within the admin panel is strictly confidential. This data must not be redistributed to external members outside of the GMT or other relevant deltalazer teams.',
+])
