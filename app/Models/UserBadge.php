@@ -21,12 +21,26 @@ class UserBadge extends Model
     protected $primaryKey = 'user_id';
     protected $table = 'osu_badges';
 
+    public function image2xUrl()
+    {
+        if ($this->isExternalImage()) {
+            return $this->image;
+        }
+
+        return retinaify($this->imageUrl());
+    }
+
     public function imageUrl()
     {
-        if (preg_match('~^https?://~', $this->image) === 1) {
+        if ($this->isExternalImage()) {
             return $this->image;
         }
 
         return "https://assets.ppy.sh/profile-badges/{$this->image}";
+    }
+
+    private function isExternalImage(): bool
+    {
+        return preg_match('~^https?://~', $this->image) === 1;
     }
 }
