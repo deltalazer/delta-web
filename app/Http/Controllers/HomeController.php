@@ -163,7 +163,7 @@ class HomeController extends Controller
             $urls[] = ['loc' => build_url($build), 'lastmod' => $build->date];
         }
 
-        $beatmapsets = Beatmapset::active()->where('approved', '>', 0)->where('user_id', '<>', 0)->orderBy('beatmapset_id')->get();
+        $beatmapsets = Beatmapset::active()->where('approved', '>=', Beatmapset::STATES['wip'])->where('user_id', '<>', 0)->orderBy('beatmapset_id')->get();
 
         foreach ($beatmapsets as $beatmapset) {
             $urls[] = ['loc' => route('beatmapsets.show', $beatmapset), 'lastmod' => $beatmapset->last_update];
