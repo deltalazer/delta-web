@@ -23,6 +23,8 @@ class DeltaMirrorImport extends Command
     const LOCAL_BEATMAP_STATS = ['playcount', 'passcount'];
     const LOCAL_SET_STATS = ['favourite_count', 'play_count', 'rating'];
     const PAGE_SIZE = 500;
+    const GAP_PAGE_SIZE = 100;
+    const GAP_SEARCH_URL = 'https://osu.direct/api/v2/search';
     const SEARCH_URL = 'https://catboy.best/api/v2/search';
     const STATUSES = [1, 2, 3, 4];
 
@@ -30,7 +32,9 @@ class DeltaMirrorImport extends Command
         {--full : Page through every set instead of stopping at the first page with nothing new}
         {--max-pages=0 : Stop each status after this many pages}
         {--dry-run : Fetch and check everything without writing}
-        {--qualified-only : Only re-check the qualified sets against osu.direct}';
+        {--qualified-only : Only re-check the qualified sets against osu.direct}
+        {--set=* : Import only these beatmapset ids, fetched from osu.direct, for sets the search mirror is missing}
+        {--gaps-only : Only page through all of osu.direct for sets that catboy is missing}';
 
     protected $description = 'Import ranked, approved, qualified and loved beatmapsets from the beatmap mirror.';
 
@@ -45,8 +49,22 @@ class DeltaMirrorImport extends Command
         $maxPages = get_int($this->option('max-pages')) ?? 0;
         $this->dryRun = (bool) $this->option('dry-run');
         $changed = [];
+        $setIds = array_map('intval', $this->option('set'));
 
-        foreach ($this->option('qualified-only') ? [] : static::STATUSES as $status) {
+        foreach ($setIds as $id) {
+            $set = $this->fetchCurrentSet($client, $id);
+
+            if ($set !== null && $this->importSet($set, true)) {
+                $changed[] = $id;
+                $this->line("set {$id}: imported as ".($set['status'] ?? $set['ranked'] ?? '?'));
+            }
+
+            usleep(static::CURRENT_SET_DELAY_US);
+        }
+
+        $gapsOnly = (bool) $this->option('gaps-only');
+
+        foreach ($this->option('qualified-only') || $setIds !== [] || $gapsOnly ? [] : static::STATUSES as $status) {
             for ($page = 0; $maxPages === 0 || $page < $maxPages; $page++) {
                 $offset = $page * static::PAGE_SIZE;
                 $sets = $this->fetchPage($client, $status, $offset);
@@ -80,7 +98,11 @@ class DeltaMirrorImport extends Command
             }
         }
 
-        $refreshed = $this->refreshQualified($client);
+        if ($setIds === [] && !$this->option('qualified-only')) {
+            $changed = [...$changed, ...$this->fillGaps($client, $full || $gapsOnly, $maxPages)];
+        }
+
+        $refreshed = $setIds === [] && !$gapsOnly ? $this->refreshQualified($client) : [];
 
         if (!$this->dryRun) {
             foreach (array_chunk(array_values(array_unique($full ? $refreshed : [...$changed, ...$refreshed])), 200) as $ids) {
@@ -127,6 +149,78 @@ class DeltaMirrorImport extends Command
                 }
             } catch (Throwable $e) {
                 $this->warn("attempt {$attempt} failed: {$e->getMessage()}");
+            }
+
+            sleep(5 * $attempt);
+        }
+
+        return null;
+    }
+
+    private function fillGaps(Client $client, bool $full, int $maxPages): array
+    {
+        $imported = [];
+
+        foreach (static::STATUSES as $status) {
+            for ($page = 0; $maxPages === 0 || $page < $maxPages; $page++) {
+                $offset = $page * static::GAP_PAGE_SIZE;
+                $sets = $this->fetchGapPage($client, $status, $offset);
+
+                if ($sets === null) {
+                    $this->warn("osu.direct did not answer for status {$status} at offset {$offset}, gap check stopped");
+                    break;
+                }
+
+                if ($sets === []) {
+                    break;
+                }
+
+                $ids = array_map(fn ($set) => (int) ($set['id'] ?? 0), $sets);
+                $known = array_flip(array_map('intval', DB::table('osu_beatmapsets')->whereIn('beatmapset_id', $ids)->pluck('beatmapset_id')->all()));
+                $missing = array_filter($sets, fn ($set) => !isset($known[(int) ($set['id'] ?? 0)]));
+
+                foreach ($missing as $set) {
+                    if ($this->importSet($set)) {
+                        $imported[] = (int) $set['id'];
+                        $this->line("set {$set['id']}: missing from catboy, imported from osu.direct");
+                    }
+                }
+
+                if (!$full && $missing === []) {
+                    break;
+                }
+
+                usleep(static::CURRENT_SET_DELAY_US);
+            }
+        }
+
+        $this->line(count($imported).' sets missing from catboy were imported from osu.direct');
+
+        return $imported;
+    }
+
+    private function fetchGapPage(Client $client, int $status, int $offset): ?array
+    {
+        for ($attempt = 1; $attempt <= 3; $attempt++) {
+            try {
+                $response = $client->get(static::GAP_SEARCH_URL, ['http_errors' => false, 'query' => [
+                    'amount' => static::GAP_PAGE_SIZE,
+                    'offset' => $offset,
+                    'status' => $status,
+                ]]);
+
+                if ($response->getStatusCode() === 429) {
+                    sleep(max(1, (int) $response->getHeaderLine('ratelimit-reset')));
+                    continue;
+                }
+
+                $sets = json_decode((string) $response->getBody(), true);
+
+                if ($response->getStatusCode() === 200 && is_array($sets) && array_is_list($sets)) {
+                    return $sets;
+                }
+            } catch (Throwable $e) {
+                $this->warn("osu.direct attempt {$attempt} failed: {$e->getMessage()}");
             }
 
             sleep(5 * $attempt);
