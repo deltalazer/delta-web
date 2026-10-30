@@ -507,8 +507,20 @@ class Beatmapset extends Model implements AfterCommit, CommentableInterface, Ind
         return $this->download_disabled || $this->download_disabled_url !== null;
     }
 
+    public static function localPreviewPath(int $id): string
+    {
+        return public_path("uploads/default/previews/{$id}.mp3");
+    }
+
     public function previewUrl(): string
     {
+        if ((int) $this->user_id !== 0) {
+            $path = static::localPreviewPath($this->getKey());
+            $version = is_file($path) ? '?'.filemtime($path) : '';
+
+            return $GLOBALS['cfg']['app']['url']."/uploads/default/previews/{$this->getKey()}.mp3{$version}";
+        }
+
         return "https://b.ppy.sh/preview/{$this->getKey()}.mp3";
     }
 

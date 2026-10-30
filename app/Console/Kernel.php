@@ -74,6 +74,12 @@ class Kernel extends ConsoleKernel
             ->runInBackground()
             ->onOneServer();
 
+        $schedule->command('delta:beatmap-previews')
+            ->everyFiveMinutes()
+            ->withoutOverlapping()
+            ->runInBackground()
+            ->onOneServer();
+
         $schedule->command('rankings:recalculate-country-stats')
             ->cron('25 0,3,6,9,12,15,18,21 * * *')
             ->onOneServer();
