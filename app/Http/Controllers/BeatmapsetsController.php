@@ -98,7 +98,7 @@ class BeatmapsetsController extends Controller
                 $languages = [];
             }
 
-            $noindex = !$beatmapset->esShouldIndex();
+            $noindex = !$beatmapset->esShouldIndex() || (int) $beatmapset->user_id === 0;
             $config = [
                 'tags_min_votes_display' => $GLOBALS['cfg']['osu']['beatmap_tags']['min_votes_display'],
             ];
